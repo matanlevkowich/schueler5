@@ -1,0 +1,96 @@
+@use 'variables';
+@use 'functions';
+
+:root {
+    --font-base: 1vw; // Default base font size
+}
+
+
+@media (min-width: variables.$big-tablet-start) and (max-width: variables.$big-tablet-end) {
+  :root {
+    --font-base: 14px; // Fixed base for tablets and phones
+  }
+}
+
+@media (min-width: variables.$tablet-start) and (max-width: variables.$tablet-end) {
+    :root {
+    --font-base: 12px; // Fixed base for tablets and phones
+  }
+}
+
+@media (max-width: variables.$phone) {
+  :root {
+    --font-base: 10px; // Fixed base for tablets and phones
+  }
+}
+
+
+// Box sizing rules
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+// Remove default margin
+body,
+h1,
+h2,
+h3,
+h4,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+// Remove list styles on ul, ol elements with a list role
+ul[role="list"],
+ol[role="list"] {
+  list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4{
+  font-family: variables.$heading-font;
+  font-weight: variables.$normal-font-weight;
+}
+
+a{
+  font-family: variables.$heading-font;
+  text-decoration: none;
+  color: variables.$black;
+}
+
+html {
+  min-height: variables.$min-height; 
+  // Smooth scroll on focus-within
+  scroll-behavior: smooth;
+}
+
+body{
+  font-family: variables.$base-font; 
+  font-size: functions.dynamic-size(1); 
+  font-weight: variables.$light-font-weight;
+  color: variables.$black;
+  line-height: 1.8;
+}
+
+// Make images easier to work with
+img,
+picture {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+// Inherit fonts for inputs and buttons
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}

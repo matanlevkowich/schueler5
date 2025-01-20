@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        {% hook "seo" %}
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"> 
+        <meta name="referrer" content="origin-when-cross-origin" />
+        <link rel="home" href="{{ siteUrl }}" />
+        <link href="/assets/favicon.png?v=2" rel="shortcut icon">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        {% do craft.app.view.registerCssFile('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=IBM+Plex+Sans:wght@200;400;600&display=swap') %}
+        {% do craft.app.view.registerCssFile('@web/interface/css/main.css?v=2') %}
+        {% do craft.app.view.registerJsFile('@web/interface/js/lisi.js?v=1.2') %}
+                
+    
+    </head>
+    <body class="ltr">
+        
+        <header class="header">
+            {% include '_layout/header' %}
+        </header>
+        <main id="content" role="main">
+            {% block content %}
+                
+            {% endblock %}
+        </main>
+        <footer class="footer">
+            {% include "_layout/footer" %}
+        </footer> 
+        {#<div class="consent">
+            <div class="grt-cookie">
+                <div class="grt-cookies-msg">{{ cookies.text }}</div>
+                <span class="grt-cookie-button">{{ cookies.button }}</span>
+            </div>
+        </div>#}
+    </body>
+</html>

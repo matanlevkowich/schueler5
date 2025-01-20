@@ -1,0 +1,23 @@
+.ham {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 0;
+  flex-direction: column;
+  z-index: 9999;
+}
+.ham__line {
+  width: calc(var(--font-base) * 2.5);
+  background: #E52623;
+  margin-bottom: calc(var(--font-base) * 0.5);
+  height: calc(var(--font-base) * 0.4);
+  transform: rotate(0deg) scale(1, 1);
+  transform-origin: center;
+  display: block;
+}
+.ham__line:last-child {
+  margin-bottom: 0;
+}
+
+/*# sourceMappingURL=ham.css.map */

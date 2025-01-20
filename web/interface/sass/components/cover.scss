@@ -1,0 +1,70 @@
+@use '../base/functions';
+@use '../base/variables';
+
+// cover //
+
+.cover{
+  position: relative;
+  color:variables.$white;
+
+  &__background{
+    min-height: 100vh;
+    background-size: cover;
+  }
+
+  &__gradiant{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background:variables.$gradiant-black-alt;
+    background:variables.$gradiant-black;
+
+  }
+
+  &__text{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: functions.dynamic-size(4) functions.dynamic-size(6) functions.dynamic-size(8);
+    font-size: 200%;
+    
+  }
+
+  &__title{
+    font-size: 300%;
+  }
+
+  &__subtitle{
+    margin-right: 30%;
+  }
+  .button{
+    margin-top: functions.dynamic-size(3);
+  }
+}
+
+@media (min-width: variables.$big-tablet-start) and (max-width: variables.$big-tablet-end) {
+    .cover{
+    margin:0 functions.dynamic-size(1.5);
+    min-height: 50vw;
+    
+    &--flex{
+      margin: functions.dynamic-size(1.5);
+      padding: functions.dynamic-size(2.5) functions.dynamic-size(1.5);
+
+      svg.icon{
+        width: functions.dynamic-size(3);
+      }
+    }
+
+    &__text{
+      padding:0 functions.dynamic-size(1.5);
+    }
+
+    &__quote{
+      font-size: 5vw;
+      top: functions.dynamic-size(2);
+    }
+  }
+}

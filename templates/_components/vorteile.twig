@@ -1,0 +1,22 @@
+<div class="box box--color">
+    <div class="box__text">
+        {% set blocks = entry.textOnly.all() %}
+        {% for block in blocks %}
+            <h1 class="box__title">{{ block.title }}</h1>
+            <div class="box__paragraph">{{ block.text }}</div>
+        {% endfor %}
+    </div>
+
+    <div class="thumbs">
+        {% set categories = craft.categories.group('vorteile').relatedTo(entry).all() %}
+        {% for category in categories %}
+            <div class="thumb thumb--margin">
+                {% include 'icon' %}
+                
+                <h2 class="thumb__title thumb__title--margin">{{ category.title }}</h2>
+                <p class="thumb__subtitle">{{ category.subtitle }}</p>
+                <div class="thumb__desc">{{ category.text }}</div>
+            </div>
+        {% endfor %}
+    </div>
+</div>

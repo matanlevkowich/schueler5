@@ -1,0 +1,103 @@
+@use '../base/functions';
+@use '../base/variables';
+
+// header //
+
+.footer {
+  @include functions.flex(space-between, unset, 0);
+  background: variables.$gradiant-background-alt;
+  background: variables.$gradiant-background;
+  background: linear-gradient(135deg, rgba(151,209,216,1) 0%, rgba(40,102,110,1) 100%);
+  color:variables.$light-color;
+  position: relative;
+  padding:functions.dynamic-size(4);
+  
+  a{
+    color: variables.$light-color;
+    font-family: variables.$base-font;
+    text-transform: uppercase;
+    font-weight: variables.$normal-font-weight;
+  }
+
+  .logo {
+    width:functions.dynamic-size(31);
+
+  }
+  .logo path{
+    fill: variables.$light-color;
+  }
+
+  &__box{
+    position: relative;
+  }
+
+  &__copyrights{
+    position: absolute;
+    bottom: 0;
+    font-size: 85%;
+    line-height: 2.2;
+    left: functions.dynamic-size(1);
+  }
+
+  &__column{
+    display: inline-block;
+    vertical-align: top;
+    margin-left: functions.dynamic-size(2);
+    margin-right: functions.dynamic-size(6);
+    
+    h3{
+      margin-top: functions.dynamic-size(1.2);
+      margin-bottom: functions.dynamic-size(.5);
+      
+      &:first-child{
+        margin-top:0;
+      }
+    }
+    
+    .navigation{
+      font-size: 100%;
+    }
+
+    a,
+    .navigation a{
+      display: block;
+      letter-spacing: functions.dynamic-size(.1);
+      line-height: 2.2;
+      font-weight: variables.$normal-font-weight;
+    
+      &:after,
+      &:before{
+        display: none;
+      }
+    }
+
+    .navigation li{
+      display: block;
+      margin:0;
+    }
+  }
+}
+
+@media (min-width: variables.$big-tablet-start) and (max-width: variables.$big-tablet-end) {
+  .footer{
+    padding: functions.dynamic-size(1.5);
+
+    .logo{
+      width: functions.dynamic-size(22);
+    }
+
+    &__column{
+      margin-left: 0;
+      margin-right: functions.dynamic-size(3);
+      font-size: 90%;
+
+      &:last-child{
+        margin-right: 0;
+      }
+    }
+
+    &__copyrights{
+      font-size: 83%;
+    }
+  }
+}

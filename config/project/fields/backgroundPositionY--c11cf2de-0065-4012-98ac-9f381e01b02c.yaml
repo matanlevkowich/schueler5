@@ -1,0 +1,14 @@
+columnSuffix: null
+handle: backgroundPositionY
+instructions: 'Position the background image along the vertical axis'
+name: 'Background Position Y'
+searchable: false
+settings:
+  defaultValue: 50
+  max: 100
+  min: 0
+  step: 10
+  suffix: null
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Range

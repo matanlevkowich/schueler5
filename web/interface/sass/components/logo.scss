@@ -1,0 +1,17 @@
+@use '../base/functions';
+@use '../base/variables';
+
+// logo //
+
+.logo{
+    width:functions.dynamic-size(20);
+
+  &__footer{
+    width:functions.dynamic-size(15);
+  }
+
+  &--header{
+    .logo__path{
+      fill: variables.$red;    }
+  }  
+}

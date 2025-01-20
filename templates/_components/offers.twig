@@ -1,0 +1,23 @@
+<div class="box box--color">
+    <div class="box__text">
+        {% include 'icon' %}
+        {% set blocks = entry.textOnly.all() %}
+        {% for block in blocks %}
+            <h1 class="box__title">{{ block.title }}</h1>
+            <div class="box__paragraph">{{ block.text }}</div>
+        {% endfor %}
+    </div>
+
+    <div class="thumbs">
+        {% set entries = craft.entries.section('angebote').all() %}
+        {% for entry in entries %}
+            <div class="thumb">
+                {% set thumb = entry.thumb.one() %}
+                <img class="thumb__image" src="{{ thumb.getUrl }}">
+                <h2 class="thumb__title">{{ entry.title }}</h2>
+                <p class="thumb__subtitle">{{ entry.subtitle }}</p>
+                {% include '_components/button' with { link: { label: 'mehr infos', value: entry.url } } %}
+            </div>
+        {% endfor %}
+    </div>
+</div>

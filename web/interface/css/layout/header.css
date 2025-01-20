@@ -1,0 +1,35 @@
+.header {
+  position: absolute;
+  left: calc(var(--font-base) * 2);
+  top: calc(var(--font-base) * 2);
+  z-index: 9999;
+}
+.header__nav {
+  position: fixed;
+  right: calc(var(--font-base) * 3);
+  top: calc(var(--font-base) * 4);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: calc(var(--font-base) * 1);
+  font-family: "Bebas Neue", serif;
+  font-size: 200%;
+}
+.header__text {
+  line-height: 1;
+  margin-top: calc(var(--font-base) * 0.4);
+  color: #E52623;
+}
+
+@media (min-width: 769px) and (max-width: 992px) {
+  .header {
+    padding: calc(var(--font-base) * 1) calc(var(--font-base) * 1.5);
+    align-items: flex-end;
+  }
+  .header .logo {
+    width: calc(var(--font-base) * 25);
+  }
+}
+
+/*# sourceMappingURL=header.css.map */

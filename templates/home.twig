@@ -1,0 +1,7 @@
+{% extends 'index' %}
+
+{% block content %}
+    {% include '_components/cover' %}
+    {% include '_components/text-box' with { buttonClass:'button--right'} %}
+    {% include '_components/text-cover' with { extraClass: 'text--right' } %}
+{% endblock %}

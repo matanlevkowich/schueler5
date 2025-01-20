@@ -1,0 +1,23 @@
+@use 'variables';
+
+// SCSS Function to calculate sizes
+@function dynamic-size($factor) {
+    @return calc(var(--font-base) * #{$factor});
+}
+
+@mixin flex($justify, $align, $gap) {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: $justify;
+  align-items: $align;
+  gap: $gap;
+}
+
+
+@mixin transition($time){
+    -webkit-transition: all $time ease-in-out;
+    -moz-transition: all $time ease-in-out;
+    -o-transition: all $time ease-in-out;
+    -ms-transition: all $time ease-in-out;
+    transition: all $time ease-in-out;    
+}

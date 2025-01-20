@@ -1,0 +1,56 @@
+.cover {
+  position: relative;
+  color: #fff;
+}
+.cover__background {
+  min-height: 100vh;
+  background-size: cover;
+}
+.cover__gradiant {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  background: linear-gradient(135deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.2) 100%);
+}
+.cover__text {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: calc(var(--font-base) * 4) calc(var(--font-base) * 6) calc(var(--font-base) * 8);
+  font-size: 200%;
+}
+.cover__title {
+  font-size: 300%;
+}
+.cover__subtitle {
+  margin-right: 30%;
+}
+.cover .button {
+  margin-top: calc(var(--font-base) * 3);
+}
+
+@media (min-width: 769px) and (max-width: 992px) {
+  .cover {
+    margin: 0 calc(var(--font-base) * 1.5);
+    min-height: 50vw;
+  }
+  .cover--flex {
+    margin: calc(var(--font-base) * 1.5);
+    padding: calc(var(--font-base) * 2.5) calc(var(--font-base) * 1.5);
+  }
+  .cover--flex svg.icon {
+    width: calc(var(--font-base) * 3);
+  }
+  .cover__text {
+    padding: 0 calc(var(--font-base) * 1.5);
+  }
+  .cover__quote {
+    font-size: 5vw;
+    top: calc(var(--font-base) * 2);
+  }
+}
+
+/*# sourceMappingURL=cover.css.map */

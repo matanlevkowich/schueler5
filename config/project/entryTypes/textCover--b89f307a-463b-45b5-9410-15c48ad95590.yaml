@@ -1,0 +1,111 @@
+color: emerald
+fieldLayouts:
+  e6c5d2c6-e25d-4b5d-8f61-86995898e29d:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: '2025-01-20T10:12:20+00:00'
+            elementCondition: null
+            fieldUid: 81d5b426-e396-4d96-bdc3-c4b37c0ddfd7 # Image
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 5167b922-2a1d-470a-b282-003135b6b771
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-01-20T13:20:32+00:00'
+            elementCondition: null
+            fieldUid: e6904e0d-8cb4-4147-8916-63f37437a6ac # Section Title
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 535b1879-3a10-4999-a78b-0a13bad37221
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-01-20T10:10:32+00:00'
+            elementCondition: null
+            fieldUid: 8d8c1ad0-9b3c-44db-b579-7931d0c36040 # Simple Text
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: efd2f770-977f-4ad8-89fc-efcc135029e4
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-01-20T10:10:32+00:00'
+            elementCondition: null
+            fieldUid: 4e517de5-b619-49d4-ac54-f8402034e3d0 # CTA Button
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: b02dcd74-d2b4-4397-af54-cd812c5942da
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-01-20T10:10:32+00:00'
+            elementCondition:
+              class: craft\elements\conditions\entries\EntryCondition
+              conditionRules:
+                -
+                  class: craft\fields\conditions\LightswitchFieldConditionRule
+                  fieldUid: 4e517de5-b619-49d4-ac54-f8402034e3d0 # CTA Button
+                  layoutElementUid: b02dcd74-d2b4-4397-af54-cd812c5942da
+                  uid: 8fc5e783-2a18-4ebb-a38d-06cd1e9230ef
+                  value: true
+              elementType: craft\elements\Entry
+              fieldContext: global
+            fieldUid: 9735bb42-4ba5-49db-b437-e9b3d2c4a5ef # CTA Link
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 56e9f6f8-7e47-43ce-a97f-2e506639384b
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 14c501a8-264c-49e4-9302-b8269fa208f8
+        userCondition: null
+handle: textCover
+hasTitleField: false
+icon: subtitles
+name: 'Text + Cover'
+showSlugField: true
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

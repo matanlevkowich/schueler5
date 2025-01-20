@@ -1,0 +1,21 @@
+columnSuffix: null
+handle: textCover
+instructions: null
+name: 'Text + Cover'
+searchable: false
+settings:
+  createButtonLabel: null
+  defaultIndexViewMode: cards
+  entryTypes:
+    - b89f307a-463b-45b5-9410-15c48ad95590 # Text + Cover
+  includeTableView: false
+  maxEntries: 1
+  minEntries: 1
+  pageSize: null
+  propagationKeyFormat: null
+  propagationMethod: all
+  showCardsInGrid: false
+  viewMode: blocks
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Matrix

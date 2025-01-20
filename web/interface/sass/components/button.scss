@@ -1,0 +1,47 @@
+@use '../base/functions';
+@use '../base/variables';
+
+// button //
+
+.button{
+  margin:0 functions.dynamic-size(8);
+
+  &--red{
+    .button__box{
+      color:variables.$white;
+      background: variables.$red;  
+      border-color: variables.$red;;
+    }
+    
+
+  }
+
+  &--right{
+    text-align: right;
+    .button__box{
+      border-bottom-right-radius: 0;
+      border-bottom-left-radius: functions.dynamic-size(5);
+    }
+  }
+
+  &__box{
+    display: inline-block;
+    border: functions.dynamic-size(.4) solid;
+    letter-spacing: functions.dynamic-size(.2);
+    padding:functions.dynamic-size(1) functions.dynamic-size(2);
+    border-bottom-right-radius: functions.dynamic-size(5);
+    &:hover{
+      color: variables.$white;
+    }
+  }
+  
+}
+
+
+@media (min-width: variables.$big-tablet-start) and (max-width: variables.$big-tablet-end) {
+  .button{
+    &__box{
+      padding:functions.dynamic-size(.75) functions.dynamic-size(1.5); 
+    }
+  }
+}

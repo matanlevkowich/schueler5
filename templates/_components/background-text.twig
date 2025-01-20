@@ -1,0 +1,16 @@
+{% set blocks = entry.backgroundImageText.all %}
+{% for block in blocks %}
+    {% set cover = block.image.one() %}            
+    <div class="cover cover--flex {{ extraClass ?? '' }}" style="background-image: url('{{ cover.getUrl }}'); background-position-y:{{ cover.position }};">
+        <div class="cover__dark"></div>
+        <div class="cover__text">
+            {% include 'icon' %}
+            <h1 class="cover__title">{{ block.title }}</h1>
+            {{ block.text }}
+            {% set link = block.buttonLink %}
+            {% if link is not empty %}
+                {% include '_components/button' with { link:link } %} 
+            {% endif %}
+        </div>
+    </div>
+{% endfor %}

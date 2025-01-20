@@ -1,0 +1,6 @@
+<nav class="navigation">
+	<li {% if craft.app.request.segments|last == 'ueber' %}class="active"{% endif %}><a href="/ueber">über</a></li>
+	<li {% if craft.app.request.segments|last == 'craniosacrale' %}class="active"{% endif %}><a href="/craniosacrale">craniosacrale</a></li>
+	<li {% if craft.app.request.segments|last == 'yoga' %}class="active"{% endif %}><a href="/yoga">yoga</a></li>
+	<li {% if craft.app.request.segments|last == 'kontakt' %}class="active"{% endif %}><a href="/kontakt">kontakt</a></li>
+</nav>

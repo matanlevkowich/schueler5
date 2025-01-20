@@ -1,0 +1,62 @@
+@use '../base/functions';
+@use '../base/variables';
+
+// nav //
+
+.navigation {
+  position: fixed;
+  display: none;
+  font-size: 110%;
+
+  li{
+    display: inline-block;
+    margin:0 functions.dynamic-size(1);
+    text-transform: uppercase;
+    letter-spacing: functions.dynamic-size(.2);
+  
+  }
+
+  a{
+    font-weight: variables.$semibold-font-weight;
+    display: block;
+    position: relative;
+  
+    &:before,
+    &:after{
+      content: '';
+      position: absolute;
+      top:100%;
+      left: 0;
+      width:100%;
+      height: functions.dynamic-size(1);
+      background-image: url('/assets/small-wave.svg');
+      background-size: functions.dynamic-size(6);
+      background-repeat: repeat-x;
+      background-position-x: center;
+    }
+
+    &:after{
+      background:variables.$white;
+      transform: scaleX(1);
+      transform-origin: right;
+    }
+  }
+
+  li.active a:after,
+  li a:hover:after{
+    transform: scaleX(0);
+    @include functions.transition(.5s);
+  }
+}
+
+@media (min-width: variables.$big-tablet-start) and (max-width: variables.$big-tablet-end) {
+  .navigation{
+    font-size: 85%;
+    margin-bottom: functions.dynamic-size(.5);
+    li{
+      margin: 0 functions.dynamic-size(.5);
+    }
+  }
+
+}
+

@@ -1,0 +1,106 @@
+@use '../base/functions';
+@use '../base/variables';
+
+// text box //
+
+.text{
+  padding:functions.dynamic-size(4);
+  font-size: 200%;
+
+  &--cover{
+    margin:functions.dynamic-size(4);
+    position: relative;
+    color:variables.$white;
+    .text__box{
+      background: transparent;
+      color:variables.$white;
+      border: functions.dynamic-size(.75) solid;
+      border-radius: 0;
+      border-bottom-left-radius: functions.dynamic-size(15);
+      border-top-right-radius: functions.dynamic-size(15);
+    }
+  }
+
+  &--right{
+    .text__title{
+      text-align: right;
+    }
+
+    .text__paragraph{
+      margin: functions.dynamic-size(5) functions.dynamic-size(10) functions.dynamic-size(3);
+      margin-left: 0;
+    }
+
+    .text__inner{
+      &:after{
+        left:auto;
+        right: 0;
+      }
+    }
+  }
+
+  &__cover{
+    width:100%;
+    height: 100%;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  &__gradiant{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background:variables.$gradiant-black-alt;
+    background:variables.$gradiant-black;
+
+  }
+
+  &__outer{
+    position: relative;
+    font-size: 85%;
+  }
+
+  &__title{
+    font-size: 400%;
+  }
+
+  &__box{
+    background: variables.$red;
+    display: inline-block;
+    line-height: 1.2;
+    color:variables.$white;
+    padding:functions.dynamic-size(4) functions.dynamic-size(7) functions.dynamic-size(4.5);
+    border-top-left-radius: functions.dynamic-size(15);
+    border-bottom-right-radius: functions.dynamic-size(15);
+  }
+
+  &__inner{
+    position: relative;
+    &:after{
+      position: absolute;
+      bottom:functions.dynamic-size(-1);
+      left:0;
+      content: '';
+      width:50%;
+      height: functions.dynamic-size(.75);
+      background: variables.$white;
+    }
+  }
+
+  &__paragraph{
+    margin: functions.dynamic-size(5) functions.dynamic-size(10) functions.dynamic-size(3);
+    margin-right: 0;
+    font-size: 125%;
+  }
+
+}
+
+@media (min-width: variables.$big-tablet-start) and (max-width: variables.$big-tablet-end) {
+  .text{
+    
+   }
+}

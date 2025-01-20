@@ -1,0 +1,37 @@
+@use '../base/functions';
+@use '../base/variables';
+
+// footer //
+
+.header {
+  position: absolute;
+  left:functions.dynamic-size(2);
+  top:functions.dynamic-size(2);
+  z-index: 9999;
+  
+  &__nav{
+    position: fixed;
+    right:functions.dynamic-size(3);
+    top:functions.dynamic-size(4);
+    @include functions.flex(center,center,functions.dynamic-size(1));
+    font-family: variables.$heading-font;
+    font-size: 200%;
+  }
+
+  &__text{
+    line-height: 1;
+    margin-top:functions.dynamic-size(.4);
+    color:variables.$red;
+  }
+}
+
+@media (min-width: variables.$big-tablet-start) and (max-width: variables.$big-tablet-end) {
+  .header{
+    padding: functions.dynamic-size(1) functions.dynamic-size(1.5);
+    align-items: flex-end;
+
+    .logo{
+      width: functions.dynamic-size(25);
+    }
+  }
+}

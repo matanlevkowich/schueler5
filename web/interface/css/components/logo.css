@@ -1,0 +1,11 @@
+.logo {
+  width: calc(var(--font-base) * 20);
+}
+.logo__footer {
+  width: calc(var(--font-base) * 15);
+}
+.logo--header .logo__path {
+  fill: #E52623;
+}
+
+/*# sourceMappingURL=logo.css.map */

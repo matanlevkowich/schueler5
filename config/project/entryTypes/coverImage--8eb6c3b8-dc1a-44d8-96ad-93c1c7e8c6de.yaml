@@ -1,0 +1,83 @@
+color: orange
+fieldLayouts:
+  3acd58f1-850b-4239-b879-e8b777d8218b:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: '2025-01-19T20:36:54+00:00'
+            elementCondition: null
+            fieldUid: 81d5b426-e396-4d96-bdc3-c4b37c0ddfd7 # Image
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 923f485d-dc48-475f-a8dd-f8e19eee4d4c
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            dateAdded: '2025-01-19T20:35:19+00:00'
+            disabled: false
+            elementCondition: null
+            id: null
+            includeInCards: false
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            providesThumbs: false
+            readonly: false
+            required: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: e3eabadc-4857-4cd2-8fd5-b29d277cf220
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-01-19T20:36:54+00:00'
+            elementCondition: null
+            fieldUid: 7f95c745-3cf9-4cb2-8d2e-4932a9f7971a # Subtitle
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: da5652a3-ed9e-4abc-8ca4-90c2c9d60ecd
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 6fef3601-4ae5-48f6-a5b8-e528fcde261e
+        userCondition: null
+handle: coverImage
+hasTitleField: true
+icon: image-landscape
+name: 'Cover Image'
+showSlugField: true
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

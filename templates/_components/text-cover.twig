@@ -1,0 +1,21 @@
+{% set blocks = entry.textCover.all() %}
+{% for block in blocks %}
+    <div class="text text--cover {{ extraClass ?? '' }}">
+        {% set cover = block.image.one() %}            
+        <div class="text__cover" style="background-image: url('{{ cover.getUrl }}'); background-position-y:{{ cover.backgroundPositionY}}%;"></div>
+        <div class="text__gradiant"></div>
+        <div class="text__outer">
+            <h1 class="text__title">
+                    <div class="text__box">
+                        <span class="text__inner">{{ block.sectionTitle | nl2br }}</span>
+                    </div>
+                </h1>
+                <div class="text__paragraph">{{ block.simpleText }}</div>
+                {% if block.ctaButton %}
+                    {% set link = block.ctaLink %}
+                    {% include '_components/button' with { buttonClass:'button--red', link:link } %}
+                {% endif %}
+            </div>
+        </div>
+    </div>
+{% endfor %}

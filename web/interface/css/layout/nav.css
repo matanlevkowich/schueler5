@@ -1,0 +1,54 @@
+.navigation {
+  position: fixed;
+  display: none;
+  font-size: 110%;
+}
+.navigation li {
+  display: inline-block;
+  margin: 0 calc(var(--font-base) * 1);
+  text-transform: uppercase;
+  letter-spacing: calc(var(--font-base) * 0.2);
+}
+.navigation a {
+  font-weight: 600;
+  display: block;
+  position: relative;
+}
+.navigation a:before, .navigation a:after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: calc(var(--font-base) * 1);
+  background-image: url("/assets/small-wave.svg");
+  background-size: calc(var(--font-base) * 6);
+  background-repeat: repeat-x;
+  background-position-x: center;
+}
+.navigation a:after {
+  background: #fff;
+  transform: scaleX(1);
+  transform-origin: right;
+}
+.navigation li.active a:after,
+.navigation li a:hover:after {
+  transform: scaleX(0);
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+@media (min-width: 769px) and (max-width: 992px) {
+  .navigation {
+    font-size: 85%;
+    margin-bottom: calc(var(--font-base) * 0.5);
+  }
+  .navigation li {
+    margin: 0 calc(var(--font-base) * 0.5);
+  }
+}
+
+/*# sourceMappingURL=nav.css.map */

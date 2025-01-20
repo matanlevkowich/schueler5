@@ -1,0 +1,14 @@
+<a class="header__link" href="{{ siteUrl }}">
+    {% include '_layout/logo' with { extraClass: 'logo--header' } %}                    
+</a>
+
+<div class="header__nav">
+    <span class="header__text">Menu</span>
+    <div class="ham">
+        <span class="ham__line"></span>
+        <span class="ham__line"></span>
+        <span class="ham__line"></span>
+    </div>
+</div>
+
+{% include '_layout/nav' %}                

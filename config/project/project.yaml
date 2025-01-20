@@ -1,0 +1,66 @@
+dateModified: 1737379232
+email:
+  fromEmail: justobe@gmail.com
+  fromName: schuelerinnenschule
+  transportType: craft\mail\transportadapters\Sendmail
+fs:
+  images:
+    hasUrls: true
+    name: Images
+    settings:
+      path: assets/images
+    type: craft\fs\Local
+    url: /assets/images
+meta:
+  __names__:
+    1ec7e76f-561b-41ca-8e77-0f3321ccc1a9: Clean # Clean
+    4e517de5-b619-49d4-ac54-f8402034e3d0: 'CTA Button' # CTA Button
+    7b4a5764-db95-4e82-bb31-45dc9ddf2a1c: Images # Images
+    7f95c745-3cf9-4cb2-8d2e-4932a9f7971a: Subtitle # Subtitle
+    8d8c1ad0-9b3c-44db-b579-7931d0c36040: 'Simple Text' # Simple Text
+    8eb6c3b8-dc1a-44d8-96ad-93c1c7e8c6de: 'Cover Image' # Cover Image
+    51af5b2e-f807-4b09-89a6-c605d62e4296: Home # Home
+    72dce0d4-0301-4f00-b080-ba91db7eff2b: schuelerinnenschule # schuelerinnenschule
+    81d5b426-e396-4d96-bdc3-c4b37c0ddfd7: Image # Image
+    81e6deb1-17ac-4b0c-8279-eebeb19a15b8: SEO # SEO
+    738ea168-d971-48b3-b9bb-590219be413f: Simple # Simple
+    1422cb2b-bafc-4fee-a6c9-b202b6e80e50: home # home
+    9735bb42-4ba5-49db-b437-e9b3d2c4a5ef: 'CTA Link' # CTA Link
+    b04cfd72-7e84-4227-86ca-8f55f74a1a80: 'Text + Cover' # Text + Cover
+    b89f307a-463b-45b5-9410-15c48ad95590: 'Text + Cover' # Text + Cover
+    b91bb8ee-398d-410d-b714-fe5eaaeb99ec: 'Text Box' # Text Box
+    c2dfbc55-82e4-4796-8774-0cb0d892d8fd: 'Text Box' # Text Box
+    c11cf2de-0065-4012-98ac-9f381e01b02c: 'Background Position Y' # Background Position Y
+    dce497a3-7f6a-43fc-8257-438b4d67a877: Cover # Cover
+    e4ca347d-de44-444b-be52-ceb80c45bb49: schuelerinnenschule # schuelerinnenschule
+    e6904e0d-8cb4-4147-8916-63f37437a6ac: 'Section Title' # Section Title
+plugins:
+  ckeditor:
+    edition: standard
+    enabled: true
+    schemaVersion: 3.0.0.0
+  oembed:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.1
+  seo:
+    edition: standard
+    enabled: true
+    schemaVersion: 3.2.0
+  site-switcher:
+    edition: standard
+    enabled: true
+    schemaVersion: 0.0.0
+system:
+  edition: solo
+  live: true
+  name: schuelerinnenschule
+  schemaVersion: 5.5.0.0
+  timeZone: America/Los_Angeles
+users:
+  allowPublicRegistration: false
+  defaultGroup: null
+  photoSubpath: null
+  photoVolumeUid: null
+  require2fa: false
+  requireEmailVerification: true

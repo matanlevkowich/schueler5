@@ -1,0 +1,28 @@
+@use '../base/functions';
+@use '../base/variables';
+
+// hamburger menu //
+
+.ham{
+  @include functions.flex(center,center,0);
+  flex-direction: column;
+  z-index: 9999;
+  
+  &__line{
+    width: functions.dynamic-size(2.5);
+    background:variables.$red;
+    margin-bottom: functions.dynamic-size(.5);
+    height: functions.dynamic-size(.4);
+    transform: rotate(0deg) scale(1, 1);
+    transform-origin: center;
+    display: block;
+    &:last-child{
+      margin-bottom: 0;
+    }
+  }
+}
+
+@media (min-width: variables.$big-tablet-start) and (max-width: variables.$big-tablet-end) {
+
+}
+

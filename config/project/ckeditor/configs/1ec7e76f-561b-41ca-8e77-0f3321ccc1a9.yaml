@@ -1,0 +1,5 @@
+headingLevels: false
+name: Clean
+toolbar:
+  - bold
+  - italic

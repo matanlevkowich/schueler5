@@ -1,0 +1,21 @@
+columnSuffix: null
+handle: textBox
+instructions: null
+name: 'Text Box'
+searchable: false
+settings:
+  createButtonLabel: null
+  defaultIndexViewMode: cards
+  entryTypes:
+    - b91bb8ee-398d-410d-b714-fe5eaaeb99ec # Text Box
+  includeTableView: false
+  maxEntries: 1
+  minEntries: 1
+  pageSize: null
+  propagationKeyFormat: null
+  propagationMethod: all
+  showCardsInGrid: false
+  viewMode: blocks
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Matrix
