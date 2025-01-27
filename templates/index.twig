@@ -12,9 +12,6 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         {% do craft.app.view.registerCssFile('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=IBM+Plex+Sans:wght@200;400;600&display=swap') %}
         {% do craft.app.view.registerCssFile('@web/interface/css/main.css?v=2') %}
-        {% do craft.app.view.registerJsFile('@web/interface/js/lisi.js?v=1.2') %}
-                
-    
     </head>
     <body class="ltr">
         
@@ -36,4 +33,5 @@
             </div>
         </div>#}
     </body>
+    {% do craft.app.view.registerJsFile('@web/interface/js/main.js?v=1.2') %}
 </html>

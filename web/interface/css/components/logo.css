@@ -1,11 +1,25 @@
 .logo {
   width: calc(var(--font-base) * 20);
+  position: relative;
 }
 .logo__footer {
   width: calc(var(--font-base) * 15);
 }
+.logo__path {
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
 .logo--header .logo__path {
   fill: #E52623;
+}
+.logo--nav {
+  width: calc(var(--font-base) * 107);
+}
+.logo--nav .logo__path {
+  fill: #ee3733;
 }
 
 /*# sourceMappingURL=logo.css.map */

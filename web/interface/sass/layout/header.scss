@@ -11,14 +11,68 @@
   
   &__nav{
     position: fixed;
+    z-index: 10;
     right:functions.dynamic-size(3);
     top:functions.dynamic-size(4);
     @include functions.flex(center,center,functions.dynamic-size(1));
     font-family: variables.$heading-font;
     font-size: 200%;
+    cursor: pointer;
+    &:hover{
+      .header__line{
+        &:first-child{
+          transform: translateY(functions.dynamic-size(-.2));
+        }
+        &:last-child{
+          transform: translateY(functions.dynamic-size(.2));
+        }
+      }
+    }
+    
+    &--active:hover,
+    &--active{
+      .header__text{
+        color:variables.$white;  
+      }
+
+      .header__line{
+        background:variables.$white;
+        opacity: 0;
+        &:first-child{
+          transform: rotate(45deg);
+          opacity: 1;
+        }
+        &:last-child{
+          transform: rotate(-45deg);
+          opacity: 1;
+        }
+
+      }
+      
+    }
+  }
+
+  &__ham{
+    @include functions.flex(center,center,functions.dynamic-size(.5));
+    flex-direction: column;
+    z-index: 9999;
+  }
+  &__line{
+    @include functions.transition(.2s);
+    width: functions.dynamic-size(2.5);
+    background:variables.$red;
+    transform: 0;
+    height: functions.dynamic-size(.4);
+    transform: rotate(0deg) scale(1, 1);
+    transform-origin: left;
+    display: block;
+    &:last-child{
+      margin-bottom: 0;
+    }
   }
 
   &__text{
+    @include functions.transition(.2s);
     line-height: 1;
     margin-top:functions.dynamic-size(.4);
     color:variables.$red;
@@ -26,12 +80,5 @@
 }
 
 @media (min-width: variables.$big-tablet-start) and (max-width: variables.$big-tablet-end) {
-  .header{
-    padding: functions.dynamic-size(1) functions.dynamic-size(1.5);
-    align-items: flex-end;
 
-    .logo{
-      width: functions.dynamic-size(25);
-    }
-  }
 }

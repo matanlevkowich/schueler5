@@ -1,10 +1,11 @@
 defaultPlacement: end
 enableVersioning: true
 entryTypes:
-  - 51af5b2e-f807-4b09-89a6-c605d62e4296 # Home
+  -
+    uid: 51af5b2e-f807-4b09-89a6-c605d62e4296 # Home
 handle: home
 maxAuthors: 1
-name: home
+name: Home
 previewTargets:
   -
     __assoc__:
@@ -19,7 +20,7 @@ previewTargets:
         - '1'
 propagationMethod: all
 siteSettings:
-  72dce0d4-0301-4f00-b080-ba91db7eff2b: # schuelerinnenschule
+  72dce0d4-0301-4f00-b080-ba91db7eff2b: # Schuelerinnenschule
     enabledByDefault: true
     hasUrls: true
     template: home.twig

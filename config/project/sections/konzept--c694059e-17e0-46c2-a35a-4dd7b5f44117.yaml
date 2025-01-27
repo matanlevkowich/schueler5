@@ -1,0 +1,28 @@
+defaultPlacement: end
+enableVersioning: true
+entryTypes:
+  -
+    uid: 78e9170b-0c4d-4e9e-970a-f1fbf5857227 # Konzept
+handle: konzept
+maxAuthors: 1
+name: Konzept
+previewTargets:
+  -
+    __assoc__:
+      -
+        - label
+        - 'Primary entry page'
+      -
+        - urlFormat
+        - '{url}'
+      -
+        - refresh
+        - '1'
+propagationMethod: all
+siteSettings:
+  72dce0d4-0301-4f00-b080-ba91db7eff2b: # Schuelerinnenschule
+    enabledByDefault: true
+    hasUrls: true
+    template: konzept.twig
+    uriFormat: konzept
+type: single

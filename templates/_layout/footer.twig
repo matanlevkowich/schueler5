@@ -1,23 +1,47 @@
-<div class="footer__box">
-	{% include '_layout/logo' with { extraClass: 'logo__footer' } %}
-	<div class="footer__copyrights">© {{ now|date('Y') }} ALL RIGHTS RESERVED. ELISABETH RAUTER. </div>
-</div>
-
-<div class="footer__box">
-	<div class="footer__column">
-		<h3 class="footer_title">Menu</h3>
-		<a href="{{ siteUrl }}">home</a>
-		{% include '_layout/nav' %}
-	</div>
-
-	<div class="footer__column">
-		<h3 class="footer_title">Legal</h3>
-		{% set entries = craft.entries.section('legal').all() %}
-		{% for entry in entries %}
-			<a href="{{ entry.url }}">{{ entry.title }}</a>
-		{% endfor %}
-		<h3 class="footer_title">Web Design</h3>
-		<a href="https://lessmore.co/" target="_blank">lessmore creative studio</a>
+<div class="footer__section footer__section--center">
+	<div class="footer__box">
+		<h1 class="footer__heading">{{ footer.sectionTitle }}</h1>
+		<div class="footer__logos">
+			{% set logos = footer.logos.all() %}
+			{% for image in logos %}<img class="footer__logo" src="{{ image.getUrl }}">{% endfor %}
+		</div>
 	</div>
 </div>
+<div class="footer__section footer__section--flex">
+	<div class="footer__box">
+		{% include '_layout/logo' with { extraClass: 'logo__footer' } %}
+		<div class="footer__text">{{ footer.sectionTitle2 }}</div>
+	</div>
 
+	<div class="footer__box footer__box--flex">
+		<div class="footer__column">
+			<h3 class="footer__title">Menu</h3>
+			<a href="{{ siteUrl }}">home</a>
+			{% include '_layout/nav' %}
+		</div>
+
+		<div class="footer__column">
+			<h3 class="footer__title">Adresse</h3>
+			{{ footer.simpleText }}
+			<h3 class="footer__title">Kontakt</h3>
+			{{ footer.simpleText2 }}
+		</div>
+
+		<div class="footer__column">
+			<h3 class="footer__title">Follow</h3>
+			{% set links = footer.socialLinks.all() %}
+			{% for block in links %}
+				<a href="{{ block.linkUrl }}" target="_blank">{{ block.title }}</a>
+			{% endfor %}
+			<h3 class="footer__title">Legal</h3>
+			{% set entries = craft.entries.section('legal').all() %}
+			{% for entry in entries %}
+				<a href="{{ entry.url }}">{{ entry.title }}</a>
+			{% endfor %}
+			<h3 class="footer__title">Web Design</h3>
+			<a href="https://lessmore.co/" target="_blank">lessmore creative studio</a>
+		</div>
+	</div>
+
+	<div class="footer__copyrights">© {{ now|date('Y') }} All rights reserver. Schülerinnenschule.</div>
+</div>

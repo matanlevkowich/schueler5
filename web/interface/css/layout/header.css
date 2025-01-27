@@ -6,6 +6,7 @@
 }
 .header__nav {
   position: fixed;
+  z-index: 10;
   right: calc(var(--font-base) * 3);
   top: calc(var(--font-base) * 4);
   display: flex;
@@ -15,21 +16,64 @@
   gap: calc(var(--font-base) * 1);
   font-family: "Bebas Neue", serif;
   font-size: 200%;
+  cursor: pointer;
+}
+.header__nav:hover .header__line:first-child {
+  transform: translateY(calc(var(--font-base) * -0.2));
+}
+.header__nav:hover .header__line:last-child {
+  transform: translateY(calc(var(--font-base) * 0.2));
+}
+.header__nav--active:hover .header__text, .header__nav--active .header__text {
+  color: #fff;
+}
+.header__nav--active:hover .header__line, .header__nav--active .header__line {
+  background: #fff;
+  opacity: 0;
+}
+.header__nav--active:hover .header__line:first-child, .header__nav--active .header__line:first-child {
+  transform: rotate(45deg);
+  opacity: 1;
+}
+.header__nav--active:hover .header__line:last-child, .header__nav--active .header__line:last-child {
+  transform: rotate(-45deg);
+  opacity: 1;
+}
+.header__ham {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: calc(var(--font-base) * 0.5);
+  flex-direction: column;
+  z-index: 9999;
+}
+.header__line {
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  width: calc(var(--font-base) * 2.5);
+  background: #E52623;
+  transform: 0;
+  height: calc(var(--font-base) * 0.4);
+  transform: rotate(0deg) scale(1, 1);
+  transform-origin: left;
+  display: block;
+}
+.header__line:last-child {
+  margin-bottom: 0;
 }
 .header__text {
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
   line-height: 1;
   margin-top: calc(var(--font-base) * 0.4);
   color: #E52623;
-}
-
-@media (min-width: 769px) and (max-width: 992px) {
-  .header {
-    padding: calc(var(--font-base) * 1) calc(var(--font-base) * 1.5);
-    align-items: flex-end;
-  }
-  .header .logo {
-    width: calc(var(--font-base) * 25);
-  }
 }
 
 /*# sourceMappingURL=header.css.map */

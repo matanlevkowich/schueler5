@@ -1,0 +1,7 @@
+{% extends 'index' %}
+
+{% block content %}
+    {% include '_components/cover' %}
+    {% set categories = craft.categories.group('konzept').all() %}
+    {% include '_components/flex' %}
+{% endblock %}

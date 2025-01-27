@@ -1,8 +1,12 @@
 {% set blocks = entry.cover.all() %}
 {% for block in blocks %}
-    {% set cover = block.image.one() %}            
     <div class="cover">
-        <div class="cover__background" style="background-image: url('{{ cover.getUrl }}'); background-position-y:{{ cover.backgroundPositionY}}%;"></div>
+        {% set images = block.images.all() %}            
+        <div class="cover__background">
+            {% for image in images %}
+                <div class="cover__fade {% if loop.first %}cover__fade--active{% endif %}" style="background-image: url('{{ image.getUrl }}'); background-position-y:{{ image.backgroundPositionY}}%;"></div>
+            {% endfor %}
+        </div>
         <div class="cover__gradiant"></div>
         <div class="cover__text">
             <h1 class="cover__title">{{ block.title }}</h1>

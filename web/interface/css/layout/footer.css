@@ -1,17 +1,55 @@
-/* Error: Undefined variable.
- *   ,
- * 8 |   background: variables.$gradiant-background-alt;
- *   |               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
- *   '
- *   web/interface/sass/layout/footer.scss 8:15  root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Undefined variable.\a   \2577 \a 8 \2502    background: variables.$gradiant-background-alt;\a   \2502                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\a   \2575 \a   web/interface/sass/layout/footer.scss 8:15  root stylesheet";
+.footer {
+  padding: calc(var(--font-base) * 4);
 }
+.footer__section {
+  border-top: calc(var(--font-base) * 1) solid;
+  padding-block: calc(var(--font-base) * 5);
+}
+.footer__section:last-child {
+  border-bottom: calc(var(--font-base) * 1) solid;
+}
+.footer__section--center {
+  text-align: center;
+}
+.footer__section--flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: calc(var(--font-base) * 2);
+  flex-wrap: wrap;
+}
+.footer__column .footer__title {
+  margin-top: calc(var(--font-base) * 1.5);
+  margin-bottom: calc(var(--font-base) * 0.25);
+}
+.footer__column .footer__title:first-child {
+  margin-top: 0;
+}
+.footer__column a {
+  display: block;
+  text-transform: capitalize;
+}
+.footer__box--flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: calc(var(--font-base) * 5);
+}
+.footer__heading {
+  font-size: 300%;
+}
+.footer__logos {
+  margin-top: calc(var(--font-base) * 2);
+}
+.footer__logo {
+  height: calc(var(--font-base) * 4);
+  display: inline-block;
+  margin: 0 calc(var(--font-base) * 1.5);
+}
+.footer__copyrights {
+  width: 100%;
+}
+
+/*# sourceMappingURL=footer.css.map */

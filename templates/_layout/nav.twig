@@ -1,6 +1,42 @@
-<nav class="navigation">
-	<li {% if craft.app.request.segments|last == 'ueber' %}class="active"{% endif %}><a href="/ueber">über</a></li>
-	<li {% if craft.app.request.segments|last == 'craniosacrale' %}class="active"{% endif %}><a href="/craniosacrale">craniosacrale</a></li>
-	<li {% if craft.app.request.segments|last == 'yoga' %}class="active"{% endif %}><a href="/yoga">yoga</a></li>
-	<li {% if craft.app.request.segments|last == 'kontakt' %}class="active"{% endif %}><a href="/kontakt">kontakt</a></li>
+<nav class="nav {{ extraClass ?? '' }}">
+	{% if includeLogo ?? false %}
+		<div class="nav__back">{% include '_layout/logo' with { extraClass: 'logo--nav' } %}</div>
+	{% endif %}
+	<li class="nav__li {% if craft.app.request.segments|last == 'konzept' %} nav__li--active{% endif %}">
+		<a class="nav__a" href="/konzept">
+			<span class="nav__span" data-hover="konzept">konzept</span>
+		</a>
+	</li>
+	<li class="nav__li {% if craft.app.request.segments|last == 'unser-team' %} nav__li--active{% endif %}">
+		<a class="nav__a" href="/unser-team">
+			<span class="nav__span" data-hover="unser team">unser team</span>
+		</a>
+	</li>
+	<li class="nav__li {% if craft.app.request.segments|last == 'schulalltag' %} nav__li--active{% endif %}">
+		<a class="nav__a" href="/schulalltag">
+			<span class="nav__span" data-hover="schulalltag">schulalltag</span>
+		</a>
+	</li>
+	<li class="nav__li {% if craft.app.request.segments|last == 'aufnahme' %} nav__li--active{% endif %}">
+		<a class="nav__a" href="/aufnahme">
+			<span class="nav__span" data-hover="konzept">aufnahme</span>
+				
+		</a>
+	</li>
+	<li class="nav__li {% if craft.app.request.segments|last == 'faq' %} nav__li--active{% endif %}">
+		<a class="nav__a" href="/faq">
+			<span class="nav__span" data-hover="faq">faq</span>
+			
+		</a>
+	</li>
+	<li class="nav__li {% if craft.app.request.segments|last == 'spenden' %} nav__li--active{% endif %}">
+		<a class="nav__a" href="/spenden">
+			<span class="nav__span" data-hover="spenden">spenden</span>
+		</a>
+	</li>
+	<li class="nav__li {% if craft.app.request.segments|last == 'kontakt' %} nav__li--active{% endif %}">
+		<a class="nav__a" href="/kontakt">
+			<span class="nav__span" data-hover="kontakt">kontakt</span>
+		</a>
+	</li>
 </nav>

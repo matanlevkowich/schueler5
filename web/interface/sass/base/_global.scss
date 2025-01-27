@@ -40,6 +40,7 @@ h3,
 h4,
 figure,
 blockquote,
+p,
 dl,
 dd {
   margin: 0;
@@ -60,7 +61,6 @@ h4{
 }
 
 a{
-  font-family: variables.$heading-font;
   text-decoration: none;
   color: variables.$black;
 }

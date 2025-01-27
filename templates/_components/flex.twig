@@ -1,0 +1,24 @@
+<div class="flex">
+  {% set groups = categories|batch(2) %} 
+  {% for group in groups %}
+    <div class="flex__wrapper">
+        <div class="flex__items">
+           {% for category in group %}
+           <div class="card card--small" data-id='{{ category.id}}'>
+              <div class="card__inner">
+                 <h1 class="card__title">{{ category.title }}</h1>
+                 <span class="card__number">{{ loop.index }}</span>
+              </div>
+           </div>
+           {% endfor %}
+        </div>
+        {% for category in group %}
+           <div class="card card--large" id="{{ category.id }}" data-id="{{ category.id }}">
+              <div class="card__close">{#{% include '_components/close' %}#}</div>
+              <h2 class="card__title">{{ category.title }}</h2>
+              <div class="card__text">{{ category.richText }}</div>
+           </div>
+        {% endfor %}
+    </div>
+  {% endfor %}
+</div>

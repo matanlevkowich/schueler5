@@ -1,0 +1,108 @@
+fieldLayouts:
+  77665c44-3352-4427-aa14-7efbbdfbc7da:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: '2025-01-23T23:46:44+00:00'
+            elementCondition: null
+            fieldUid: e6904e0d-8cb4-4147-8916-63f37437a6ac # Section Title
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: 'Logos Title'
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 19f69d78-e28b-4222-967d-6bdf05787070
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-01-23T23:31:23+00:00'
+            elementCondition: null
+            fieldUid: f8093026-1d28-4701-b3e4-fbc82300742f # Logos
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 06cb0d50-0569-4bb8-8990-97a66216ba58
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-01-24T17:14:02+00:00'
+            elementCondition: null
+            fieldUid: e6904e0d-8cb4-4147-8916-63f37437a6ac # Section Title
+            handle: sectionTitle2
+            includeInCards: false
+            instructions: null
+            label: 'Footer Text'
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 288ac3f2-081b-462f-a5bc-2eb6dfaab084
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-01-24T17:16:51+00:00'
+            elementCondition: null
+            fieldUid: 8d8c1ad0-9b3c-44db-b579-7931d0c36040 # Simple Text
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: Adresse
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: ddad5972-6ebc-423e-8e90-67da964b45e1
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-01-24T17:18:35+00:00'
+            elementCondition: null
+            fieldUid: 8d8c1ad0-9b3c-44db-b579-7931d0c36040 # Simple Text
+            handle: simpleText2
+            includeInCards: false
+            instructions: null
+            label: 'Kontakt Info'
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: da0b9fe1-3e71-4815-b5ec-fd305a376523
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-01-24T17:31:50+00:00'
+            elementCondition: null
+            fieldUid: 4fcec15c-7da4-465e-b7de-adb5f37e3e36 # Social Links
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: f873fd53-3722-47fd-9161-df8b0f556a4e
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 5c48e94a-7b43-479a-9141-29fd49b33ef2
+        userCondition: null
+handle: footer
+name: Footer
+sortOrder: 1

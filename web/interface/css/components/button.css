@@ -1,5 +1,6 @@
 .button {
   margin: 0 calc(var(--font-base) * 8);
+  font-family: "Bebas Neue", serif;
 }
 .button--red .button__box {
   color: #fff;

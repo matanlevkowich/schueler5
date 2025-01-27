@@ -5,13 +5,30 @@
 
 .logo{
     width:functions.dynamic-size(20);
+    position: relative;
 
   &__footer{
     width:functions.dynamic-size(15);
   }
+  &__path{
+    @include functions.transition(.2s);
+  }
 
   &--header{
     .logo__path{
-      fill: variables.$red;    }
-  }  
+      fill: variables.$red;   
+    }
+  }
+  &--white{
+    .logo__path{
+      //fill: variables.$white;   
+    }
+  } 
+  
+  &--nav{
+    width: functions.dynamic-size(107);
+    .logo__path{
+      fill:variables.$off-red;
+    }
+  } 
 }

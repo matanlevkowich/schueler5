@@ -3,60 +3,110 @@
 
 // nav //
 
-.navigation {
-  position: fixed;
-  display: none;
-  font-size: 110%;
-
-  li{
-    display: inline-block;
-    margin:0 functions.dynamic-size(1);
+.nav {
+  &--header{
+    @include functions.flex(center, center, functions.dynamic-size(4));
+    @include functions.transition(.2s);
+    position: fixed;
+    width:100%;
+    height: 100%;
+    left: 0;
+    top:-100%;
+    background:variables.$red; 
+    font-size: 175%;  
     text-transform: uppercase;
-    letter-spacing: functions.dynamic-size(.2);
+    overflow: hidden;
+    
+    .nav__a{
+      color:variables.$white;
+      width: 110%;
+      &:hover{
+        .nav__span{
+          transform: translateY(100%);
+        }
+      }
+    }
+
+    .nav__li{
+      transform: translateY(functions.dynamic-size(-3));
+      opacity: 0;
+      &--active{
+        .nav__span{
+          transform: translateY(100%);
+        }
+      }
+    }
+    .nav__span{
+      position: relative;
+      display: inline-block;
+      width: 100%;
+      @include functions.transition(.4s);
+      &:before{
+        position: absolute;
+        top: -100%;
+        width: 110%;
+        content: attr(data-hover);
+        font-weight: variables.$semibold-font-weight;
+        transform: translate3d(0,0,0);
+      }
+    }
+  }
   
+  &--active{
+    top: 0;
+
+    .nav__back{
+      transform: translateX(0);
+      opacity: 1; 
+      transition-delay: .4s;
+    }
+    .nav__li{
+      transform: translateY(0);
+      opacity: 1;
+      //transition-delay: .7s;
+      @for $i from 1 through 8 {
+        &:nth-child(#{$i}) {
+        transition-delay: calc(0.5s + (#{$i} * 0.1s));
+      }
+  }
+    }
   }
 
-  a{
-    font-weight: variables.$semibold-font-weight;
+  &__back{
+    @include functions.transition(.4s);
+    transition-delay: .2s;
+    position: absolute;
+    line-height: 0;
+    transform: translateX(functions.dynamic-size(-4));
+    opacity: 0;
+  }
+
+  &__li{
+    @include functions.transition(.4s);
+    transition-delay: .2s;
     display: block;
     position: relative;
-  
-    &:before,
-    &:after{
-      content: '';
-      position: absolute;
-      top:100%;
-      left: 0;
-      width:100%;
-      height: functions.dynamic-size(1);
-      background-image: url('/assets/small-wave.svg');
-      background-size: functions.dynamic-size(6);
-      background-repeat: repeat-x;
-      background-position-x: center;
-    }
+    
+    &--active{
 
-    &:after{
-      background:variables.$white;
-      transform: scaleX(1);
-      transform-origin: right;
     }
   }
 
-  li.active a:after,
-  li a:hover:after{
-    transform: scaleX(0);
-    @include functions.transition(.5s);
+  &__a{
+    overflow: hidden;
+    position: relative;
+    display: inline-block;
+  }
+}
+
+.footer{
+  .nav{
+    position: relative;
+    display: block;
   }
 }
 
 @media (min-width: variables.$big-tablet-start) and (max-width: variables.$big-tablet-end) {
-  .navigation{
-    font-size: 85%;
-    margin-bottom: functions.dynamic-size(.5);
-    li{
-      margin: 0 functions.dynamic-size(.5);
-    }
-  }
 
 }
 
