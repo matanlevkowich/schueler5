@@ -1,0 +1,12 @@
+.flex {
+  padding: calc(var(--font-base) * 4);
+}
+.flex__items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: unset;
+  gap: calc(var(--font-base) * 4);
+}
+
+/*# sourceMappingURL=flex.css.map */

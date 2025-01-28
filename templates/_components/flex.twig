@@ -1,15 +1,21 @@
 <div class="flex">
+  {% set categoryCounter = 0 %}
   {% set groups = categories|batch(2) %} 
   {% for group in groups %}
-    <div class="flex__wrapper">
+    <div class="flex__wrapper flex__wrapper--{{ loop.index }}">
         <div class="flex__items">
            {% for category in group %}
-           <div class="card card--small" data-id='{{ category.id}}'>
-              <div class="card__inner">
-                 <h1 class="card__title">{{ category.title }}</h1>
-                 <span class="card__number">{{ loop.index }}</span>
-              </div>
-           </div>
+               {% set categoryCounter = categoryCounter + 1 %} {# Increment the counter #}
+               <div class="card card--small" data-id='{{ category.id }}'>
+                  <div class="card__inner">
+                    {% set classes = ['card__title--1', 'card__title--2', 'card__title--3', 'card__title--4'] %}
+                    {% set currentClass = classes[(categoryCounter - 1) % 4] %}
+                    <h1 class="card__title {{ currentClass }}">
+                      <span class="card__titlein">{{ category.sectionTitle | nl2br }}</span>
+                    </h1>
+                    <span class="card__number">{{ categoryCounter }}</span> 
+                  </div>
+               </div>
            {% endfor %}
         </div>
         {% for category in group %}

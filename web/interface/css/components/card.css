@@ -1,0 +1,44 @@
+.card--small {
+  width: calc(var(--font-base) * 35);
+  background: #E52623;
+  line-height: 1.2;
+  color: #fff;
+  padding: calc(var(--font-base) * 4) calc(var(--font-base) * 7) calc(var(--font-base) * 4.5);
+  border-top-left-radius: calc(var(--font-base) * 15);
+  border-bottom-right-radius: calc(var(--font-base) * 15);
+  position: relative;
+}
+.card__inner {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: calc(var(--font-base) * 2);
+  flex-wrap: nowrap;
+  font-size: 250%;
+}
+.card__number {
+  font-weight: 600;
+  font-size: 150%;
+  line-height: 1;
+  position: absolute;
+  right: calc(var(--font-base) * 2);
+  top: calc(var(--font-base) * 2);
+}
+.card__titlein {
+  position: relative;
+}
+.card__titlein:after {
+  position: absolute;
+  bottom: calc(var(--font-base) * -1);
+  left: 0;
+  content: "";
+  width: 50%;
+  height: calc(var(--font-base) * 0.5);
+  background: #fff;
+}
+.card--large {
+  display: none;
+}
+
+/*# sourceMappingURL=card.css.map */

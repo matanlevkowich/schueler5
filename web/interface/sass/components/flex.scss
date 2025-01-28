@@ -1,0 +1,17 @@
+@use '../base/functions';
+@use '../base/variables';
+
+// flex //
+
+.flex{
+  padding: functions.dynamic-size(4);
+  &__items{
+    @include functions.flex(space-between, unset, functions.dynamic-size(4));
+  }
+  
+}
+
+
+@media (min-width: variables.$big-tablet-start) and (max-width: variables.$big-tablet-end) {
+  
+}

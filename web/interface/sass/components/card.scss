@@ -1,0 +1,52 @@
+@use '../base/functions';
+@use '../base/variables';
+
+// card //
+
+.card{
+  &--small{
+    width:functions.dynamic-size(35);
+    background: variables.$red;
+    line-height: 1.2;
+    color:variables.$white;
+    padding:functions.dynamic-size(4) functions.dynamic-size(7) functions.dynamic-size(4.5);
+    border-top-left-radius: functions.dynamic-size(15);
+    border-bottom-right-radius: functions.dynamic-size(15);
+    position: relative;
+  }
+  &__inner{
+    @include functions.flex(flex-start, flex-start, functions.dynamic-size(2));
+    flex-wrap: nowrap;
+    font-size: 250%;
+  }
+
+  &__number{
+    font-weight: variables.$semibold-font-weight;
+    font-size: 150%;
+    line-height: 1;
+    position: absolute;
+    right: functions.dynamic-size(2);
+    top: functions.dynamic-size(2);
+  }
+
+  &__titlein{
+    position: relative;
+    &:after{
+        position: absolute;
+        bottom:functions.dynamic-size(-1);
+        left:0;
+        content: '';
+        width:50%;
+        height: functions.dynamic-size(.5);
+        background: variables.$white;
+      }
+  }
+  &--large{
+    display: none;
+  }
+}
+
+
+@media (min-width: variables.$big-tablet-start) and (max-width: variables.$big-tablet-end) {
+  
+}

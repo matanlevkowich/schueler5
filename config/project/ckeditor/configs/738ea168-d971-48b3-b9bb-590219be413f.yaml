@@ -18,5 +18,6 @@ options:
 toolbar:
   - bold
   - italic
+  - underline
   - link
   - bulletedList
