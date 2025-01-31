@@ -403,6 +403,9 @@ select {
 .card:nth-child(even) {
   color: #E52623;
 }
+.card:nth-child(even) .card__text li:before {
+  content: url("/assets/li-red.svg");
+}
 .card:last-child {
   border: none;
 }
@@ -440,6 +443,19 @@ select {
 }
 .card__text {
   margin: calc(var(--font-base) * 2) 0 calc(var(--font-base) * 4);
+  font-size: 110%;
+}
+.card__text li {
+  display: block;
+  position: relative;
+}
+.card__text li:before {
+  content: url(/assets/li-black.svg);
+  width: calc(var(--font-base) * 2);
+  height: auto;
+  display: inline-block;
+  position: absolute;
+  left: calc(var(--font-base) * -2.7);
 }
 .card__inner {
   display: flex;

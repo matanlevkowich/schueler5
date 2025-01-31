@@ -9,6 +9,14 @@
 
   &:nth-child(even){
     color:variables.$red;
+
+    .card__text{
+      li{
+        &:before{
+          content: url('/assets/li-red.svg');
+        }
+      }
+    }  
   }
 
   &:last-child{
@@ -50,6 +58,20 @@
 
   &__text{
     margin:functions.dynamic-size(2) 0 functions.dynamic-size(4);
+    font-size: 110%;
+    li{
+      display: block;
+      position: relative;
+      &:before{
+        content: url(/assets/li-black.svg);
+        width: calc(var(--font-base)* 2);
+        height: auto;
+        display: inline-block;
+        position: absolute;
+        left: calc(var(--font-base)* -2.7);
+        //top:calc(var(--font-base)* .1);
+      }
+    }
   }
 
   &__inner{
