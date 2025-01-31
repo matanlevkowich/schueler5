@@ -2,25 +2,19 @@
 	{% if includeLogo ?? false %}
 		<div class="nav__back">{% include '_layout/logo' with { extraClass: 'logo--nav' } %}</div>
 	{% endif %}
-	<li class="nav__li {% if craft.app.request.segments|last == 'konzept' %} nav__li--active{% endif %}">
-		<a class="nav__a" href="/konzept">
-			<span class="nav__span" data-hover="konzept">konzept</span>
+	<li class="nav__li {% if craft.app.request.segments|last == '' %} nav__li--active{% endif %}">
+		<a class="nav__a" href="/ueber">
+			<span class="nav__span" data-hover="home">home</span>
+		</a>
+	</li>
+	<li class="nav__li {% if craft.app.request.segments|last == 'ueber' %} nav__li--active{% endif %}">
+		<a class="nav__a" href="/ueber">
+			<span class="nav__span" data-hover="über uns">über uns</span>
 		</a>
 	</li>
 	<li class="nav__li {% if craft.app.request.segments|last == 'team' %} nav__li--active{% endif %}">
 		<a class="nav__a" href="/team">
 			<span class="nav__span" data-hover="team">team</span>
-		</a>
-	</li>
-	<li class="nav__li {% if craft.app.request.segments|last == 'schulalltag' %} nav__li--active{% endif %}">
-		<a class="nav__a" href="/schulalltag">
-			<span class="nav__span" data-hover="schulalltag">schulalltag</span>
-		</a>
-	</li>
-	<li class="nav__li {% if craft.app.request.segments|last == 'aufnahme' %} nav__li--active{% endif %}">
-		<a class="nav__a" href="/aufnahme">
-			<span class="nav__span" data-hover="konzept">aufnahme</span>
-				
 		</a>
 	</li>
 	<li class="nav__li {% if craft.app.request.segments|last == 'faqs' %} nav__li--active{% endif %}">

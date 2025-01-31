@@ -70,8 +70,8 @@ fieldLayouts:
         name: Content
         uid: c72bfb00-b74a-4f2f-87e2-5878af3a8532
         userCondition: null
-handle: konzept
-name: Konzept
+handle: ueber
+name: Über
 siteSettings:
   72dce0d4-0301-4f00-b080-ba91db7eff2b: # Schuelerinnenschule
     hasUrls: false

@@ -3,7 +3,7 @@
 {% block content %}
     {% include '_components/cover' %}
     {% include '_components/text' with { extraClass: 'text--small' } %}
-    {% set categories = craft.categories.group('konzept').all() %}
-    {% include '_components/konzept-box' %}
+    {% set categories = craft.categories.group('ueber').all() %}
+    {% include '_components/ueber-box' %}
     {% include '_components/flex-code' %}
 {% endblock %}

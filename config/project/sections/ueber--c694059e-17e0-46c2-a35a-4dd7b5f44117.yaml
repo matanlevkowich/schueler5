@@ -3,9 +3,9 @@ enableVersioning: true
 entryTypes:
   -
     uid: 78e9170b-0c4d-4e9e-970a-f1fbf5857227 # Konzept
-handle: konzept
+handle: ueber
 maxAuthors: 1
-name: Konzept
+name: Über
 previewTargets:
   -
     __assoc__:
@@ -23,6 +23,6 @@ siteSettings:
   72dce0d4-0301-4f00-b080-ba91db7eff2b: # Schuelerinnenschule
     enabledByDefault: true
     hasUrls: true
-    template: konzept.twig
-    uriFormat: konzept
+    template: ueber.twig
+    uriFormat: ueber
 type: single
