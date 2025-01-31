@@ -7,6 +7,13 @@
   padding:functions.dynamic-size(4);
   font-size: 200%;
 
+  &--small{
+    font-size: 175%;
+    .text__paragraph{
+      margin: functions.dynamic-size(3) functions.dynamic-size(8) 0;
+    }
+  }
+
   &--cover{
     margin:functions.dynamic-size(4);
     position: relative;

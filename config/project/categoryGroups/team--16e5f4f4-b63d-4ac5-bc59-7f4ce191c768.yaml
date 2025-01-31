@@ -1,0 +1,82 @@
+defaultPlacement: end
+fieldLayouts:
+  0310bf49-4dd6-429d-b75e-75c285e6c09a:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            dateAdded: '2025-01-30T11:34:15+00:00'
+            disabled: false
+            elementCondition: null
+            id: null
+            includeInCards: false
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            providesThumbs: false
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\TitleField
+            uid: 95168350-1bfe-4994-aa30-98dadcb118eb
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-01-30T11:36:03+00:00'
+            elementCondition: null
+            fieldUid: 81d5b426-e396-4d96-bdc3-c4b37c0ddfd7 # Image
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 3d8a8ae3-509a-4c57-b616-4d1ee346c1ad
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-01-30T11:36:03+00:00'
+            elementCondition: null
+            fieldUid: 8d8c1ad0-9b3c-44db-b579-7931d0c36040 # Simple Text
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 81dbbf97-cf5e-437a-bb98-531a8146fe63
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 2fc91e3e-81f5-4998-9527-fd191168775c
+        userCondition: null
+handle: team
+name: Team
+siteSettings:
+  72dce0d4-0301-4f00-b080-ba91db7eff2b: # Schuelerinnenschule
+    hasUrls: false
+    template: null
+    uriFormat: null
+structure:
+  maxLevels: 1
+  uid: 91dd8793-06af-437c-9fac-9e569cd25874

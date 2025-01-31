@@ -4,11 +4,14 @@
 // flex //
 
 .flex{
-  padding: functions.dynamic-size(4);
+  padding-bottom: functions.dynamic-size(4);
   &__items{
-    @include functions.flex(space-between, unset, functions.dynamic-size(4));
+    padding: 0 functions.dynamic-size(4);
+    @include functions.flex(flex-start, unset, functions.dynamic-size(4));
   }
-  
+  &__wrapper{
+    margin-bottom: functions.dynamic-size(4);
+  }
 }
 
 

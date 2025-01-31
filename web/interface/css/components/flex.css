@@ -1,12 +1,16 @@
 .flex {
-  padding: calc(var(--font-base) * 4);
+  padding-bottom: calc(var(--font-base) * 4);
 }
 .flex__items {
+  padding: 0 calc(var(--font-base) * 4);
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: unset;
   gap: calc(var(--font-base) * 4);
+}
+.flex__wrapper {
+  margin-bottom: calc(var(--font-base) * 4);
 }
 
 /*# sourceMappingURL=flex.css.map */

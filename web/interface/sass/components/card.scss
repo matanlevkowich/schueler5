@@ -4,31 +4,69 @@
 // card //
 
 .card{
-  &--small{
-    width:functions.dynamic-size(35);
-    background: variables.$red;
+  border-bottom:functions.dynamic-size(.5) solid;
+  margin:0 functions.dynamic-size(4);
+
+  &:nth-child(even){
+    color:variables.$red;
+  }
+
+  &:last-child{
+    border:none;
+  }
+
+  &--min{
+    .card__title{
+      font-size: 300%;
+    }
+    .card__number{
+      margin-top: functions.dynamic-size(.5);
+    }
+    .card__inner{
+      max-width: 90%;
+    }
+  }
+
+  &__small{
+    width:100%;
     line-height: 1.2;
-    color:variables.$white;
-    padding:functions.dynamic-size(4) functions.dynamic-size(7) functions.dynamic-size(4.5);
-    border-top-left-radius: functions.dynamic-size(15);
-    border-bottom-right-radius: functions.dynamic-size(15);
+    margin-top:functions.dynamic-size(4);
+    padding:functions.dynamic-size(2) 0;
+    position: relative;
+    cursor: pointer;
+    @include functions.flex(space-between, center, functions.dynamic-size(2) nowrap);
+  }
+
+  &__large{
+    width: 100%;
+    height: 0;
+    text-align: left;
+    margin-block: 0;
+    overflow: hidden;
+    cursor: unset;
+    font-size: 150%;
     position: relative;
   }
+
+  &__text{
+    margin:functions.dynamic-size(2) 0 functions.dynamic-size(4);
+  }
+
   &__inner{
     @include functions.flex(flex-start, flex-start, functions.dynamic-size(2));
     flex-wrap: nowrap;
-    font-size: 250%;
+    font-size: 150%;
   }
 
   &__number{
     font-weight: variables.$semibold-font-weight;
     font-size: 150%;
     line-height: 1;
-    position: absolute;
-    right: functions.dynamic-size(2);
-    top: functions.dynamic-size(2);
+    margin-top: functions.dynamic-size(1);
   }
-
+  &__title{
+    font-size: 500%;
+  }
   &__titlein{
     position: relative;
     &:after{
@@ -37,12 +75,9 @@
         left:0;
         content: '';
         width:50%;
-        height: functions.dynamic-size(.5);
+        //height: functions.dynamic-size(.5);
         background: variables.$white;
       }
-  }
-  &--large{
-    display: none;
   }
 }
 

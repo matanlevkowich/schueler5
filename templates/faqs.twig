@@ -1,0 +1,9 @@
+{% extends 'index' %}
+
+{% block content %}
+    {% include '_components/cover' %}
+    {% include '_components/text' with { extraClass: 'text--small' } %}
+    {% set categories = craft.categories.group('faqs').all() %}
+    {% include '_components/faqs-box' %}
+    {% include '_components/flex-code' %}
+{% endblock %}

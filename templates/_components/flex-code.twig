@@ -1,0 +1,108 @@
+{#<script>
+// Select all elements with the class 'card__small'
+const cardsSmall = document.querySelectorAll('.card__small');
+
+// Add click event listeners to each small card
+cardsSmall.forEach(card => {
+    card.addEventListener('click', function () {
+        const myEm = this.getAttribute('data-id');
+        const targetCard = document.querySelector(`.card__large[data-id='${myEm}']`);
+
+        if (this.classList.contains('card__small--active')) {
+            // If the clicked card is already active, remove 'active' from this card
+            this.classList.remove('card__small--active');
+            if (targetCard) {
+                targetCard.style.height = '0px';
+                targetCard.classList.remove('card__large--active');
+            }
+        } else {
+            // Slide up all elements with the class 'card--large'
+            document.querySelectorAll('.card__large').forEach(el => {
+                el.style.height = '0px';
+                el.classList.remove('card__large--active');
+            });
+
+            // Remove 'active' from all small cards
+            cardsSmall.forEach(c => c.classList.remove('card__small--active'));
+
+            // Slide down the corresponding large card and add 'active' to the clicked small card
+            if (targetCard) {
+                const contentHeight = targetCard.scrollHeight;
+                targetCard.classList.add('card__large--active');
+                targetCard.style.height = `${contentHeight}px`;
+                targetCard.style.transition = 'all 0.6s ease';
+                
+            }
+            this.classList.add('card__small--active');
+        }
+    });
+});
+
+// Select all elements with the class 'close'
+const closes = document.querySelectorAll('.close');
+
+// Add click event listeners to each 'close' element
+closes.forEach(close => {
+    close.addEventListener('click', function () {
+        // Remove 'active' from all small cards
+        cardsSmall.forEach(c => c.classList.remove('card__small--active'));
+
+        // Slide up all elements with the class 'card--large'
+        document.querySelectorAll('.card__large').forEach(el => {
+            el.style.height = '0px';
+            el.classList.remove('card__large--active');
+        });
+    });
+});
+
+</script>#}
+
+<script>
+// Select all elements with the class 'card__small'
+const cardsSmall = document.querySelectorAll('.card__small');
+
+cardsSmall.forEach(card => {
+    card.addEventListener('click', function () {
+        const myEm = this.getAttribute('data-id');
+        const targetCard = document.querySelector(`.card__large[data-id='${myEm}']`);
+
+        if (this.classList.contains('card__small--active')) {
+            // If already active, close only this card
+            this.classList.remove('card__small--active');
+            if (targetCard) {
+                targetCard.style.height = '0px';
+                targetCard.classList.remove('card__large--active');
+            }
+        } else {
+            // Otherwise, toggle only the related large card
+            this.classList.add('card__small--active');
+
+            if (targetCard) {
+                const contentHeight = targetCard.scrollHeight;
+                targetCard.classList.add('card__large--active');
+                targetCard.style.height = `${contentHeight}px`;
+                targetCard.style.transition = 'all 0.6s ease';
+            }
+        }
+    });
+});
+
+// Select all elements with the class 'close'
+const closes = document.querySelectorAll('.close');
+
+closes.forEach(close => {
+    close.addEventListener('click', function () {
+        const parentCard = this.closest('.card__large');
+        if (parentCard) {
+            const dataId = parentCard.getAttribute('data-id');
+            const relatedSmallCard = document.querySelector(`.card__small[data-id='${dataId}']`);
+
+            if (relatedSmallCard) {
+                relatedSmallCard.classList.remove('card__small--active');
+            }
+            parentCard.style.height = '0px';
+            parentCard.classList.remove('card__large--active');
+        }
+    });
+});
+</script>

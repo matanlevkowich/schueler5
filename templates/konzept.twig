@@ -2,6 +2,8 @@
 
 {% block content %}
     {% include '_components/cover' %}
+    {% include '_components/text' with { extraClass: 'text--small' } %}
     {% set categories = craft.categories.group('konzept').all() %}
-    {% include '_components/flex' %}
+    {% include '_components/konzept-box' %}
+    {% include '_components/flex-code' %}
 {% endblock %}

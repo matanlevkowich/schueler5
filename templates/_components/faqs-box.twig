@@ -1,0 +1,19 @@
+<div class="flex">
+   {% set smallCardCounter = 0 %}
+   {% for category in categories %}
+      {% set smallCardCounter = smallCardCounter + 1 %} {# Increment the counter #}
+      <div class="card card--min">
+        <div class="card__small" data-id='{{ category.id }}'>
+          <div class="card__inner">
+            <span class="card__number">{% if smallCardCounter <= 9%}0{% endif %}{{ smallCardCounter }}</span> 
+            <h1 class="card__title">{{ category.title }}</h1>
+          </div>
+          <div class="card__close">{% include '_components/close' %}</div>
+        </div>
+
+        <div class="card__large" id="{{ category.id }}" data-id="{{ category.id }}">          
+            <div class="card__text">{{ category.simpleText }}</div>
+        </div>
+      </div>
+   {% endfor %}
+</div>

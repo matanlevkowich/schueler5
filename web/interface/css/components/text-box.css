@@ -2,6 +2,12 @@
   padding: calc(var(--font-base) * 4);
   font-size: 200%;
 }
+.text--small {
+  font-size: 175%;
+}
+.text--small .text__paragraph {
+  margin: calc(var(--font-base) * 3) calc(var(--font-base) * 8) 0;
+}
 .text--cover {
   margin: calc(var(--font-base) * 4);
   position: relative;

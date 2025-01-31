@@ -382,25 +382,64 @@ select {
 }
 
 .flex {
-  padding: calc(var(--font-base) * 4);
+  padding-bottom: calc(var(--font-base) * 4);
 }
 .flex__items {
+  padding: 0 calc(var(--font-base) * 4);
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: unset;
   gap: calc(var(--font-base) * 4);
 }
+.flex__wrapper {
+  margin-bottom: calc(var(--font-base) * 4);
+}
 
-.card--small {
-  width: calc(var(--font-base) * 35);
-  background: #E52623;
+.card {
+  border-bottom: calc(var(--font-base) * 0.5) solid;
+  margin: 0 calc(var(--font-base) * 4);
+}
+.card:nth-child(even) {
+  color: #E52623;
+}
+.card:last-child {
+  border: none;
+}
+.card--min .card__title {
+  font-size: 300%;
+}
+.card--min .card__number {
+  margin-top: calc(var(--font-base) * 0.5);
+}
+.card--min .card__inner {
+  max-width: 90%;
+}
+.card__small {
+  width: 100%;
   line-height: 1.2;
-  color: #fff;
-  padding: calc(var(--font-base) * 4) calc(var(--font-base) * 7) calc(var(--font-base) * 4.5);
-  border-top-left-radius: calc(var(--font-base) * 15);
-  border-bottom-right-radius: calc(var(--font-base) * 15);
+  margin-top: calc(var(--font-base) * 4);
+  padding: calc(var(--font-base) * 2) 0;
   position: relative;
+  cursor: pointer;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: calc(var(--font-base) * 2) nowrap;
+}
+.card__large {
+  width: 100%;
+  height: 0;
+  text-align: left;
+  margin-block: 0;
+  overflow: hidden;
+  cursor: unset;
+  font-size: 150%;
+  position: relative;
+}
+.card__text {
+  margin: calc(var(--font-base) * 2) 0 calc(var(--font-base) * 4);
 }
 .card__inner {
   display: flex;
@@ -409,15 +448,16 @@ select {
   align-items: flex-start;
   gap: calc(var(--font-base) * 2);
   flex-wrap: nowrap;
-  font-size: 250%;
+  font-size: 150%;
 }
 .card__number {
   font-weight: 600;
   font-size: 150%;
   line-height: 1;
-  position: absolute;
-  right: calc(var(--font-base) * 2);
-  top: calc(var(--font-base) * 2);
+  margin-top: calc(var(--font-base) * 1);
+}
+.card__title {
+  font-size: 500%;
 }
 .card__titlein {
   position: relative;
@@ -428,11 +468,31 @@ select {
   left: 0;
   content: "";
   width: 50%;
-  height: calc(var(--font-base) * 0.5);
   background: #fff;
 }
-.card--large {
-  display: none;
+
+.close {
+  position: relative;
+  z-index: -1;
+  width: calc(var(--font-base) * 4);
+  height: calc(var(--font-base) * 4);
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.card__small--active .close {
+  transform: rotate(180deg);
+}
+
+.card:nth-child(even) .close__shape {
+  fill: #E52623;
+}
+.card--min .close {
+  width: calc(var(--font-base) * 3);
+  height: calc(var(--font-base) * 3);
 }
 
 .cover {
@@ -506,6 +566,12 @@ select {
 .text {
   padding: calc(var(--font-base) * 4);
   font-size: 200%;
+}
+.text--small {
+  font-size: 175%;
+}
+.text--small .text__paragraph {
+  margin: calc(var(--font-base) * 3) calc(var(--font-base) * 8) 0;
 }
 .text--cover {
   margin: calc(var(--font-base) * 4);

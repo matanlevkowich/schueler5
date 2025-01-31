@@ -1,12 +1,47 @@
-.card--small {
-  width: calc(var(--font-base) * 35);
-  background: #E52623;
+.card {
+  border-bottom: calc(var(--font-base) * 0.5) solid;
+  margin: 0 calc(var(--font-base) * 4);
+}
+.card:nth-child(even) {
+  color: #E52623;
+}
+.card:last-child {
+  border: none;
+}
+.card--min .card__title {
+  font-size: 300%;
+}
+.card--min .card__number {
+  margin-top: calc(var(--font-base) * 0.5);
+}
+.card--min .card__inner {
+  max-width: 90%;
+}
+.card__small {
+  width: 100%;
   line-height: 1.2;
-  color: #fff;
-  padding: calc(var(--font-base) * 4) calc(var(--font-base) * 7) calc(var(--font-base) * 4.5);
-  border-top-left-radius: calc(var(--font-base) * 15);
-  border-bottom-right-radius: calc(var(--font-base) * 15);
+  margin-top: calc(var(--font-base) * 4);
+  padding: calc(var(--font-base) * 2) 0;
   position: relative;
+  cursor: pointer;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: calc(var(--font-base) * 2) nowrap;
+}
+.card__large {
+  width: 100%;
+  height: 0;
+  text-align: left;
+  margin-block: 0;
+  overflow: hidden;
+  cursor: unset;
+  font-size: 150%;
+  position: relative;
+}
+.card__text {
+  margin: calc(var(--font-base) * 2) 0 calc(var(--font-base) * 4);
 }
 .card__inner {
   display: flex;
@@ -15,15 +50,16 @@
   align-items: flex-start;
   gap: calc(var(--font-base) * 2);
   flex-wrap: nowrap;
-  font-size: 250%;
+  font-size: 150%;
 }
 .card__number {
   font-weight: 600;
   font-size: 150%;
   line-height: 1;
-  position: absolute;
-  right: calc(var(--font-base) * 2);
-  top: calc(var(--font-base) * 2);
+  margin-top: calc(var(--font-base) * 1);
+}
+.card__title {
+  font-size: 500%;
 }
 .card__titlein {
   position: relative;
@@ -34,11 +70,7 @@
   left: 0;
   content: "";
   width: 50%;
-  height: calc(var(--font-base) * 0.5);
   background: #fff;
-}
-.card--large {
-  display: none;
 }
 
 /*# sourceMappingURL=card.css.map */

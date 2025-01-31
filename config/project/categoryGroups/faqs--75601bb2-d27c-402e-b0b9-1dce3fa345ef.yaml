@@ -1,0 +1,66 @@
+defaultPlacement: end
+fieldLayouts:
+  a188ffdb-d617-43fe-80b3-61769d4b78df:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            dateAdded: '2025-01-30T11:46:45+00:00'
+            disabled: false
+            elementCondition: null
+            id: null
+            includeInCards: false
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            providesThumbs: false
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\TitleField
+            uid: 4818acc7-54d9-4199-a954-098a27c669ff
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-01-30T11:48:26+00:00'
+            elementCondition: null
+            fieldUid: 8d8c1ad0-9b3c-44db-b579-7931d0c36040 # Simple Text
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 01f128f0-c1e7-4964-889f-c637a8efdaf5
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 43415570-2b25-4417-8366-2553dd9e0ecf
+        userCondition: null
+handle: faqs
+name: FAQs
+siteSettings:
+  72dce0d4-0301-4f00-b080-ba91db7eff2b: # Schuelerinnenschule
+    hasUrls: false
+    template: null
+    uriFormat: null
+structure:
+  maxLevels: 1
+  uid: fc935e07-86d2-4a80-b6e3-60d1b08182e5
