@@ -1,6 +1,8 @@
 .button {
   margin-left: calc(var(--font-base) * 4);
-  font-family: "Bebas Neue", serif;
+  font-weight: 600;
+  font-size: 80%;
+  text-transform: uppercase;
 }
 .button--red {
   margin-bottom: calc(var(--font-base) * 2);

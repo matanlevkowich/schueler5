@@ -5,7 +5,9 @@
 
 .button{
   margin-left:functions.dynamic-size(4);
-  font-family: variables.$heading-font;
+  font-weight:variables.$semibold-font-weight;
+  font-size: 80%;
+  text-transform: uppercase;
 
   &--red{
     margin-bottom: functions.dynamic-size(2);
