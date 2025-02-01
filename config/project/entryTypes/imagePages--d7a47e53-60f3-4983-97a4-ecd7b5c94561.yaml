@@ -1,0 +1,75 @@
+color: null
+fieldLayouts:
+  b1fc4131-da40-4ff3-ae74-e0e1a89fe38a:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: '2025-02-01T14:38:15+00:00'
+            elementCondition: null
+            fieldUid: e6904e0d-8cb4-4147-8916-63f37437a6ac # Section Title
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 265ca22d-3b34-440b-9371-ccb7bc82fea2
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-02-01T14:37:23+00:00'
+            elementCondition: null
+            fieldUid: 81d5b426-e396-4d96-bdc3-c4b37c0ddfd7 # Image
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 5a6801a1-3da4-43fb-b4f5-c29b9a015f65
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: c11bb58d-6a54-4a69-acf8-d9932e1ca892
+        userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: '2025-02-01T14:37:23+00:00'
+            elementCondition: null
+            fieldUid: 81e6deb1-17ac-4b0c-8279-eebeb19a15b8 # SEO
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 0a1d122a-46b3-48ef-b610-86b2c2e8706f
+            userCondition: null
+            warning: null
+            width: 100
+        name: SEO
+        uid: 999fca15-e1f8-4276-a7b2-2dbbb8298a73
+        userCondition: null
+handle: imagePages
+hasTitleField: false
+icon: null
+name: 'Image Pages'
+showSlugField: true
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

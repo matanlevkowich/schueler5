@@ -2,7 +2,7 @@ defaultPlacement: end
 enableVersioning: true
 entryTypes:
   -
-    uid: 78e9170b-0c4d-4e9e-970a-f1fbf5857227 # Konzept
+    uid: 78e9170b-0c4d-4e9e-970a-f1fbf5857227 # Rich Pages Simple Text
 handle: ueber
 maxAuthors: 1
 name: Über

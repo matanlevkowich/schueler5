@@ -20,6 +20,26 @@
 .card--min .card__inner {
   max-width: 90%;
 }
+.card--min .card__text {
+  font-size: 150%;
+}
+.card--flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: calc(var(--font-base) * 4);
+  flex-wrap: nowrap;
+}
+.card--flex .card__small {
+  width: 60%;
+  cursor: auto;
+}
+.card__image {
+  width: 40%;
+  margin-top: calc(var(--font-base) * 6);
+  margin-bottom: calc(var(--font-base) * 4);
+}
 .card__small {
   width: 100%;
   line-height: 1.2;

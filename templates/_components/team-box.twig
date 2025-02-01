@@ -1,37 +1,19 @@
 <div class="flex">
-  {% set smallCardCounter = 0 %} {# Counter for card--small #}
-  {% set largeCardCounter = 0 %} {# Counter for card--large #}
-  {% set groups = categories|batch(3) %} 
-  {% for group in groups %}
-    <div class="flex__wrapper flex__wrapper--{{ loop.index }}">
-        <div class="flex__items">
-           {% for category in group %}
-              {% set smallCardCounter = smallCardCounter + 1 %} {# Increment the counter #}
-              {% set classes = ['card--1', 'card--2', 'card--3', 'card--4'] %}
-              {% set currentClass = classes[(smallCardCounter - 1) % 4] %}
-              <div class="card card--small {{ currentClass }}" data-id='{{ category.id }}'>
-                <div class="card__inner">
-                  <h1 class="card__title">
-                    <span class="card__titlein">{{ category.title }}</span>
-                  </h1>
-                  {% set image = category.image.one %}
-                  <img src="{{ image.getUrl }}"/>                  
-                </div>
-              </div>
-           {% endfor %}
-        </div>
-        {% for category in group %}
-          {% set largeCardCounter = largeCardCounter + 1 %} {# Increment the counter #}
-          {% set classes = ['card--large1', 'card--large2', 'card--large3', 'card--large4'] %}
-          {% set currentClass = classes[(largeCardCounter - 1) % 4] %}
-          <div class="card card--large {{ currentClass }}" id="{{ category.id }}" data-id="{{ category.id }}">
-            <div class="card__close">{% include '_components/close' %}</div>
-            <div class="card__block">
-              <h1 class="card__title">{{ category.title }}</h1>
-              <div class="card__text">{{ category.simpleText }}</div>
-            </div>
+   {% set smallCardCounter = 0 %}
+   {% for category in categories %}
+      {% set smallCardCounter = smallCardCounter + 1 %} {# Increment the counter #}
+      <div class="card card--min card--flex">
+        <div class="card__small">
+          <div class="card__inner">
+            <span class="card__number">{% if smallCardCounter <= 9%}0{% endif %}{{ smallCardCounter }}</span> 
+            <h1 class="card__title">{{ category.title }}</h1>
           </div>
-        {% endfor %}
-    </div>
-  {% endfor %}
+          <div class="card__text">{{ category.simpleText }}</div>
+        </div>
+        <div class="card__image">
+          {% set image = category.image.one %}
+          <img src="{{ image.getUrl }}"/>                  
+        </div>
+      </div>
+   {% endfor %}
 </div>

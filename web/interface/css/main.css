@@ -418,6 +418,26 @@ select {
 .card--min .card__inner {
   max-width: 90%;
 }
+.card--min .card__text {
+  font-size: 150%;
+}
+.card--flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: calc(var(--font-base) * 4);
+  flex-wrap: nowrap;
+}
+.card--flex .card__small {
+  width: 60%;
+  cursor: auto;
+}
+.card__image {
+  width: 40%;
+  margin-top: calc(var(--font-base) * 6);
+  margin-bottom: calc(var(--font-base) * 4);
+}
 .card__small {
   width: 100%;
   line-height: 1.2;
@@ -583,6 +603,9 @@ select {
   padding: calc(var(--font-base) * 4);
   font-size: 200%;
 }
+.text--margin {
+  margin-top: calc(var(--font-base) * 12);
+}
 .text--small {
   font-size: 175%;
 }
@@ -594,24 +617,8 @@ select {
   position: relative;
   color: #fff;
 }
-.text--cover .text__box {
-  background: transparent;
+.text--cover .text__inner {
   color: #fff;
-  border: calc(var(--font-base) * 0.75) solid;
-  border-radius: 0;
-  border-bottom-left-radius: calc(var(--font-base) * 15);
-  border-top-right-radius: calc(var(--font-base) * 15);
-}
-.text--right .text__title {
-  text-align: right;
-}
-.text--right .text__paragraph {
-  margin: calc(var(--font-base) * 5) calc(var(--font-base) * 10) calc(var(--font-base) * 3);
-  margin-left: 0;
-}
-.text--right .text__inner:after {
-  left: auto;
-  right: 0;
 }
 .text__cover {
   width: 100%;
@@ -630,12 +637,17 @@ select {
   background: rgba(0, 0, 0, 0.5);
   background: linear-gradient(135deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.2) 100%);
 }
+.text__number {
+  font-family: "IBM Plex Sans", serif;
+  font-weight: 600;
+}
 .text__outer {
   position: relative;
   font-size: 85%;
 }
 .text__title {
-  font-size: 400%;
+  font-size: 450%;
+  line-height: 1;
 }
 .text__box {
   background: #E52623;
@@ -648,6 +660,13 @@ select {
 }
 .text__inner {
   position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: unset;
+  align-items: unset;
+  gap: calc(var(--font-base) * 2);
+  margin-block: calc(var(--font-base) * 4);
+  color: #E52623;
 }
 .text__inner:after {
   position: absolute;
@@ -655,42 +674,36 @@ select {
   left: 0;
   content: "";
   width: 50%;
-  height: calc(var(--font-base) * 0.75);
   background: #fff;
 }
 .text__paragraph {
-  margin: calc(var(--font-base) * 5) calc(var(--font-base) * 10) calc(var(--font-base) * 3);
+  margin: calc(var(--font-base) * 5) calc(var(--font-base) * 10);
   margin-right: 0;
   font-size: 125%;
 }
+.text__paragraph--full {
+  margin: 0;
+  font-size: 90%;
+}
 
 .button {
-  margin: 0 calc(var(--font-base) * 8);
+  margin-left: calc(var(--font-base) * 4);
   font-family: "Bebas Neue", serif;
+}
+.button--red {
+  margin-bottom: calc(var(--font-base) * 2);
 }
 .button--red .button__box {
   color: #fff;
   background: #E52623;
   border-color: #E52623;
 }
-.button--right {
-  text-align: right;
-}
-.button--right .button__box {
-  border-bottom-right-radius: 0;
-  border-bottom-left-radius: calc(var(--font-base) * 5);
-}
 .button__box {
   display: inline-block;
   border: calc(var(--font-base) * 0.4) solid;
   letter-spacing: calc(var(--font-base) * 0.2);
   padding: calc(var(--font-base) * 1) calc(var(--font-base) * 2);
-  border-bottom-right-radius: calc(var(--font-base) * 5);
 }
-.button__box:hover {
-  color: #fff;
-}
-
 @media (min-width: 769px) and (max-width: 992px) {
   .button__box {
     padding: calc(var(--font-base) * 0.75) calc(var(--font-base) * 1.5);

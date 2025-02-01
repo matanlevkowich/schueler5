@@ -1,11 +1,10 @@
 {% set blocks = entry.textBox.all() %}
 {% for block in blocks %}
     <div class="text {{ extraClass ?? '' }}">
-            <h1 class="text__title">
-                <div class="text__box">
-                    <span class="text__inner">{{ block.sectionTitle | nl2br }}</span>
-                </div>
-            </h1>
+            <div class="text__inner">
+                <span class="text__number">{{ textNumber ?? '' }}</span>
+                <h1 class="text__title">{{ block.sectionTitle | nl2br }}</h1>
+            </div>
             <div class="text__paragraph">{{ block.simpleText }}</div>
             {% if block.ctaButton %}
                 {% set link = block.ctaLink %}

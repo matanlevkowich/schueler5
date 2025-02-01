@@ -7,6 +7,10 @@
   padding:functions.dynamic-size(4);
   font-size: 200%;
 
+  &--margin{
+    margin-top:functions.dynamic-size(12);
+  }
+
   &--small{
     font-size: 175%;
     .text__paragraph{
@@ -18,31 +22,8 @@
     margin:functions.dynamic-size(4);
     position: relative;
     color:variables.$white;
-    .text__box{
-      background: transparent;
-      color:variables.$white;
-      border: functions.dynamic-size(.75) solid;
-      border-radius: 0;
-      border-bottom-left-radius: functions.dynamic-size(15);
-      border-top-right-radius: functions.dynamic-size(15);
-    }
-  }
-
-  &--right{
-    .text__title{
-      text-align: right;
-    }
-
-    .text__paragraph{
-      margin: functions.dynamic-size(5) functions.dynamic-size(10) functions.dynamic-size(3);
-      margin-left: 0;
-    }
-
     .text__inner{
-      &:after{
-        left:auto;
-        right: 0;
-      }
+      color:variables.$white;
     }
   }
 
@@ -63,7 +44,11 @@
     height: 100%;
     background:variables.$gradiant-black-alt;
     background:variables.$gradiant-black;
+  }
 
+  &__number{
+    font-family: variables.$base-font;
+    font-weight: variables.$semibold-font-weight;
   }
 
   &__outer{
@@ -72,7 +57,8 @@
   }
 
   &__title{
-    font-size: 400%;
+    font-size: 450%;
+    line-height: 1;
   }
 
   &__box{
@@ -87,21 +73,29 @@
 
   &__inner{
     position: relative;
+    @include functions.flex(unset, unset, functions.dynamic-size(2));
+    margin-block: functions.dynamic-size(4);
+    color:variables.$red;
     &:after{
       position: absolute;
       bottom:functions.dynamic-size(-1);
       left:0;
       content: '';
       width:50%;
-      height: functions.dynamic-size(.75);
+      //height: functions.dynamic-size(.75);
       background: variables.$white;
     }
   }
 
   &__paragraph{
-    margin: functions.dynamic-size(5) functions.dynamic-size(10) functions.dynamic-size(3);
+    margin: functions.dynamic-size(5) functions.dynamic-size(10);
     margin-right: 0;
     font-size: 125%;
+
+    &--full{
+      margin: 0;
+      font-size: 90%;
+    }
   }
 
 }

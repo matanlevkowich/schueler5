@@ -1,0 +1,28 @@
+defaultPlacement: end
+enableVersioning: true
+entryTypes:
+  -
+    uid: d7a47e53-60f3-4983-97a4-ecd7b5c94561 # Image Pages
+handle: stundenplan
+maxAuthors: 1
+name: Stundenplan
+previewTargets:
+  -
+    __assoc__:
+      -
+        - label
+        - 'Primary entry page'
+      -
+        - urlFormat
+        - '{url}'
+      -
+        - refresh
+        - '1'
+propagationMethod: all
+siteSettings:
+  72dce0d4-0301-4f00-b080-ba91db7eff2b: # Schuelerinnenschule
+    enabledByDefault: true
+    hasUrls: true
+    template: stundenplan.twig
+    uriFormat: stundenplan
+type: single

@@ -5,11 +5,10 @@
         <div class="text__cover" style="background-image: url('{{ cover.getUrl }}'); background-position-y:{{ cover.backgroundPositionY}}%;"></div>
         <div class="text__gradiant"></div>
         <div class="text__outer">
-            <h1 class="text__title">
-                    <div class="text__box">
-                        <span class="text__inner">{{ block.sectionTitle | nl2br }}</span>
-                    </div>
-                </h1>
+            <div class="text__inner">
+                <div class="text__number">{{ textNumber ?? '' }}</div>
+                <h1 class="text__title">{{ block.sectionTitle | nl2br }}</h1>
+            </div>
                 <div class="text__paragraph">{{ block.simpleText }}</div>
                 {% if block.ctaButton %}
                     {% set link = block.ctaLink %}

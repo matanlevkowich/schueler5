@@ -33,6 +33,25 @@
     .card__inner{
       max-width: 90%;
     }
+
+    .card__text{
+      font-size: 150%;
+    }
+  }
+
+  &--flex{
+    @include functions.flex(space-between, flex-start, functions.dynamic-size(4));
+    flex-wrap: nowrap;
+    .card__small{
+      width:60%;
+      cursor: auto;
+    }
+  }
+
+  &__image{
+    width:40%;
+    margin-top: functions.dynamic-size(6);
+    margin-bottom: functions.dynamic-size(4);
   }
 
   &__small{

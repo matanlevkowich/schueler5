@@ -1,30 +1,21 @@
 .button {
-  margin: 0 calc(var(--font-base) * 8);
+  margin-left: calc(var(--font-base) * 4);
   font-family: "Bebas Neue", serif;
+}
+.button--red {
+  margin-bottom: calc(var(--font-base) * 2);
 }
 .button--red .button__box {
   color: #fff;
   background: #E52623;
   border-color: #E52623;
 }
-.button--right {
-  text-align: right;
-}
-.button--right .button__box {
-  border-bottom-right-radius: 0;
-  border-bottom-left-radius: calc(var(--font-base) * 5);
-}
 .button__box {
   display: inline-block;
   border: calc(var(--font-base) * 0.4) solid;
   letter-spacing: calc(var(--font-base) * 0.2);
   padding: calc(var(--font-base) * 1) calc(var(--font-base) * 2);
-  border-bottom-right-radius: calc(var(--font-base) * 5);
 }
-.button__box:hover {
-  color: #fff;
-}
-
 @media (min-width: 769px) and (max-width: 992px) {
   .button__box {
     padding: calc(var(--font-base) * 0.75) calc(var(--font-base) * 1.5);
