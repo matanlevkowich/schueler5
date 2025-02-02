@@ -432,10 +432,6 @@ select {
 .card--min .card__inner {
   max-width: 90%;
 }
-.card--min .card__text {
-  font-size: 150%;
-  line-height: 1.5;
-}
 .card--flex {
   display: flex;
   flex-wrap: wrap;
@@ -447,6 +443,10 @@ select {
 .card--flex .card__small {
   width: 60%;
   cursor: auto;
+}
+.card--flex .card__text {
+  font-size: 150%;
+  line-height: 1.5;
 }
 .card__image {
   width: 40%;

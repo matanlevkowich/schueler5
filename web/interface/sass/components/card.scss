@@ -33,12 +33,9 @@
     .card__inner{
       max-width: 90%;
     }
-
-    .card__text{
-      font-size: 150%;
-      line-height: 1.5;
-    }
   }
+
+
 
   &--flex{
     @include functions.flex(space-between, flex-start, functions.dynamic-size(4));
@@ -46,6 +43,10 @@
     .card__small{
       width:60%;
       cursor: auto;
+    }
+    .card__text{
+      font-size: 150%;
+      line-height: 1.5;
     }
   }
 
