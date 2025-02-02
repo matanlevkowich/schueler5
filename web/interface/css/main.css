@@ -183,6 +183,7 @@ select {
 .footer__column .footer__title {
   margin-top: calc(var(--font-base) * 1.5);
   margin-bottom: calc(var(--font-base) * 0.25);
+  font-size: 140%;
 }
 .footer__column .footer__title:first-child {
   margin-top: 0;
