@@ -3,7 +3,7 @@
 		<div class="nav__back">{% include '_layout/logo' with { extraClass: 'logo--nav' } %}</div>
 	{% endif %}
 	<li class="nav__li {% if craft.app.request.segments|last == '' %} nav__li--active{% endif %}">
-		<a class="nav__a" href="/ueber">
+		<a class="nav__a" href="{{ siteUrl }}">
 			<span class="nav__span" data-hover="home">home</span>
 		</a>
 	</li>
