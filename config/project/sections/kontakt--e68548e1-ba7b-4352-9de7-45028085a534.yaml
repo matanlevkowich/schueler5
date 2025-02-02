@@ -2,7 +2,7 @@ defaultPlacement: end
 enableVersioning: true
 entryTypes:
   -
-    uid: b5f8fe2d-d017-4342-9388-c400e28155f1 # Rich Pages Rich Text
+    uid: d67e2bc7-d428-44fe-a92c-918dd1e30ca0 # Simple Pages
 handle: kontakt
 maxAuthors: 1
 name: Kontakt
