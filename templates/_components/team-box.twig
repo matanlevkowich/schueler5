@@ -12,7 +12,8 @@
         </div>
         <div class="card__image">
           {% set image = category.image.one %}
-          <img src="{{ image.getUrl }}"/>                  
+
+          <img src="{{ image.getUrl('teamCrop') }}"/>                  
         </div>
       </div>
    {% endfor %}
