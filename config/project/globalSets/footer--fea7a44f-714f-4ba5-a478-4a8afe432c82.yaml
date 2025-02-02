@@ -99,6 +99,22 @@ fieldLayouts:
             warning: null
             width: 100
           -
+            dateAdded: '2025-02-02T13:24:54+00:00'
+            elementCondition: null
+            fieldUid: d6b689f4-cfa4-407b-b9c1-6e6d1e5d1113 # Document
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: Vereinsstatut
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 1f2adad2-cfde-4688-ac4e-ff873773c5aa
+            userCondition: null
+            warning: null
+            width: 100
+          -
             dateAdded: '2025-01-24T17:18:35+00:00'
             elementCondition: null
             fieldUid: 8d8c1ad0-9b3c-44db-b579-7931d0c36040 # Simple Text

@@ -699,6 +699,18 @@ select {
   margin: 0;
   font-size: 90%;
 }
+.text__paragraph li {
+  display: block;
+  position: relative;
+}
+.text__paragraph li:before {
+  content: url(/assets/li-black.svg);
+  width: calc(var(--font-base) * 2);
+  height: auto;
+  display: inline-block;
+  position: absolute;
+  left: calc(var(--font-base) * -2.7);
+}
 
 .button {
   margin-left: calc(var(--font-base) * 4);

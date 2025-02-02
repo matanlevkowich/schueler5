@@ -50,6 +50,8 @@
 			{% for entry in entries %}
 				<a href="{{ entry.url }}">{{ entry.title }}</a>
 			{% endfor %}
+				{% set asset = footer.document.one() %}
+				<a href="{{ asset.url }}" target="_blank">Vereinsstatut</a>
 			<h3 class="footer__title">Web Design</h3>
 			<a href="https://lessmore.co/" target="_blank">lessmore creative studio</a>
 		</div>
