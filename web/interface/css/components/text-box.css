@@ -96,5 +96,48 @@
   position: absolute;
   left: calc(var(--font-base) * -2.7);
 }
+.text__paragraph a {
+  color: #E52623;
+  display: inline-block;
+  position: relative;
+  font-weight: 600;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  padding: 0 calc(var(--font-base) * 0.1);
+}
+.text__paragraph a:after, .text__paragraph a:before {
+  position: absolute;
+  height: 100%;
+  content: "";
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.text__paragraph a:after {
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  background: #fff;
+}
+.text__paragraph a:before {
+  background-image: url(/assets/li-red.svg);
+  width: calc(var(--font-base) * 1.5);
+  background-size: calc(var(--font-base) * 1.5) auto;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: inline-block;
+  z-index: -1;
+}
+.text__paragraph a:hover {
+  transform: translateX(calc(var(--font-base) * 1.8));
+}
+.text__paragraph a:hover:before {
+  transform: translateX(calc(var(--font-base) * -1.8));
+}
 
 /*# sourceMappingURL=text-box.css.map */
