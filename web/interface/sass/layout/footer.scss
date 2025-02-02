@@ -42,10 +42,19 @@
   }
   &__heading{
     font-size: 300%;
+    &--small{
+      font-size: 175%;
+      font-weight: variables.$semibold-font-weight;
+      margin-bottom: functions.dynamic-size(1);
+    }
   }
 
   &__logos{
     margin-top:functions.dynamic-size(2);
+    &--extra{
+      @include functions.flex(center, flex-top, functions.dynamic-size(6));
+      margin-top:functions.dynamic-size(6);
+    }
   }
   &__logo{
     height: functions.dynamic-size(4);

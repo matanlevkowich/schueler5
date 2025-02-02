@@ -1,4 +1,4 @@
-dateModified: 1738481013
+dateModified: 1738482305
 email:
   fromEmail: justobe@gmail.com
   fromName: schuelerinnenschule
@@ -26,6 +26,7 @@ meta:
     4fcec15c-7da4-465e-b7de-adb5f37e3e36: 'Social Links' # Social Links
     5cbc31b7-84cc-4880-9d91-a9e1943249ea: Links # Links
     6c9bd2a3-c3ea-45a5-8f1b-831d44c47b12: Spenden # Spenden
+    6f01d8ab-c9b6-4c17-a6d7-1fbe1e9a88ba: 'Additional Logos' # Additional Logos
     7b4a5764-db95-4e82-bb31-45dc9ddf2a1c: Images # Images
     07e010e8-068b-44d2-b9ef-3e723330ed8f: 'Link URL' # Link URL
     7f95c745-3cf9-4cb2-8d2e-4932a9f7971a: Subtitle # Subtitle
@@ -38,11 +39,13 @@ meta:
     81d5b426-e396-4d96-bdc3-c4b37c0ddfd7: Image # Image
     81e6deb1-17ac-4b0c-8279-eebeb19a15b8: SEO # SEO
     738ea168-d971-48b3-b9bb-590219be413f: Rich # Rich
+    844a2ebb-be85-49dc-8ccd-af1f89ec7348: Logos # Logos
     1422cb2b-bafc-4fee-a6c9-b202b6e80e50: Home # Home
     7500d289-f696-4a78-a669-4955fa9ae6bd: 'Rich Text' # Rich Text
     9735bb42-4ba5-49db-b437-e9b3d2c4a5ef: 'CTA Link' # CTA Link
     75601bb2-d27c-402e-b0b9-1dce3fa345ef: FAQs # FAQs
     309512d9-0a63-46ff-8108-677ee499ce7d: Logos # Logos
+    ac62ca71-10fd-409c-8e4e-8d37cd96b43b: Logo # Logo
     b04cfd72-7e84-4227-86ca-8f55f74a1a80: 'Text + Cover' # Text + Cover
     b5f8fe2d-d017-4342-9388-c400e28155f1: 'Rich Pages Rich Text' # Rich Pages Rich Text
     b10ffaeb-d278-48f2-b2bf-ece67169153e: Images # Images

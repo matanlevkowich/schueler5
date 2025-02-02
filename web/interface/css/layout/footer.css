@@ -40,8 +40,21 @@
 .footer__heading {
   font-size: 300%;
 }
+.footer__heading--small {
+  font-size: 175%;
+  font-weight: 600;
+  margin-bottom: calc(var(--font-base) * 1);
+}
 .footer__logos {
   margin-top: calc(var(--font-base) * 2);
+}
+.footer__logos--extra {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-top;
+  gap: calc(var(--font-base) * 6);
+  margin-top: calc(var(--font-base) * 6);
 }
 .footer__logo {
   height: calc(var(--font-base) * 4);

@@ -1,0 +1,25 @@
+columnSuffix: null
+handle: additionalLogos
+instructions: null
+name: 'Additional Logos'
+searchable: false
+settings:
+  createButtonLabel: null
+  defaultIndexViewMode: cards
+  entryTypes:
+    -
+      __assoc__:
+        -
+          - uid
+          - 844a2ebb-be85-49dc-8ccd-af1f89ec7348 # Logos
+  includeTableView: false
+  maxEntries: null
+  minEntries: null
+  pageSize: null
+  propagationKeyFormat: null
+  propagationMethod: all
+  showCardsInGrid: false
+  viewMode: blocks
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Matrix

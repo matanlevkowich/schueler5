@@ -5,6 +5,18 @@
 			{% set logos = footer.logos.all() %}
 			{% for image in logos %}<img class="footer__logo" src="{{ image.getUrl }}">{% endfor %}
 		</div>
+		<div class="footer__logos footer__logos--extra">
+			{% set blocks = footer.additionalLogos.all() %}
+			{% for block in blocks %}
+				<div class="footer__logobox">
+					<h3 class="footer__heading footer__heading--small">{{ block.title }}</h3>
+					<a href="{{ block.linkUrl }}" target="_blank">
+						{% set image = block.logo.one() %}
+						<img class="footer__logo" src="{{ image.getUrl }}">
+					</a>
+				</div>
+			{% endfor %}
+		</div>
 	</div>
 </div>
 <div class="footer__section footer__section--flex">

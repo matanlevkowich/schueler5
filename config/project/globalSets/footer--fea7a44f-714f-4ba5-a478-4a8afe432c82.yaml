@@ -5,6 +5,13 @@ fieldLayouts:
         elementCondition: null
         elements:
           -
+            dateAdded: '2025-02-02T07:42:54+00:00'
+            elementCondition: null
+            heading: 'Top Footer'
+            type: craft\fieldlayoutelements\Heading
+            uid: cc069131-401c-4acb-b4de-aa8fa2ed80b2
+            userCondition: null
+          -
             dateAdded: '2025-01-23T23:46:44+00:00'
             elementCondition: null
             fieldUid: e6904e0d-8cb4-4147-8916-63f37437a6ac # Section Title
@@ -36,6 +43,29 @@ fieldLayouts:
             userCondition: null
             warning: null
             width: 100
+          -
+            dateAdded: '2025-02-02T07:41:50+00:00'
+            elementCondition: null
+            fieldUid: 6f01d8ab-c9b6-4c17-a6d7-1fbe1e9a88ba # Additional Logos
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 9c99626c-6441-4f6c-b134-c95ec02f8a48
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-02-02T07:42:54+00:00'
+            elementCondition: null
+            heading: 'Bottom Footer'
+            type: craft\fieldlayoutelements\Heading
+            uid: 476c8a99-f9cb-4be6-993a-3efcd2331dde
+            userCondition: null
           -
             dateAdded: '2025-01-24T17:14:02+00:00'
             elementCondition: null
