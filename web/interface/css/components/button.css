@@ -12,12 +12,56 @@
   background: #E52623;
   border-color: #E52623;
 }
+.button--red .button__go .close__shape {
+  fill: #fff;
+}
 .button__box {
   display: inline-block;
   border: calc(var(--font-base) * 0.4) solid;
   letter-spacing: calc(var(--font-base) * 0.2);
   padding: calc(var(--font-base) * 1) calc(var(--font-base) * 2);
+  position: relative;
+  overflow: hidden;
 }
+.button__box:hover .button__go {
+  left: 0;
+}
+.button__box:hover .button__text {
+  left: 150%;
+}
+.button__go {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: -100%;
+  z-index: 1;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 0;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.button__go .close {
+  transform: rotate(-90deg);
+  width: calc(var(--font-base) * 2);
+}
+.button__text {
+  display: inline-block;
+  position: relative;
+  left: 0;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
 @media (min-width: 769px) and (max-width: 992px) {
   .button__box {
     padding: calc(var(--font-base) * 0.75) calc(var(--font-base) * 1.5);
