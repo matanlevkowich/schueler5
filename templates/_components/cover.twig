@@ -4,7 +4,11 @@
         {% set images = block.images.all() %}            
         <div class="cover__background">
             {% for image in images %}
-                <div class="cover__fade {% if loop.first %}cover__fade--active{% endif %}" style="background-image: url('{{ image.getUrl }}'); background-position-y:{{ image.backgroundPositionY}}%;"></div>
+                {% if image.focalPoint %}
+                    {% set focalX = image.focalPoint.x * 100 %}
+                    {% set focalY = image.focalPoint.y * 100 %}
+                {% endif %}
+                <div class="cover__fade {% if loop.first %}cover__fade--active{% endif %}" style="background-image: url('{{ image.getUrl }}'); background-position: {{ focalX }}% {{ focalY }}%;"></div>
             {% endfor %}
         </div>
         <div class="cover__gradiant"></div>

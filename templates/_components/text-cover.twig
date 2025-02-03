@@ -1,8 +1,12 @@
 {% set blocks = entry.textCover.all() %}
 {% for block in blocks %}
     <div class="text text--cover {{ extraClass ?? '' }}">
-        {% set cover = block.image.one() %}            
-        <div class="text__cover" style="background-image: url('{{ cover.getUrl }}'); background-position-y:{{ cover.backgroundPositionY}}%;"></div>
+        {% set cover = block.image.one() %}
+        {% if cover.focalPoint %}
+            {% set focalX = cover.focalPoint.x * 100 %}
+            {% set focalY = cover.focalPoint.y * 100 %}
+        {% endif %}            
+        <div class="text__cover" style="background-image: url('{{ cover.getUrl }}'); background-position: {{ focalX }}% {{ focalY }}%;"></div>
         <div class="text__gradiant"></div>
         <div class="text__outer">
             <div class="text__inner">
