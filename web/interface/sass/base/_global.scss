@@ -8,13 +8,13 @@
 
 @media (min-width: variables.$big-tablet-start) and (max-width: variables.$big-tablet-end) {
   :root {
-    --font-base: 14px; // Fixed base for tablets and phones
+    --font-base: 12px; // Fixed base for tablets and phones
   }
 }
 
 @media (min-width: variables.$tablet-start) and (max-width: variables.$tablet-end) {
     :root {
-    --font-base: 12px; // Fixed base for tablets and phones
+    --font-base: 11px; // Fixed base for tablets and phones
   }
 }
 

@@ -80,5 +80,12 @@
 }
 
 @media (min-width: variables.$big-tablet-start) and (max-width: variables.$big-tablet-end) {
-
+  .header{
+    top:functions.dynamic-size(1);
+    left: functions.dynamic-size(1);  
+    &__nav{
+      right:functions.dynamic-size(2);
+      top: functions.dynamic-size(2.5);
+    }
+  }
 }

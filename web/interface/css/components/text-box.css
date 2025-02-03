@@ -140,4 +140,24 @@
   transform: translateX(calc(var(--font-base) * -1.8));
 }
 
+@media (min-width: 769px) and (max-width: 992px) {
+  .text {
+    padding: calc(var(--font-base) * 2);
+    font-size: 175%;
+  }
+  .text--cover {
+    margin: calc(var(--font-base) * 2);
+  }
+  .text--small .text__paragraph {
+    margin: calc(var(--font-base) * 3) calc(var(--font-base) * 4) 0;
+  }
+  .text__paragraph {
+    margin-top: 0;
+    margin-left: calc(var(--font-base) * 8);
+  }
+  .text__paragraph--full {
+    margin: 0;
+  }
+}
+
 /*# sourceMappingURL=text-box.css.map */

@@ -156,6 +156,24 @@
 
 @media (min-width: variables.$big-tablet-start) and (max-width: variables.$big-tablet-end) {
   .text{
-    
-   }
+    padding:functions.dynamic-size(2);
+    font-size: 175%;  
+    &--cover{
+      margin:functions.dynamic-size(2);
+    }
+
+    &--small{
+      .text__paragraph{
+        margin:functions.dynamic-size(3) functions.dynamic-size(4) 0;
+      }
+    }
+
+    &__paragraph{
+      margin-top:0;
+      margin-left:functions.dynamic-size(8);
+      &--full{
+          margin: 0;
+        }
+    }
+  }
 }

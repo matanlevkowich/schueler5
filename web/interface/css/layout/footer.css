@@ -66,4 +66,13 @@
   width: 100%;
 }
 
+@media (min-width: 769px) and (max-width: 992px) {
+  .footer {
+    padding: calc(var(--font-base) * 2);
+  }
+  .footer__box--flex {
+    gap: calc(var(--font-base) * 4);
+  }
+}
+
 /*# sourceMappingURL=footer.css.map */

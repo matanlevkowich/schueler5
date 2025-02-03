@@ -76,4 +76,15 @@
   color: #E52623;
 }
 
+@media (min-width: 769px) and (max-width: 992px) {
+  .header {
+    top: calc(var(--font-base) * 1);
+    left: calc(var(--font-base) * 1);
+  }
+  .header__nav {
+    right: calc(var(--font-base) * 2);
+    top: calc(var(--font-base) * 2.5);
+  }
+}
+
 /*# sourceMappingURL=header.css.map */

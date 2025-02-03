@@ -107,6 +107,22 @@
 }
 
 @media (min-width: variables.$big-tablet-start) and (max-width: variables.$big-tablet-end) {
+  
+  .nav{
+    &--header{
+      font-size: 150%;
+      gap:functions.dynamic-size(3)
+    }   
+  }
 
+  @media (orientation: portrait) {
+    .nav{
+      &--header{
+        flex-direction: column;
+        gap:functions.dynamic-size(6);
+        font-size: 175%;
+      }
+    }
+  }
 }
 

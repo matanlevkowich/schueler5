@@ -32,3 +32,11 @@
     }
   } 
 }
+
+@media (min-width: variables.$big-tablet-start) and (max-width: variables.$big-tablet-end) {
+  .logo{
+    &--nav{
+      width: 107vw;
+    }
+  }
+}

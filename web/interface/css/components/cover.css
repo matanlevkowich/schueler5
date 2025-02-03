@@ -47,23 +47,22 @@
 }
 
 @media (min-width: 769px) and (max-width: 992px) {
-  .cover {
-    margin: 0 calc(var(--font-base) * 1.5);
-    min-height: 50vw;
+  .cover__text {
+    padding: calc(var(--font-base) * 4) calc(var(--font-base) * 4) calc(var(--font-base) * 8);
   }
-  .cover--flex {
-    margin: calc(var(--font-base) * 1.5);
-    padding: calc(var(--font-base) * 2.5) calc(var(--font-base) * 1.5);
+  .cover__title {
+    font-size: 265%;
   }
-  .cover--flex svg.icon {
-    width: calc(var(--font-base) * 3);
+  .cover__subtitle {
+    margin-right: 15%;
+  }
+}
+@media (min-width: 769px) and (max-width: 992px) and (orientation: portrait) {
+  .cover__background, .cover__gradiant {
+    min-height: 75vw;
   }
   .cover__text {
-    padding: 0 calc(var(--font-base) * 1.5);
-  }
-  .cover__quote {
-    font-size: 5vw;
-    top: calc(var(--font-base) * 2);
+    padding-bottom: calc(var(--font-base) * 4);
   }
 }
 

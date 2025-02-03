@@ -110,4 +110,23 @@
   background: #fff;
 }
 
+@media (min-width: 769px) and (max-width: 992px) {
+  .card {
+    margin: 0 calc(var(--font-base) * 2);
+  }
+  .card--flex .card__image,
+  .card--flex .card__small {
+    width: 50%;
+  }
+  .card--flex .card__inner {
+    max-width: 100%;
+  }
+  .card--min .card__title {
+    font-size: 275%;
+  }
+  .card__title {
+    font-size: 425%;
+  }
+}
+
 /*# sourceMappingURL=card.css.map */

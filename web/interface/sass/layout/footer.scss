@@ -66,3 +66,14 @@
     width:100%
   }
 }
+
+@media (min-width: variables.$big-tablet-start) and (max-width: variables.$big-tablet-end) {
+  .footer{
+    padding:functions.dynamic-size(2);
+    &__box{
+      &--flex{
+        gap:functions.dynamic-size(4);
+      }
+    }
+  }
+}

@@ -126,5 +126,25 @@
 
 
 @media (min-width: variables.$big-tablet-start) and (max-width: variables.$big-tablet-end) {
-  
+  .card{
+    margin:0 functions.dynamic-size(2);
+    &--flex{
+      .card__image,
+      .card__small{
+        width:50%
+      }
+      .card__inner{
+        max-width: 100%;
+      }
+    }
+
+    &--min{
+      .card__title{
+        font-size: 275%;
+      }
+    }
+    &__title{
+      font-size: 425%;
+    }
+  } 
 }

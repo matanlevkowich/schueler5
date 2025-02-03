@@ -60,26 +60,28 @@
 }
 
 @media (min-width: variables.$big-tablet-start) and (max-width: variables.$big-tablet-end) {
-    .cover{
-    margin:0 functions.dynamic-size(1.5);
-    min-height: 50vw;
-    
-    &--flex{
-      margin: functions.dynamic-size(1.5);
-      padding: functions.dynamic-size(2.5) functions.dynamic-size(1.5);
-
-      svg.icon{
-        width: functions.dynamic-size(3);
-      }
-    }
-
+  .cover{
     &__text{
-      padding:0 functions.dynamic-size(1.5);
+      padding:functions.dynamic-size(4) functions.dynamic-size(4) functions.dynamic-size(8);
     }
 
-    &__quote{
-      font-size: 5vw;
-      top: functions.dynamic-size(2);
+    &__title{
+      font-size: 265%;
+    }
+    &__subtitle{
+      margin-right: 15%;
+    }
+  }
+
+  @media (orientation: portrait) {
+    .cover{
+      &__background,
+      &__gradiant{
+        min-height: 75vw;
+      }
+      &__text{
+        padding-bottom: functions.dynamic-size(4);
+      }
     }
   }
 }
