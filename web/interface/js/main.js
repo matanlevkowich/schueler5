@@ -1,4 +1,3 @@
-document.documentElement.classList.remove("no-js");
 window.addEventListener("load", function () {
     document.body.style.opacity = "1";
 });
