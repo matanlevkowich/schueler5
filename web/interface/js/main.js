@@ -1,3 +1,8 @@
+document.documentElement.classList.remove("no-js");
+window.addEventListener("load", function () {
+    document.body.style.opacity = "1";
+});
+
 document.addEventListener("DOMContentLoaded", () => {
   const divs = document.querySelectorAll(".cover__fade");
   let currentIndex = 0;

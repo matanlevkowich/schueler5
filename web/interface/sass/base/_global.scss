@@ -71,13 +71,25 @@ html {
   scroll-behavior: smooth;
 }
 
+.no-js {
+  body{
+    opacity: 1;
+    transition: none;
+  }  
+}
+
+
 body{
   font-family: variables.$base-font; 
   font-size: functions.dynamic-size(1); 
   font-weight: variables.$light-font-weight;
   color: variables.$black;
   line-height: 1.8;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
 }
+
+
 
 // Make images easier to work with
 img,

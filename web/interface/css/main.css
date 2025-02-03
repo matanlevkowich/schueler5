@@ -59,12 +59,19 @@ html {
   scroll-behavior: smooth;
 }
 
+.no-js body {
+  opacity: 1;
+  transition: none;
+}
+
 body {
   font-family: "IBM Plex Sans", serif;
   font-size: calc(var(--font-base) * 1);
   font-weight: 200;
   color: #000;
   line-height: 1.8;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
 }
 
 img,
