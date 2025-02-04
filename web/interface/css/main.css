@@ -609,6 +609,7 @@ select {
   }
   .card--flex .card__text {
     margin-bottom: calc(var(--font-base) * 1);
+    font-size: 160%;
   }
   .card__text ul {
     padding-left: calc(var(--font-base) * 2.5);
