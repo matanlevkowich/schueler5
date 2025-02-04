@@ -67,13 +67,33 @@
   }
 }
 
-@media (min-width: variables.$big-tablet-start) and (max-width: variables.$big-tablet-end) {
+@media (max-width: variables.$big-tablet-end) {
   .footer{
     padding:functions.dynamic-size(2);
     &__box{
       &--flex{
         gap:functions.dynamic-size(4);
       }
+    }
+  }
+}
+
+@media (max-width: variables.$phone) {
+  .footer{
+    &__section{
+      &--flex{
+        font-size: 115%;    
+      }
+    }
+    
+    &__box{
+      &--flex{
+        width: 100%;
+      }
+    }
+
+    &__logo{
+      margin-bottom: functions.dynamic-size(1);
     }
   }
 }

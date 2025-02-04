@@ -125,7 +125,7 @@
 }
 
 
-@media (min-width: variables.$big-tablet-start) and (max-width: variables.$big-tablet-end) {
+@media (max-width: variables.$big-tablet-end) {
   .card{
     margin:0 functions.dynamic-size(2);
     &--flex{
@@ -147,4 +147,29 @@
       font-size: 425%;
     }
   } 
+}
+
+@media (max-width: variables.$phone) {
+  .card{
+    &--flex{
+      margin-bottom: functions.dynamic-size(6);
+      flex-direction: column-reverse;
+      &:last-child{
+        margin-bottom: 0;
+      }
+      .card__small,
+      .card__image{
+        width:100%;
+        margin:0;
+      }
+      .card__text{
+        margin-bottom: functions.dynamic-size(1);
+      }
+    }
+    &__text{
+      ul{
+        padding-left: functions.dynamic-size(2.5);
+      }
+    }
+  }
 }

@@ -49,6 +49,8 @@
 
   &__title{
     font-size: 300%;
+    line-height: 1.2;
+    margin-bottom: functions.dynamic-size(1.5);
   }
 
   &__subtitle{
@@ -59,7 +61,7 @@
   }
 }
 
-@media (min-width: variables.$big-tablet-start) and (max-width: variables.$big-tablet-end) {
+@media (max-width: variables.$big-tablet-end) {
   .cover{
     &__text{
       padding:functions.dynamic-size(4) functions.dynamic-size(4) functions.dynamic-size(8);
@@ -84,4 +86,18 @@
       }
     }
   }
+}
+
+@media (max-width: variables.$phone) {
+  @media (orientation: portrait) {
+    .cover{
+      &__background,
+      &__gradiant{
+        min-height: 90vh;
+      }
+      &__subtitle{
+        margin-right: 0;
+      }
+    }   
+  }  
 }

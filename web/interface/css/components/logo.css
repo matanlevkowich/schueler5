@@ -22,7 +22,7 @@
   fill: #ee3733;
 }
 
-@media (min-width: 769px) and (max-width: 992px) {
+@media (max-width: 992px) {
   .logo--nav {
     width: 107vw;
   }

@@ -110,7 +110,7 @@
   background: #fff;
 }
 
-@media (min-width: 769px) and (max-width: 992px) {
+@media (max-width: 992px) {
   .card {
     margin: 0 calc(var(--font-base) * 2);
   }
@@ -126,6 +126,26 @@
   }
   .card__title {
     font-size: 425%;
+  }
+}
+@media (max-width: 576px) {
+  .card--flex {
+    margin-bottom: calc(var(--font-base) * 6);
+    flex-direction: column-reverse;
+  }
+  .card--flex:last-child {
+    margin-bottom: 0;
+  }
+  .card--flex .card__small,
+  .card--flex .card__image {
+    width: 100%;
+    margin: 0;
+  }
+  .card--flex .card__text {
+    margin-bottom: calc(var(--font-base) * 1);
+  }
+  .card__text ul {
+    padding-left: calc(var(--font-base) * 2.5);
   }
 }
 

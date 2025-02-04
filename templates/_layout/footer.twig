@@ -32,13 +32,6 @@
 		</div>
 
 		<div class="footer__column">
-			<h3 class="footer__title">Adresse</h3>
-			{{ footer.simpleText }}
-			<h3 class="footer__title">Kontakt</h3>
-			{{ footer.simpleText2 }}
-		</div>
-
-		<div class="footer__column">
 			<h3 class="footer__title">Follow</h3>
 			{% set links = footer.socialLinks.all() %}
 			{% for block in links %}
@@ -49,12 +42,19 @@
 			{% for entry in entries %}
 				<a href="{{ entry.url }}">{{ entry.title }}</a>
 			{% endfor %}
-				{% set asset = footer.document.one() %}
-				<a href="{{ asset.url }}" target="_blank">Vereinsstatut</a>
+			{% set asset = footer.document.one() %}
+			<a href="{{ asset.url }}" target="_blank">Vereinsstatut</a>
+		</div>
+
+		<div class="footer__column">
+			<h3 class="footer__title">Adresse</h3>
+			{{ footer.simpleText }}
+			<h3 class="footer__title">Kontakt</h3>
+			{{ footer.simpleText2 }}
 			<h3 class="footer__title">Web Design</h3>
 			<a href="https://lessmore.co/" target="_blank">lessmore creative studio</a>
 		</div>
 	</div>
 
-	<div class="footer__copyrights">© {{ now|date('Y') }} All rights reserver. Schüler*innenschule.</div>
+	<div class="footer__copyrights">© {{ now|date('Y') }} All rights reserved. Schüler*innenschule.</div>
 </div>

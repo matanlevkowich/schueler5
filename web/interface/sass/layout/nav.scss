@@ -106,7 +106,7 @@
   }
 }
 
-@media (min-width: variables.$big-tablet-start) and (max-width: variables.$big-tablet-end) {
+@media (max-width: variables.$big-tablet-end) {
   
   .nav{
     &--header{

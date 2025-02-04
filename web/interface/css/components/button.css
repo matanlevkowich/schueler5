@@ -62,7 +62,7 @@
   transition: all 0.3s ease-in-out;
 }
 
-@media (min-width: 769px) and (max-width: 992px) {
+@media (max-width: 992px) {
   .button__box {
     padding: calc(var(--font-base) * 0.75) calc(var(--font-base) * 1.5);
   }

@@ -43,7 +43,7 @@
 }
 
 
-@media (min-width: variables.$big-tablet-start) and (max-width: variables.$big-tablet-end) {
+@media (max-width: variables.$big-tablet-end) {
   .thumbs{
     margin-top:functions.dynamic-size(3);
     gap:functions.dynamic-size(2);

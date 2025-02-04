@@ -79,7 +79,7 @@
   }
 }
 
-@media (min-width: variables.$big-tablet-start) and (max-width: variables.$big-tablet-end) {
+@media (max-width: variables.$big-tablet-end) {
   .header{
     top:functions.dynamic-size(1);
     left: functions.dynamic-size(1);  
@@ -89,3 +89,4 @@
     }
   }
 }
+

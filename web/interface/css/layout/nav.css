@@ -120,13 +120,13 @@
   display: block;
 }
 
-@media (min-width: 769px) and (max-width: 992px) {
+@media (max-width: 992px) {
   .nav--header {
     font-size: 150%;
     gap: calc(var(--font-base) * 3);
   }
 }
-@media (min-width: 769px) and (max-width: 992px) and (orientation: portrait) {
+@media (max-width: 992px) and (orientation: portrait) {
   .nav--header {
     flex-direction: column;
     gap: calc(var(--font-base) * 6);
