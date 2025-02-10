@@ -22,22 +22,27 @@ document.addEventListener("DOMContentLoaded", () => {
   setInterval(fadeNext, 4000); // Adjust duration as needed
 });
 
+// Mobile Menu
+
 let visible = true;
 
 function button() {
     const headButton = document.querySelector('.header__nav');
     const nav = document.querySelector('.nav');
     const logo = document.querySelector('.logo');
+    const body = document.body;
 
     if (visible) {
         headButton.classList.add('header__nav--active');
         nav.classList.add('nav--active');
         logo.classList.add('logo--white');
+        body.classList.add('no-scroll'); 
         visible = false;
     } else {
         headButton.classList.remove('header__nav--active');
         nav.classList.remove('nav--active');
         logo.classList.remove('logo--white');
+        body.classList.remove('no-scroll'); 
         visible = true;
     }
 }

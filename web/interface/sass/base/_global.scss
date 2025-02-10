@@ -89,6 +89,13 @@ body{
   transition: opacity 1s ease-in-out;
 }
 
+body.no-scroll {
+  overflow: hidden;
+  height: 100vh;
+  touch-action: none; /* Prevents touch scrolling on mobile */
+}
+
+
 
 
 // Make images easier to work with
