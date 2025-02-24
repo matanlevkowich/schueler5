@@ -1,0 +1,28 @@
+defaultPlacement: end
+enableVersioning: true
+entryTypes:
+  -
+    uid: d67e2bc7-d428-44fe-a92c-918dd1e30ca0 # Simple Pages
+handle: extraPages
+maxAuthors: 1
+name: 'Extra Pages'
+previewTargets:
+  -
+    __assoc__:
+      -
+        - label
+        - 'Primary entry page'
+      -
+        - urlFormat
+        - '{url}'
+      -
+        - refresh
+        - '1'
+propagationMethod: all
+siteSettings:
+  72dce0d4-0301-4f00-b080-ba91db7eff2b: # Schuelerinnenschule
+    enabledByDefault: true
+    hasUrls: true
+    template: extra-pages.twig
+    uriFormat: '{slug}'
+type: channel
