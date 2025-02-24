@@ -8,7 +8,9 @@
   font-weight:variables.$semibold-font-weight;
   font-size: 80%;
   text-transform: uppercase;
-
+  &--center{
+    text-align: center;
+  }
   &--red{
     margin-bottom: functions.dynamic-size(2);
     .button__box{

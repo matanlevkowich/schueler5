@@ -4,6 +4,9 @@
   font-size: 80%;
   text-transform: uppercase;
 }
+.button--center {
+  text-align: center;
+}
 .button--red {
   margin-bottom: calc(var(--font-base) * 2);
 }
