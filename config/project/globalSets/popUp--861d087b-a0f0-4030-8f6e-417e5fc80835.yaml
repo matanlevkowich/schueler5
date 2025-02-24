@@ -11,7 +11,7 @@ fieldLayouts:
             handle: null
             includeInCards: false
             instructions: null
-            label: null
+            label: Title
             providesThumbs: false
             required: false
             tip: null
@@ -27,7 +27,7 @@ fieldLayouts:
             handle: null
             includeInCards: false
             instructions: null
-            label: null
+            label: Text
             providesThumbs: false
             required: false
             tip: null
@@ -43,7 +43,7 @@ fieldLayouts:
             handle: null
             includeInCards: false
             instructions: null
-            label: null
+            label: Button
             providesThumbs: false
             required: false
             tip: null
@@ -58,7 +58,7 @@ fieldLayouts:
             fieldUid: f7c2efc1-1451-4840-8077-2afbf03f6e0e # Final Date
             handle: null
             includeInCards: false
-            instructions: null
+            instructions: 'When is the last date you want the pop up to appear?'
             label: null
             providesThumbs: false
             required: false
