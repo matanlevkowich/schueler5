@@ -2,6 +2,7 @@
   "minimum-stability": "dev",
   "prefer-stable": true,
   "require": {
+    "cooltronicpl/craft-files-autoversioning": "^2.2.0",
     "craftcms/ckeditor": "^4.4",
     "craftcms/cms": "^5.0.0",
     "doublesecretagency/craft-siteswitcher": "^3.0",

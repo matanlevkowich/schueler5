@@ -1,4 +1,4 @@
-dateModified: 1740401299
+dateModified: 1740401941
 email:
   fromEmail: justobe@gmail.com
   fromName: schuelerinnenschule
@@ -85,6 +85,10 @@ plugins:
     edition: standard
     enabled: true
     schemaVersion: 3.0.0.0
+  craft3-files-autoversioning:
+    edition: standard
+    enabled: true
+    schemaVersion: 2.0.0
   oembed:
     edition: standard
     enabled: true

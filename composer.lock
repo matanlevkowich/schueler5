@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "84629cf146f269b9488aa2aae8e52ab9",
+    "content-hash": "a6eb4d1fe7c794b01c45453e1f6fbc21",
     "packages": [
         {
             "name": "bacon/bacon-qr-code",
@@ -404,6 +404,68 @@
                 }
             ],
             "time": "2024-09-19T14:15:21+00:00"
+        },
+        {
+            "name": "cooltronicpl/craft-files-autoversioning",
+            "version": "2.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/cooltronicpl/craft-files-autoversioning.git",
+                "reference": "3252958a3d17d7b6d5daa667d417349f36108b7f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/cooltronicpl/craft-files-autoversioning/zipball/3252958a3d17d7b6d5daa667d417349f36108b7f",
+                "reference": "3252958a3d17d7b6d5daa667d417349f36108b7f",
+                "shasum": ""
+            },
+            "require": {
+                "craftcms/cms": "^5.0.0.alpha|^4.0.0"
+            },
+            "type": "craft-plugin",
+            "extra": {
+                "name": "Static Files Autoversioning",
+                "class": "cooltronicpl\\autoversioning\\Autoversioning",
+                "handle": "craft3-files-autoversioning",
+                "description": "Twig extension which enable to automatically version your static files.",
+                "hasCpSection": false,
+                "hasCpSettings": false
+            },
+            "autoload": {
+                "psr-4": {
+                    "cooltronicpl\\autoversioning\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-3.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "CoolTRONIC.pl sp. z o.o. (LLC)",
+                    "homepage": "https://cooltronic.pl",
+                    "role": "Maintainer"
+                },
+                {
+                    "name": "Paweł Potacki",
+                    "homepage": "https://potacki.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "A simple yet powerful Twig extension for CraftCMS. It assists in cache-busting your assets, ensuring that users always receive the latest versions of your files.",
+            "keywords": [
+                "cache-busting-and-versioning-for-craft-cms",
+                "craft-cms-cache-busting-plugin",
+                "craft-cms-static-asset-optimization",
+                "static-files-autoversioning",
+                "twig-extension-for-asset-versioning"
+            ],
+            "support": {
+                "docs": "https://github.com/cooltronicpl/craft-files-autoversioning/blob/master/README.md",
+                "issues": "https://github.com/cooltronicpl/craft-files-autoversioning/issues",
+                "source": "https://github.com/cooltronicpl/craft-files-autoversioning"
+            },
+            "time": "2023-12-28T09:40:57+00:00"
         },
         {
             "name": "craftcms/ckeditor",
