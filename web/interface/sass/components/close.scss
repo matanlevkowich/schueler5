@@ -4,31 +4,14 @@
 // close //
 
 .close {
-  position: relative;
-  z-index: -1;
-  width: functions.dynamic-size(4);
-  height: functions.dynamic-size(4);
+  position: absolute;
+  right: functions.dynamic-size(1.5);
+  top: functions.dynamic-size(1.5);
+  width: functions.dynamic-size(2);
+  height: functions.dynamic-size(2);
   @include functions.transition(.3s);
-}
-
-.card__small--active{
-  .close{
+  cursor: pointer;
+  &:hover{
     transform: rotate(180deg);
-  }
-}
-
-.card{
-  &:nth-child(even){
-    .close{
-      &__shape{
-        fill: variables.$red;
-      }
-    }
-  }
-  &--min{
-    .close{
-      width: functions.dynamic-size(3);
-      height: functions.dynamic-size(3);  
-    }
   }
 }

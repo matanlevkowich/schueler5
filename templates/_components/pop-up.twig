@@ -1,0 +1,12 @@
+<div class="pop">
+    <div class="pop__background"></div>
+    <div class="pop__content">
+        {% include '_components/close' %}
+        <h1 class="pop__title">{{ popUp.sectionTitle }}</h1>
+        <div class="pop__text">{{ popUp.simpleText }}</div>
+        {% set button = popUp.ctaLink ?? null %}
+        {% if button %}
+            {% include '_components/button' with { link:popUp.ctaLink , buttonClass:'button--red button--margin button--pop'} %}
+        {% endif %}
+    </div>
+</div>

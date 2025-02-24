@@ -1,4 +1,4 @@
-dateModified: 1738571323
+dateModified: 1740397775
 email:
   fromEmail: justobe@gmail.com
   fromName: schuelerinnenschule
@@ -48,6 +48,7 @@ meta:
     81e6deb1-17ac-4b0c-8279-eebeb19a15b8: SEO # SEO
     738ea168-d971-48b3-b9bb-590219be413f: Rich # Rich
     844a2ebb-be85-49dc-8ccd-af1f89ec7348: Logos # Logos
+    861d087b-a0f0-4030-8f6e-417e5fc80835: 'Pop UP' # Pop UP
     1422cb2b-bafc-4fee-a6c9-b202b6e80e50: Home # Home
     7500d289-f696-4a78-a669-4955fa9ae6bd: 'Rich Text' # Rich Text
     9735bb42-4ba5-49db-b437-e9b3d2c4a5ef: 'CTA Link' # CTA Link
@@ -62,6 +63,7 @@ meta:
     b91bb8ee-398d-410d-b714-fe5eaaeb99ec: 'Text Box' # Text Box
     b410f151-e747-495c-b7b1-555930550859: Über # Über
     bbeea582-1255-4d7d-852f-a4b991b3f193: Team # Team
+    c060b7a3-8dd5-442b-afa8-87af0f162b77: Cookies # Cookies
     c2dfbc55-82e4-4796-8774-0cb0d892d8fd: 'Text Box' # Text Box
     c11cf2de-0065-4012-98ac-9f381e01b02c: 'Background Position Y' # Background Position Y
     c694059e-17e0-46c2-a35a-4dd7b5f44117: Über # Über
@@ -74,6 +76,7 @@ meta:
     e4ca347d-de44-444b-be52-ceb80c45bb49: schuelerinnenschule # schuelerinnenschule
     e6904e0d-8cb4-4147-8916-63f37437a6ac: 'Section Title' # Section Title
     e68548e1-ba7b-4352-9de7-45028085a534: Kontakt # Kontakt
+    f7c2efc1-1451-4840-8077-2afbf03f6e0e: 'Final Date' # Final Date
     f8093026-1d28-4701-b3e4-fbc82300742f: Logos # Logos
     fea7a44f-714f-4ba5-a478-4a8afe432c82: Footer # Footer
 plugins:

@@ -4,9 +4,11 @@ instructions: null
 name: 'CTA Link'
 searchable: false
 settings:
+  advancedFields:
+    - target
+  fullGraphqlData: false
   maxLength: 255
   showLabelField: true
-  showTargetField: true
   typeSettings:
     __assoc__:
       -
@@ -29,6 +31,7 @@ settings:
   types:
     - entry
     - url
+    - email
 translationKeyFormat: null
 translationMethod: none
 type: craft\fields\Link

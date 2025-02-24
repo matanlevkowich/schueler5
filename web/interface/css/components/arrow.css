@@ -1,0 +1,25 @@
+.arrow {
+  position: relative;
+  z-index: -1;
+  width: calc(var(--font-base) * 4);
+  height: calc(var(--font-base) * 4);
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.card__small--active .arrow {
+  transform: rotate(180deg);
+}
+
+.card:nth-child(even) .arrow__shape {
+  fill: #E52623;
+}
+.card--min .arrow {
+  width: calc(var(--font-base) * 3);
+  height: calc(var(--font-base) * 3);
+}
+
+/*# sourceMappingURL=arrow.css.map */

@@ -1,0 +1,49 @@
+@use '../base/functions';
+@use '../base/variables';
+
+// pop up //
+
+.pop{
+  
+  position: fixed;
+  top:0; left:0; bottom:0; right: 0;
+  z-index: 999999;
+  @include functions.flex(center, center, 0);
+  @include functions.transition(.3s);
+  opacity: 0;
+  visibility: hidden;
+
+  &--show{
+    visibility: visible;
+    opacity: 1;
+  }
+
+  &__background{
+    position: absolute;
+    left: 0; top:0;
+    width: 100%;
+    height: 100%;
+    background: variables.$red;
+    opacity: .85;
+  }
+  &__content{
+    padding: functions.dynamic-size(4);
+    margin:functions.dynamic-size(4);
+    background: variables.$white;
+    font-size: 120%;
+    position: relative;
+    text-align: center;
+  }
+  &__title{
+    font-size: 350%;
+  }
+  &__text{
+    font-size: 150%;
+    margin-bottom: functions.dynamic-size(2);
+  }
+}
+
+
+@media (max-width: variables.$big-tablet-end) {
+  
+}

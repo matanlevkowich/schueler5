@@ -10,7 +10,7 @@
             <span class="card__number">{% if smallCardCounter <= 9%}0{% endif %}{{ smallCardCounter }}</span> 
             <h1 class="card__title">{{ category.sectionTitle | nl2br }}</h1>
           </div>
-          <div class="card__close">{% include '_components/close' %}</div>
+          <div class="card__close">{% include '_components/arrow' %}</div>
         </div>
 
         <div class="card__large" id="{{ category.id }}" data-id="{{ category.id }}">          

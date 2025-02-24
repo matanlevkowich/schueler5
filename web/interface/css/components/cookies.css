@@ -1,0 +1,40 @@
+.cook {
+  position: fixed;
+  padding: calc(var(--font-base) * 2);
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  visibility: hidden;
+  opacity: 0;
+  z-index: 9999;
+  background-color: #fff;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: calc(var(--font-base) * 1);
+  flex-wrap: nowrap;
+  border-top: calc(var(--font-base) * 1) solid #E52623;
+}
+.cook--show {
+  visibility: visible;
+  opacity: 1;
+}
+.cook__text a {
+  color: #000;
+  text-decoration: underline;
+}
+
+@media (max-width: 576px) {
+  .cook {
+    font-size: 140%;
+    flex-wrap: wrap;
+  }
+}
+
+/*# sourceMappingURL=cookies.css.map */

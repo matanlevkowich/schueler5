@@ -1,0 +1,50 @@
+.pop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 999999;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 0;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  opacity: 0;
+  visibility: hidden;
+}
+.pop--show {
+  visibility: visible;
+  opacity: 1;
+}
+.pop__background {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: #E52623;
+  opacity: 0.85;
+}
+.pop__content {
+  padding: calc(var(--font-base) * 4);
+  margin: calc(var(--font-base) * 4);
+  background: #fff;
+  font-size: 120%;
+  position: relative;
+  text-align: center;
+}
+.pop__title {
+  font-size: 350%;
+}
+.pop__text {
+  font-size: 150%;
+  margin-bottom: calc(var(--font-base) * 2);
+}
+
+/*# sourceMappingURL=pop.css.map */

@@ -17,13 +17,18 @@
       border-color: variables.$red;;
     }
     .button__go{
-      .close{
+      .arrow{
         &__shape{
           fill:variables.$white;
         }
       }
     }
   }
+
+  &--margin{
+    margin: 0;
+  }
+
   &__box{
     display: inline-block;
     border: functions.dynamic-size(.4) solid;
@@ -49,7 +54,7 @@
     z-index: 1;
     @include functions.flex(center, center, 0);
     @include functions.transition(.3s);
-    .close{
+    .arrow{
       transform:rotate(-90deg);
       width:functions.dynamic-size(2);
     }
@@ -69,6 +74,19 @@
   .button{
     &__box{
       padding:functions.dynamic-size(.75) functions.dynamic-size(1.5); 
+    }
+  }
+}
+
+@media (max-width: variables.$phone) {
+  .button{
+    &--cook{
+      width:100%;
+      font-size: 90%;
+      .button__box{
+        width: 100%;
+        text-align: center;
+      }
     }
   }
 }

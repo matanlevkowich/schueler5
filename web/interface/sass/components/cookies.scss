@@ -1,0 +1,39 @@
+@use '../base/variables';
+@use '../base/functions';
+
+// cookies //
+
+.cook {
+  position: fixed;
+  padding:functions.dynamic-size(2);
+  width:100%;
+  left:0;
+  bottom:0;
+  visibility: hidden;
+  opacity:0;
+  z-index: 9999;
+  background-color: variables.$white;
+  @include functions.transition(.3s);
+  @include functions.flex(space-between, center, functions.dynamic-size(1));
+  flex-wrap: nowrap;
+  border-top: functions.dynamic-size(1) solid variables.$red;
+  
+  &--show{
+    visibility: visible;
+    opacity: 1;
+  }
+
+  &__text{
+    a{
+      color:variables.$black;
+      text-decoration: underline;
+    }
+  }
+}
+
+@media (max-width: variables.$phone) {
+  .cook{
+    font-size: 140%;
+    flex-wrap: wrap;
+  }
+}

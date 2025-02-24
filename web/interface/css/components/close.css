@@ -1,25 +1,18 @@
 .close {
-  position: relative;
-  z-index: -1;
-  width: calc(var(--font-base) * 4);
-  height: calc(var(--font-base) * 4);
+  position: absolute;
+  right: calc(var(--font-base) * 1.5);
+  top: calc(var(--font-base) * 1.5);
+  width: calc(var(--font-base) * 2);
+  height: calc(var(--font-base) * 2);
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
   -ms-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
+  cursor: pointer;
 }
-
-.card__small--active .close {
+.close:hover {
   transform: rotate(180deg);
-}
-
-.card:nth-child(even) .close__shape {
-  fill: #E52623;
-}
-.card--min .close {
-  width: calc(var(--font-base) * 3);
-  height: calc(var(--font-base) * 3);
 }
 
 /*# sourceMappingURL=close.css.map */

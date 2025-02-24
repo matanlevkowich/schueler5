@@ -53,3 +53,82 @@ document.addEventListener('DOMContentLoaded', function () {
         button();
     });
 });
+
+// Pop Up
+
+function setupPopup(options) {
+  // Default settings
+  var settings = {
+    duration: 7, // Default cookie duration
+    delay: 3000, // Default delay before showing
+    containerSelector: "",
+    buttonSelectors: "",
+    cookieName: null // Required for cookie tracking
+  };
+
+  // Merge user options with defaults
+  if (typeof options === "object") {
+    for (var prop in options) {
+      if (options.hasOwnProperty(prop)) {
+        settings[prop] = options[prop];
+      }
+    }
+  }
+
+  var container = document.querySelector(settings.containerSelector);
+  
+  if (!container) return;
+
+  var buttons = container.querySelectorAll(settings.buttonSelectors);
+
+  // If cookie exists and is set to 0, do not show the popup
+  if (document.cookie.indexOf(settings.cookieName + "=0") !== -1) {
+    if (container.parentNode) {
+      container.parentNode.removeChild(container);
+    }
+    return; // Stop execution if the cookie prevents it from showing
+  }
+
+  // Show the element after the specified delay
+  setTimeout(function () {
+    container.classList.add(settings.containerSelector.replace(".", "") + "--show");
+  }, settings.delay);
+
+  // Set expiration date for the cookie
+  var d1 = new Date();
+  d1.setTime(d1.getTime() + settings.duration * 24 * 60 * 60 * 1000);
+  var expiredate = "expires=" + d1.toUTCString();
+
+  // Set the initial cookie to track its display
+  document.cookie = settings.cookieName + "=1;" + expiredate + ";path=/";
+
+  // Add event listeners to close buttons
+  buttons.forEach(function (button) {
+    button.addEventListener("click", function () {
+      if (container.parentNode) {
+        container.parentNode.removeChild(container);
+      }
+      // Set the cookie to prevent it from showing again
+      document.cookie = settings.cookieName + "=0;" + expiredate + ";path=/";
+    });
+  });
+}
+
+// Setup for Cookies (tracked via cookies)
+setupPopup({
+  containerSelector: ".cook",
+  buttonSelectors: ".button--cook",
+  cookieName: "acceptgrt",
+  delay: 2500,
+  duration: 1 
+});
+
+// Setup for Popup (tracked via cookies)
+setupPopup({
+  containerSelector: ".pop",
+  buttonSelectors: ".button--pop, .close",
+  cookieName: "popupClosed",
+  delay: 4000,
+  duration: 1 
+});
+

@@ -27,12 +27,13 @@
         <footer class="footer">
             {% include "_layout/footer" %}
         </footer> 
-        {#<div class="consent">
-            <div class="grt-cookie">
-                <div class="grt-cookies-msg">{{ cookies.text }}</div>
-                <span class="grt-cookie-button">{{ cookies.button }}</span>
-            </div>
-        </div>#}
+        
+        {% set popUpDate = popUp.finalDate ?? null %}
+        {% if popUpDate and popUpDate > now %}
+            {% include '_components/pop-up' %}
+        {% endif %}
+    
+        {% include '_components/cookies' %}
     </body>
     {% do craft.app.view.registerJsFile('@web/interface/js/main.js?v=1.2') %}
 </html>
