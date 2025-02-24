@@ -1,7 +1,4 @@
 .close {
-  position: absolute;
-  right: calc(var(--font-base) * 1.5);
-  top: calc(var(--font-base) * 1.5);
   width: calc(var(--font-base) * 2);
   height: calc(var(--font-base) * 2);
   -webkit-transition: all 0.3s ease-in-out;
@@ -13,6 +10,9 @@
 }
 .close:hover {
   transform: rotate(180deg);
+}
+.close__shape {
+  fill: #fff;
 }
 
 /*# sourceMappingURL=close.css.map */

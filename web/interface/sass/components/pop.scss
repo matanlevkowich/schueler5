@@ -32,9 +32,20 @@
     background: variables.$white;
     font-size: 120%;
     position: relative;
+    text-align: center;
   }
+
+  &__close{
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: functions.dynamic-size(1);
+    background:variables.$red;
+    line-height: 1;
+  }
+
   &__title{
-    font-size: 350%;
+    font-size: 400%;
   }
   &__text{
     font-size: 150%;

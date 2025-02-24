@@ -4,14 +4,17 @@
 // close //
 
 .close {
-  position: absolute;
-  right: functions.dynamic-size(1.5);
-  top: functions.dynamic-size(1.5);
+  //position: absolute;
+  //right: functions.dynamic-size(1.5);
+  //top: functions.dynamic-size(1.5);
   width: functions.dynamic-size(2);
   height: functions.dynamic-size(2);
   @include functions.transition(.3s);
   cursor: pointer;
   &:hover{
     transform: rotate(180deg);
+  }
+  &__shape{
+    fill:variables.$white;
   }
 }

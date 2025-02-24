@@ -19,7 +19,7 @@
   align-items: center;
   gap: calc(var(--font-base) * 1);
   flex-wrap: nowrap;
-  border-top: calc(var(--font-base) * 1) solid #E52623;
+  border-top: calc(var(--font-base) * 1) solid #000;
 }
 .cook--show {
   visibility: visible;

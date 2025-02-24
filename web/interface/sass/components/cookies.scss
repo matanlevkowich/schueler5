@@ -16,7 +16,7 @@
   @include functions.transition(.3s);
   @include functions.flex(space-between, center, functions.dynamic-size(1));
   flex-wrap: nowrap;
-  border-top: functions.dynamic-size(1) solid variables.$red;
+  border-top: functions.dynamic-size(1) solid variables.$black;
   
   &--show{
     visibility: visible;

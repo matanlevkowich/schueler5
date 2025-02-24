@@ -37,9 +37,18 @@
   background: #fff;
   font-size: 120%;
   position: relative;
+  text-align: center;
+}
+.pop__close {
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: calc(var(--font-base) * 1);
+  background: #E52623;
+  line-height: 1;
 }
 .pop__title {
-  font-size: 350%;
+  font-size: 400%;
 }
 .pop__text {
   font-size: 150%;

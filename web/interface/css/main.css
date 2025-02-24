@@ -1016,9 +1016,18 @@ select {
   background: #fff;
   font-size: 120%;
   position: relative;
+  text-align: center;
+}
+.pop__close {
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: calc(var(--font-base) * 1);
+  background: #E52623;
+  line-height: 1;
 }
 .pop__title {
-  font-size: 350%;
+  font-size: 400%;
 }
 .pop__text {
   font-size: 150%;
@@ -1026,9 +1035,6 @@ select {
 }
 
 .close {
-  position: absolute;
-  right: calc(var(--font-base) * 1.5);
-  top: calc(var(--font-base) * 1.5);
   width: calc(var(--font-base) * 2);
   height: calc(var(--font-base) * 2);
   -webkit-transition: all 0.3s ease-in-out;
@@ -1040,6 +1046,9 @@ select {
 }
 .close:hover {
   transform: rotate(180deg);
+}
+.close__shape {
+  fill: #fff;
 }
 
 .cook {
@@ -1063,7 +1072,7 @@ select {
   align-items: center;
   gap: calc(var(--font-base) * 1);
   flex-wrap: nowrap;
-  border-top: calc(var(--font-base) * 1) solid #E52623;
+  border-top: calc(var(--font-base) * 1) solid #000;
 }
 .cook--show {
   visibility: visible;
