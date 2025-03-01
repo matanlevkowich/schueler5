@@ -685,6 +685,7 @@ select {
   left: 0;
   padding: calc(var(--font-base) * 4) calc(var(--font-base) * 6) calc(var(--font-base) * 8);
   font-size: 200%;
+  width: 100%;
 }
 .cover__title {
   font-size: 300%;
