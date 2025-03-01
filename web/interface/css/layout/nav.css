@@ -132,7 +132,7 @@
 @media (max-width: 992px) and (orientation: portrait) {
   .nav--header {
     flex-direction: column;
-    gap: calc(var(--font-base) * 5.25);
+    gap: calc(var(--font-base) * 4.5);
     font-size: 175%;
   }
 }
