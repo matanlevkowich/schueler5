@@ -15,7 +15,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  align-items: flex-start;
+  align-content: flex-start;
   gap: calc(var(--font-base) * 2);
   flex-wrap: wrap;
 }
@@ -35,7 +35,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  align-items: flex-start;
+  align-content: flex-start;
   gap: calc(var(--font-base) * 5);
 }
 .footer__heading {
@@ -53,7 +53,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  align-items: flex-top;
+  align-content: flex-top;
   gap: calc(var(--font-base) * 6);
   margin-top: calc(var(--font-base) * 6);
 }

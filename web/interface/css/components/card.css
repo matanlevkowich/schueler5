@@ -24,7 +24,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  align-items: flex-start;
+  align-content: flex-start;
   gap: calc(var(--font-base) * 4);
   flex-wrap: nowrap;
 }
@@ -51,7 +51,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  align-items: center;
+  align-content: flex-start;
   gap: calc(var(--font-base) * 2) nowrap;
 }
 .card__large {
@@ -84,7 +84,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
-  align-items: flex-start;
+  align-content: flex-start;
   gap: calc(var(--font-base) * 2);
   flex-wrap: nowrap;
   font-size: 150%;

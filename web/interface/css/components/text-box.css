@@ -62,7 +62,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: unset;
-  align-items: unset;
+  align-content: unset;
   gap: calc(var(--font-base) * 2);
   margin-block: calc(var(--font-base) * 4);
   color: #E52623;

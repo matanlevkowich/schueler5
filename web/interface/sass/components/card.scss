@@ -63,7 +63,7 @@
     padding:functions.dynamic-size(2) 0;
     position: relative;
     cursor: pointer;
-    @include functions.flex(space-between, center, functions.dynamic-size(2) nowrap);
+    @include functions.flex(space-between, flex-start, functions.dynamic-size(2) nowrap);
   }
 
   &__large{
