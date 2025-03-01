@@ -1,0 +1,28 @@
+defaultPlacement: end
+enableVersioning: true
+entryTypes:
+  -
+    uid: b5f8fe2d-d017-4342-9388-c400e28155f1 # Rich Pages Rich Text
+handle: schulanmeldung
+maxAuthors: 1
+name: Schulanmeldung
+previewTargets:
+  -
+    __assoc__:
+      -
+        - label
+        - 'Primary entry page'
+      -
+        - urlFormat
+        - '{url}'
+      -
+        - refresh
+        - '1'
+propagationMethod: all
+siteSettings:
+  72dce0d4-0301-4f00-b080-ba91db7eff2b: # Schuelerinnenschule
+    enabledByDefault: true
+    hasUrls: true
+    template: schulanmeldung.twig
+    uriFormat: schulanmeldung
+type: single
