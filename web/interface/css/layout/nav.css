@@ -3,7 +3,7 @@
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  gap: calc(var(--font-base) * 4);
+  gap: calc(var(--font-base) * 3.5);
   -webkit-transition: all 0.2s ease-in-out;
   -moz-transition: all 0.2s ease-in-out;
   -o-transition: all 0.2s ease-in-out;
@@ -87,6 +87,9 @@
 .nav--active .nav__li:nth-child(8) {
   transition-delay: calc(0.5s + 8 * 0.1s);
 }
+.nav--active .nav__li:nth-child(9) {
+  transition-delay: calc(0.5s + 9 * 0.1s);
+}
 .nav__back {
   -webkit-transition: all 0.4s ease-in-out;
   -moz-transition: all 0.4s ease-in-out;
@@ -129,7 +132,7 @@
 @media (max-width: 992px) and (orientation: portrait) {
   .nav--header {
     flex-direction: column;
-    gap: calc(var(--font-base) * 6);
+    gap: calc(var(--font-base) * 5.25);
     font-size: 175%;
   }
 }
