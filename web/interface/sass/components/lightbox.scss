@@ -1,0 +1,45 @@
+@use '../base/functions';
+@use '../base/variables';
+
+// lightbox //
+
+.glightbox-clean {
+  .gclose{
+    opacity: 1;
+    background-color: transparent;
+    &:hover{
+      background-color: transparent;
+    }
+    svg{
+      @include functions.transition(.3s);
+      width:20px;
+      &:hover{
+        transform: rotate(180deg);
+      }
+      rect{
+        fill: variables.$white;
+      }
+    }  
+  }  
+}
+
+
+.glightbox-clean{
+  .gprev,
+  .gnext{
+    opacity: 1;
+    background-color: transparent;
+    &:hover{
+      background-color: transparent;
+    }
+    svg{
+      width:35px;
+      &:hover{
+      }
+      rect,
+      polygon{
+        fill:variables.$white;
+      }
+    }
+  }
+} 

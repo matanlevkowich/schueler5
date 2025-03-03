@@ -1,0 +1,22 @@
+<section class="projects">
+    <div class="projects__grid">
+        {% for project in projects %}
+            <article class="project">
+                {% if project.thumb.one() %}
+                    <img class="project__img" src="{{ project.thumb.one().getUrl('projects') }}" alt="{{ project.title }}">
+                {% endif %}
+                <div class="project__infos">
+                    
+                    <h2 class="project__title">{{ project.title }}</h2>
+                    {% set tags = project.projectTags.all() %}
+                    {% if tags|length > 0 %}
+                        {% set iconClass = 'tags__icon--white tags__icon--small' %}
+                        {% include '_components/tags' with { tags:tags, tagClass:'tag--white', iconClass:iconClass  } %}
+                    {% endif %}
+                    <a class="project__link" href="{{ project.url }}">Mehr erfahren {% include '_components/arrow' %}</a>
+                    <div class="project__background"></div>
+                </div>
+            </article>
+        {% endfor %}
+    </div>
+</section>

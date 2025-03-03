@@ -1,0 +1,43 @@
+.glightbox-clean .gclose {
+  opacity: 1;
+  background-color: transparent;
+}
+.glightbox-clean .gclose:hover {
+  background-color: transparent;
+}
+.glightbox-clean .gclose svg {
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  width: 20px;
+}
+.glightbox-clean .gclose svg:hover {
+  transform: rotate(180deg);
+}
+.glightbox-clean .gclose svg rect {
+  fill: #fff;
+}
+
+.glightbox-clean .gprev,
+.glightbox-clean .gnext {
+  opacity: 1;
+  background-color: transparent;
+}
+.glightbox-clean .gprev:hover,
+.glightbox-clean .gnext:hover {
+  background-color: transparent;
+}
+.glightbox-clean .gprev svg,
+.glightbox-clean .gnext svg {
+  width: 35px;
+}
+.glightbox-clean .gprev svg rect,
+.glightbox-clean .gprev svg polygon,
+.glightbox-clean .gnext svg rect,
+.glightbox-clean .gnext svg polygon {
+  fill: #fff;
+}
+
+/*# sourceMappingURL=lightbox.css.map */

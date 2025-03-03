@@ -462,6 +462,62 @@ select {
   margin-bottom: 0;
 }
 
+.glide {
+  position: relative;
+  width: 100%;
+  box-sizing: border-box;
+}
+.glide * {
+  box-sizing: inherit;
+}
+.glide__track {
+  overflow: hidden;
+}
+.glide__slides {
+  position: relative;
+  width: 100%;
+  list-style: none;
+  backface-visibility: hidden;
+  transform-style: preserve-3d;
+  touch-action: pan-Y;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  white-space: nowrap;
+  display: flex;
+  flex-wrap: nowrap;
+  will-change: transform;
+}
+.glide__slides--dragging {
+  user-select: none;
+}
+.glide__slide {
+  width: 30vw;
+  height: 100%;
+  flex-shrink: 0;
+  white-space: normal;
+  user-select: none;
+  -webkit-touch-callout: none;
+  -webkit-tap-highlight-color: transparent;
+}
+.glide__slide a {
+  user-select: none;
+  -webkit-user-drag: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+.glide__arrows {
+  -webkit-touch-callout: none;
+  user-select: none;
+}
+.glide__bullets {
+  -webkit-touch-callout: none;
+  user-select: none;
+}
+.glide--rtl {
+  direction: rtl;
+}
+
 .logo {
   width: calc(var(--font-base) * 20);
   position: relative;
@@ -548,6 +604,7 @@ select {
   width: 40%;
   margin-top: calc(var(--font-base) * 6);
   margin-bottom: calc(var(--font-base) * 4);
+  filter: grayscale(1);
 }
 .card__small {
   width: 100%;
@@ -668,6 +725,20 @@ select {
   -ms-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
+.arrow--left, .arrow--right {
+  position: absolute;
+  top: 40%;
+  width: calc(var(--font-base) * 1.5);
+  left: calc(var(--font-base) * -2.75);
+  cursor: pointer;
+  transform: rotate(90deg);
+  z-index: 9999;
+}
+.arrow--right {
+  left: auto;
+  right: calc(var(--font-base) * -2.75);
+  transform: rotate(-90deg);
+}
 
 .card__small--active .arrow {
   transform: rotate(180deg);
@@ -679,6 +750,18 @@ select {
 .card--min .arrow {
   width: calc(var(--font-base) * 3);
   height: calc(var(--font-base) * 3);
+}
+
+.project__link .arrow {
+  vertical-align: middle;
+  margin-left: calc(var(--font-base) * 0.25);
+  transform: rotate(-90deg);
+  width: calc(var(--font-base) * 1);
+  height: calc(var(--font-base) * 1);
+  z-index: 0;
+}
+.project__link .arrow__shape {
+  fill: #fff;
 }
 
 .cover {
@@ -764,7 +847,13 @@ select {
   font-size: 200%;
 }
 .text--margin {
-  margin-top: calc(var(--font-base) * 12);
+  margin-top: calc(var(--font-base) * 6);
+}
+.text--padding {
+  padding-bottom: 0;
+}
+.text--padding .text__inner {
+  margin-bottom: 0;
 }
 .text--small {
   font-size: 175%;
@@ -949,6 +1038,9 @@ select {
 .button--red .button__go .arrow__shape {
   fill: #fff;
 }
+.button--font {
+  font-size: 120%;
+}
 .button--margin {
   margin: 0;
 }
@@ -1125,6 +1217,198 @@ select {
     font-size: 140%;
     flex-wrap: wrap;
   }
+}
+.projects {
+  padding: calc(var(--font-base) * 4);
+}
+.projects__grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: unset;
+  align-content: unset;
+  gap: 4vw;
+}
+
+.project {
+  width: 28vw;
+  position: relative;
+  font-size: 110%;
+}
+.project__img {
+  filter: grayscale(1);
+}
+.project__infos {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  align-content: flex-start;
+  gap: 0;
+  flex-direction: column;
+  padding: calc(var(--font-base) * 2);
+}
+.project__background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #000;
+  opacity: 0.3;
+  z-index: 0;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.project__title {
+  color: #E52623;
+  font-size: 275%;
+  position: relative;
+  z-index: 1;
+}
+.project__link {
+  font-size: 120%;
+  position: relative;
+  z-index: 1;
+  color: #fff;
+  font-weight: 600;
+  margin-top: calc(var(--font-base) * 1);
+  letter-spacing: calc(var(--font-base) * 0.1);
+}
+.project__link:hover + .project__background {
+  opacity: 0.4;
+  background: #E52623;
+}
+
+@media (max-width: 992px) {
+  .projects__grid {
+    gap: 48px;
+  }
+  .project {
+    width: calc(50% - 24px);
+  }
+}
+.tags {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+}
+.tags__icon {
+  width: calc(var(--font-base) * 1.6);
+  height: auto;
+  margin-right: calc(var(--font-base) * 0.5);
+}
+.tags__icon--white .tags__path {
+  fill: #fff;
+}
+.tags__icon--small {
+  width: calc(var(--font-base) * 1);
+}
+.tags__path {
+  fill: #000;
+}
+
+.tag {
+  display: inline-block;
+}
+.tag--white {
+  color: #fff;
+}
+.tag--white .tag__link {
+  color: #fff;
+}
+.tag__link {
+  text-transform: uppercase;
+}
+
+.gallery {
+  padding: 0 calc(var(--font-base) * 4) calc(var(--font-base) * 4);
+}
+.gallery:hover .gallery__img {
+  filter: brightness(0.5);
+}
+.gallery__img {
+  filter: brightness(1);
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.gallery .gallery__img:hover {
+  filter: brightness(1);
+}
+
+.glightbox-clean .gclose {
+  opacity: 1;
+  background-color: transparent;
+}
+.glightbox-clean .gclose:hover {
+  background-color: transparent;
+}
+.glightbox-clean .gclose svg {
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  width: 20px;
+}
+.glightbox-clean .gclose svg:hover {
+  transform: rotate(180deg);
+}
+.glightbox-clean .gclose svg rect {
+  fill: #fff;
+}
+
+.glightbox-clean .gprev,
+.glightbox-clean .gnext {
+  opacity: 1;
+  background-color: transparent;
+}
+.glightbox-clean .gprev:hover,
+.glightbox-clean .gnext:hover {
+  background-color: transparent;
+}
+.glightbox-clean .gprev svg,
+.glightbox-clean .gnext svg {
+  width: 35px;
+}
+.glightbox-clean .gprev svg rect,
+.glightbox-clean .gprev svg polygon,
+.glightbox-clean .gnext svg rect,
+.glightbox-clean .gnext svg polygon {
+  fill: #fff;
+}
+
+.filter {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-content: center;
+  gap: 0;
+  padding: calc(var(--font-base) * 1) calc(var(--font-base) * 4) 0;
+  font-size: 150%;
+  text-transform: uppercase;
+}
+.filter__icon {
+  width: auto;
+  height: calc(var(--font-base) * 1.2);
+  align-self: center;
+  margin-right: calc(var(--font-base) * 0.2);
+}
+.filter__icon--remove {
+  margin-right: 0;
+}
+.filter span {
+  margin: 0 calc(var(--font-base) * 0.5);
 }
 
 /*# sourceMappingURL=main.css.map */

@@ -1,0 +1,11 @@
+{% extends 'index' %}
+
+{% block content %}
+    <div class="text text--margin text--padding">
+        <div class="text__inner">
+            <span class="text__number">01</span>
+            <h1 class="text__title">{{ entry.title }}</h1>
+        </div>  
+    </div>
+    {% include '_components/projekte-tags' %}
+{% endblock %}

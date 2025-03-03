@@ -3,6 +3,7 @@
 @use 'layout/footer';
 @use 'layout/nav';
 @use 'layout/ham';
+@use 'glide/glide.core';
 @use 'components/logo';
 @use 'components/flex';
 @use 'components/card';
@@ -13,3 +14,8 @@
 @use 'components/pop';
 @use 'components/close';
 @use 'components/cookies';
+@use 'components/projects';
+@use 'components/tags';
+@use 'components/gallery';
+@use 'components/lightbox';
+@use 'components/filter';

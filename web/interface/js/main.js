@@ -132,3 +132,27 @@ setupPopup({
   duration: 1 
 });
 
+
+// Glide 
+
+new Glide('.glide', {
+  type: 'carousel',
+  gap:40,
+  perView: 4,
+  breakpoints: {
+    768: {
+      perView: 1
+    }
+
+  }
+}).mount()
+
+
+if (window.innerWidth > 768) {
+    const lightbox = GLightbox({
+        touchNavigation: true,
+        loop: true,
+        closeButton: true,
+        autoplayVideos: true
+    });
+}

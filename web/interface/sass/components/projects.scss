@@ -1,0 +1,68 @@
+@use '../base/functions';
+@use '../base/variables';
+
+// projects //
+
+.projects{
+  padding:functions.dynamic-size(4);
+  
+  &__grid{
+    @include functions.flex(unset, unset, 4vw);
+  } 
+}
+
+.project{
+  width: 28vw;
+  position: relative;
+  font-size: 110%;
+  &__img{
+    filter:grayscale(1);
+  }
+  &__infos{
+    position: absolute;
+    top:0; left: 0; right: 0; bottom:0;
+    @include functions.flex(flex-end, flex-start, 0);
+    flex-direction: column;
+    padding:functions.dynamic-size(2);
+  }
+  &__background{
+    position: absolute;
+    top:0; left: 0; right: 0; bottom:0;
+    background: variables.$black;
+    opacity: .3;  
+    z-index: 0;
+    @include functions.transition(.3s);
+  }
+  &__title{
+    color:variables.$red;
+    font-size: 275%;
+    position: relative;
+    z-index: 1;
+  }
+  &__link{
+    font-size: 120%;
+    position: relative;
+    z-index: 1;
+    color: variables.$white;
+    font-weight: variables.$semibold-font-weight;
+    margin-top: functions.dynamic-size(1);
+    letter-spacing: functions.dynamic-size(.1);
+    &:hover{
+      + .project__background{
+        opacity: .4;
+        background:variables.$red;
+      }
+    }
+  }
+}
+
+@media (max-width: variables.$big-tablet-end) {
+  .projects{
+    &__grid{
+    gap: 48px;
+  }  
+  }
+  .project{
+    width:calc(50% - 24px);
+  }
+}

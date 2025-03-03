@@ -40,6 +40,7 @@
   width: 40%;
   margin-top: calc(var(--font-base) * 6);
   margin-bottom: calc(var(--font-base) * 4);
+  filter: grayscale(1);
 }
 .card__small {
   width: 100%;

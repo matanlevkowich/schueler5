@@ -8,7 +8,14 @@
   font-size: 200%;
 
   &--margin{
-    margin-top:functions.dynamic-size(12);
+    margin-top:functions.dynamic-size(6);
+  }
+
+  &--padding{
+    padding-bottom: 0;
+    .text__inner{
+      margin-bottom: 0;
+    }
   }
 
   &--small{

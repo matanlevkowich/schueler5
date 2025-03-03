@@ -3,7 +3,13 @@
   font-size: 200%;
 }
 .text--margin {
-  margin-top: calc(var(--font-base) * 12);
+  margin-top: calc(var(--font-base) * 6);
+}
+.text--padding {
+  padding-bottom: 0;
+}
+.text--padding .text__inner {
+  margin-bottom: 0;
 }
 .text--small {
   font-size: 175%;

@@ -18,6 +18,9 @@
 .button--red .button__go .arrow__shape {
   fill: #fff;
 }
+.button--font {
+  font-size: 120%;
+}
 .button--margin {
   margin: 0;
 }

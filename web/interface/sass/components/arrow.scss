@@ -9,6 +9,22 @@
   width: functions.dynamic-size(4);
   height: functions.dynamic-size(4);
   @include functions.transition(.3s);
+
+  &--left,
+  &--right{
+    position: absolute;
+    top: 40%;
+    width: calc(var(--font-base)* 1.5);
+    left: calc(var(--font-base)* -2.75);
+    cursor: pointer;
+    transform: rotate(90deg);
+    z-index: 9999;
+  }
+  &--right{
+    left:auto;
+    right: calc(var(--font-base)* -2.75);
+    transform: rotate(-90deg);
+  }
 }
 
 .card__small--active{
@@ -30,5 +46,19 @@
       width: functions.dynamic-size(3);
       height: functions.dynamic-size(3);  
     }
+  }
+}
+
+.project__link{
+  .arrow{
+    vertical-align: middle;
+    margin-left: functions.dynamic-size(.25);
+    transform: rotate(-90deg);
+    width: functions.dynamic-size(1);
+    height: functions.dynamic-size(1);
+    z-index: 0;
+    &__shape{
+      fill:variables.$white;
+    } 
   }
 }

@@ -4,4 +4,24 @@
     {% include '_components/cover' %}
     {% include '_components/text-box' with { textNumber: '01'} %}
     {% include '_components/text-cover' with { textNumber: '02' } %}
+    
+    <div class="text text--padding">
+        <div class="text__inner">
+            <span class="text__number">03</span>
+            <h1 class="text__title">{{ entry.sectionTitle }}</h1>
+        </div>
+    </div>
+    {% set projects = craft.entries()
+        .section('projektePages')
+        .with(['projectTags', 'thumb'])
+        .orderBy('postDate DESC')
+        .limit(3)
+    %}
+    {% include '_components/projekte' with { projects: projects } %}
+    {% include '_components/button' with { 
+        link: { value: '/projekte', label: 'Alle Projekte entdecken' }, 
+        buttonClass: 'button--margin button--center button--font' 
+    } %}
+
 {% endblock %}
+

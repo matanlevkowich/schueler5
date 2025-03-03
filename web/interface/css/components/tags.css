@@ -1,0 +1,34 @@
+.tags {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+}
+.tags__icon {
+  width: calc(var(--font-base) * 1.6);
+  height: auto;
+  margin-right: calc(var(--font-base) * 0.5);
+}
+.tags__icon--white .tags__path {
+  fill: #fff;
+}
+.tags__icon--small {
+  width: calc(var(--font-base) * 1);
+}
+.tags__path {
+  fill: #000;
+}
+
+.tag {
+  display: inline-block;
+}
+.tag--white {
+  color: #fff;
+}
+.tag--white .tag__link {
+  color: #fff;
+}
+.tag__link {
+  text-transform: uppercase;
+}
+
+/*# sourceMappingURL=tags.css.map */

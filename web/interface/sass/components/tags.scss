@@ -1,0 +1,39 @@
+@use '../base/functions';
+@use '../base/variables';
+
+// tags //
+
+.tags{
+  position: relative;
+  z-index: 1;
+  width:100%;
+  &__icon{
+    width: functions.dynamic-size(1.6);
+    height: auto;
+    margin-right: functions.dynamic-size(.5);
+    &--white{
+      .tags__path{
+          fill:variables.$white;
+      }
+    }
+    &--small{
+      width: functions.dynamic-size(1);  
+    }
+  }
+  &__path{
+    fill:variables.$black;
+  }
+}
+
+.tag{
+  display: inline-block;
+  &--white{
+    color:variables.$white;
+    .tag__link{
+      color:variables.$white;
+    }
+  }
+  &__link{
+    text-transform: uppercase; 
+  }
+}

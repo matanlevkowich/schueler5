@@ -1,0 +1,24 @@
+@use '../base/functions';
+@use '../base/variables';
+
+// filter //
+
+.filter{
+  @include functions.flex(flex-start,center, 0);
+  padding:functions.dynamic-size(1) functions.dynamic-size(4) 0;
+  font-size: 150%;
+  text-transform: uppercase;
+  &__icon{
+    width:auto;
+    height: functions.dynamic-size(1.2);
+    align-self: center;
+    margin-right: functions.dynamic-size(.2);
+    &--remove{
+      margin-right: 0;
+    }
+  }
+  span{
+    margin:0 functions.dynamic-size(.5);
+  }
+
+}

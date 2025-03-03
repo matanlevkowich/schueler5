@@ -10,11 +10,11 @@ settings:
   allowedKinds:
     - image
   branchLimit: null
-  defaultUploadLocationSource: null
+  defaultUploadLocationSource: 'volume:7b4a5764-db95-4e82-bb31-45dc9ddf2a1c' # Images
   defaultUploadLocationSubpath: null
   maintainHierarchy: false
   maxRelations: null
-  minRelations: 1
+  minRelations: null
   previewMode: full
   restrictFiles: true
   restrictLocation: true
@@ -23,7 +23,7 @@ settings:
   restrictedLocationSubpath: null
   selectionLabel: null
   showCardsInGrid: false
-  showSiteMenu: false
+  showSiteMenu: true
   showUnpermittedFiles: false
   showUnpermittedVolumes: false
   sources: '*'

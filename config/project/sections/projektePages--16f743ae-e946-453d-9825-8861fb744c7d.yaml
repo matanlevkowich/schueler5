@@ -1,0 +1,28 @@
+defaultPlacement: end
+enableVersioning: true
+entryTypes:
+  -
+    uid: 2344f00e-4728-4c97-a0c1-fdfb41645ca0 # Projects
+handle: projektePages
+maxAuthors: 1
+name: 'Projekte '
+previewTargets:
+  -
+    __assoc__:
+      -
+        - label
+        - 'Primary entry page'
+      -
+        - urlFormat
+        - '{url}'
+      -
+        - refresh
+        - '1'
+propagationMethod: all
+siteSettings:
+  72dce0d4-0301-4f00-b080-ba91db7eff2b: # Schuelerinnenschule
+    enabledByDefault: true
+    hasUrls: true
+    template: projekte/_entry.twig
+    uriFormat: 'projekte/{slug}'
+type: channel

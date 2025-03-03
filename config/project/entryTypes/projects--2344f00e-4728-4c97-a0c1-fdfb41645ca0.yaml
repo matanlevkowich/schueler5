@@ -1,0 +1,137 @@
+color: null
+fieldLayouts:
+  871028d1-a3c1-44a7-87d8-568037025e11:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            dateAdded: '2025-03-02T11:17:39+00:00'
+            disabled: false
+            elementCondition: null
+            id: null
+            includeInCards: false
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            providesThumbs: false
+            readonly: false
+            required: true
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: 50b3b501-c381-4da1-ba22-a2aab1398420
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-03-02T11:23:23+00:00'
+            elementCondition: null
+            fieldUid: 921683f4-6186-47c6-838d-24b7775d1d32 # Thumb
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: d8b0f7a9-04b6-422a-b6f3-3b67639e8268
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-03-02T11:24:27+00:00'
+            elementCondition: null
+            fieldUid: 20a31ae5-1782-4bdc-bf1f-58066d44029e # Project Tags
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: e044a3a3-2bca-48d6-876a-e6ba1c9a1f88
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-03-02T11:21:35+00:00'
+            elementCondition: null
+            fieldUid: 7500d289-f696-4a78-a669-4955fa9ae6bd # Rich Text
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 88fc0c2f-0973-496c-8583-05a4c623321a
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-03-02T11:21:35+00:00'
+            elementCondition: null
+            fieldUid: b10ffaeb-d278-48f2-b2bf-ece67169153e # Images
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: adc80ed5-7b04-4df2-a3de-508d55faa6ec
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 2ef50b6d-cd91-4ada-b05c-f49ca1ac6689
+        userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: '2025-03-02T11:21:35+00:00'
+            elementCondition: null
+            fieldUid: 81e6deb1-17ac-4b0c-8279-eebeb19a15b8 # SEO
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: f2bcd2c5-aa56-4623-8b9d-25a22a94482b
+            userCondition: null
+            warning: null
+            width: 100
+        name: SEO
+        uid: e215802c-c8c7-446d-8545-95063a50597a
+        userCondition: null
+handle: projects
+hasTitleField: true
+icon: null
+name: Projects
+showSlugField: true
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

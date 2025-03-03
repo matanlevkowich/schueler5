@@ -1,0 +1,41 @@
+fieldLayouts:
+  15316a07-9b26-4cfb-bbb3-9890fa3eaf4a:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            dateAdded: '2025-03-02T11:22:27+00:00'
+            disabled: false
+            elementCondition: null
+            id: null
+            includeInCards: false
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            providesThumbs: false
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\TitleField
+            uid: 64e3e8b3-6204-460a-9930-dab61d024069
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 68887237-0a2a-45bd-8e7f-67e3613d2461
+        userCondition: null
+handle: projects
+name: Projects

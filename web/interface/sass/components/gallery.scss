@@ -1,0 +1,21 @@
+@use '../base/functions';
+@use '../base/variables';
+
+// gallery //
+
+.gallery{
+  padding:0 functions.dynamic-size(4) functions.dynamic-size(4); 
+  &:hover{
+    .gallery__img{
+      filter:brightness(0.5);
+    }
+  }
+  &__img{
+    filter:brightness(1);
+    @include functions.transition(.3s);
+  }
+}
+
+.gallery .gallery__img:hover{
+  filter: brightness(1.0);
+}

@@ -1,0 +1,11 @@
+{% extends 'index' %}
+
+{% block content %}
+    {% include '_components/tags-rich-text' with { extraClass: 'text--margin' } %}
+    {% include '_components/gallery' %}
+
+    {% include '_components/button' with { 
+        link: { value: '/projekte', label: 'Zur Projektübersicht' }, 
+        buttonClass: 'button--margin button--center button--font' 
+    } %}
+{% endblock %}

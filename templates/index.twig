@@ -10,7 +10,9 @@
 
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        {% do craft.app.view.registerCssFile('https://use.typekit.net/stp6jeb.css') %}
         {% do craft.app.view.registerCssFile('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=IBM+Plex+Sans:wght@200;400;600&display=swap') %}
+        {% do craft.app.view.registerCssFile('https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css') %}
         {% do craft.app.view.registerCssFile(version('/interface/css/main.css')) %}
         <script src='/interface/js/load.js?v=1.2'></script>
     </head>
@@ -35,5 +37,7 @@
     
         {% include '_components/cookies' %}
     </body>
+    {% do craft.app.view.registerJsFile(version('/interface/js/glightbox.js')) %}
+    {% do craft.app.view.registerJsFile('https://unpkg.com/@glidejs/glide@3.7.1/dist/glide.js') %}
     {% do craft.app.view.registerJsFile(version('/interface/js/main.js')) %}
 </html>

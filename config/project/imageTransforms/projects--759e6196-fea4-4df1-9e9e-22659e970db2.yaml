@@ -1,0 +1,11 @@
+fill: null
+format: jpg
+handle: projects
+height: 1600
+interlace: none
+mode: crop
+name: Projects
+position: center-center
+quality: 60
+upscale: true
+width: 1200

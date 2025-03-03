@@ -1,0 +1,11 @@
+fill: null
+format: jpg
+handle: gallery
+height: 1500
+interlace: none
+mode: crop
+name: Gallery
+position: center-center
+quality: 60
+upscale: true
+width: 1500

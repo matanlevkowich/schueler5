@@ -1,0 +1,20 @@
+.gallery {
+  padding: 0 calc(var(--font-base) * 4) calc(var(--font-base) * 4);
+}
+.gallery:hover .gallery__img {
+  filter: brightness(0.5);
+}
+.gallery__img {
+  filter: brightness(1);
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.gallery .gallery__img:hover {
+  filter: brightness(1);
+}
+
+/*# sourceMappingURL=gallery.css.map */

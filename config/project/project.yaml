@@ -1,4 +1,35 @@
-dateModified: 1740846836
+dateModified: 1740950468
+elementSources:
+  craft\elements\Entry:
+    -
+      defaultSort:
+        - postDate
+        - desc
+      defaultViewMode: ''
+      disabled: false
+      key: '*'
+      tableAttributes:
+        - status
+        - section
+        - postDate
+        - expiryDate
+        - link
+      type: native
+    -
+      key: singles
+      type: native
+    -
+      heading: 'Multiple Pages'
+      type: heading
+    -
+      key: 'section:16f743ae-e946-453d-9825-8861fb744c7d' # Projekte 
+      type: native
+    -
+      key: 'section:caf33f71-3ca0-46e2-8dc4-6449cae8f777' # Legal
+      type: native
+    -
+      key: 'section:10bf7c5c-23ce-4205-a559-887fc23d5e7d' # Extra Pages
+      type: native
 email:
   fromEmail: justobe@gmail.com
   fromName: schuelerinnenschule
@@ -25,6 +56,13 @@ fs:
       path: assets/logos
     type: craft\fs\Local
     url: /assets/logos
+  thumbs:
+    hasUrls: true
+    name: Thumbs
+    settings:
+      path: assets/thumbs
+    type: craft\fs\Local
+    url: /assets/thumbs
 meta:
   __names__:
     1c6f8cdb-e812-48db-96ad-c9a533549802: Stundenplan # Stundenplan
@@ -37,10 +75,13 @@ meta:
     7b4a5764-db95-4e82-bb31-45dc9ddf2a1c: Images # Images
     07e010e8-068b-44d2-b9ef-3e723330ed8f: 'Link URL' # Link URL
     7f95c745-3cf9-4cb2-8d2e-4932a9f7971a: Subtitle # Subtitle
+    8cecd4aa-e25b-48a6-81ca-4690de9977c1: Projects # Projects
     8d8c1ad0-9b3c-44db-b579-7931d0c36040: 'Simple Text' # Simple Text
     8eb6c3b8-dc1a-44d8-96ad-93c1c7e8c6de: 'Cover Image' # Cover Image
     10bf7c5c-23ce-4205-a559-887fc23d5e7d: 'Extra Pages' # Extra Pages
     16e5f4f4-b63d-4ac5-bc59-7f4ce191c768: Team # Team
+    16f743ae-e946-453d-9825-8861fb744c7d: 'Projekte ' # Projekte 
+    20a31ae5-1782-4bdc-bf1f-58066d44029e: 'Project Tags' # Project Tags
     51af5b2e-f807-4b09-89a6-c605d62e4296: Home # Home
     64de1d10-bb17-4fea-a662-523ad739ca0c: Docs # Docs
     72dce0d4-0301-4f00-b080-ba91db7eff2b: Schuelerinnenschule # Schuelerinnenschule
@@ -48,18 +89,22 @@ meta:
     81d5b426-e396-4d96-bdc3-c4b37c0ddfd7: Image # Image
     81e6deb1-17ac-4b0c-8279-eebeb19a15b8: SEO # SEO
     738ea168-d971-48b3-b9bb-590219be413f: Rich # Rich
+    759e6196-fea4-4df1-9e9e-22659e970db2: Projects # Projects
     844a2ebb-be85-49dc-8ccd-af1f89ec7348: Logos # Logos
     861d087b-a0f0-4030-8f6e-417e5fc80835: 'Pop UP' # Pop UP
     1422cb2b-bafc-4fee-a6c9-b202b6e80e50: Home # Home
+    2344f00e-4728-4c97-a0c1-fdfb41645ca0: Projects # Projects
     7500d289-f696-4a78-a669-4955fa9ae6bd: 'Rich Text' # Rich Text
     9735bb42-4ba5-49db-b437-e9b3d2c4a5ef: 'CTA Link' # CTA Link
     75601bb2-d27c-402e-b0b9-1dce3fa345ef: FAQs # FAQs
     309512d9-0a63-46ff-8108-677ee499ce7d: Logos # Logos
+    921683f4-6186-47c6-838d-24b7775d1d32: Thumb # Thumb
     a136c54b-7ce5-4912-9c74-fbbfcb09ee96: Schulanmeldung # Schulanmeldung
     ac62ca71-10fd-409c-8e4e-8d37cd96b43b: Logo # Logo
     b04cfd72-7e84-4227-86ca-8f55f74a1a80: 'Text + Cover' # Text + Cover
     b5f8fe2d-d017-4342-9388-c400e28155f1: 'Rich Pages Rich Text' # Rich Pages Rich Text
     b10ffaeb-d278-48f2-b2bf-ece67169153e: Images # Images
+    b58d4061-dfe7-4694-b0ba-4ec7abe42c6a: Gallery # Gallery
     b79cc2fe-563d-40b4-b679-f7ed158a3e99: 'Team Crop' # Team Crop
     b89f307a-463b-45b5-9410-15c48ad95590: 'Text + Cover' # Text + Cover
     b91bb8ee-398d-410d-b714-fe5eaaeb99ec: 'Text Box' # Text Box
@@ -68,6 +113,7 @@ meta:
     c060b7a3-8dd5-442b-afa8-87af0f162b77: Cookies # Cookies
     c2dfbc55-82e4-4796-8774-0cb0d892d8fd: 'Text Box' # Text Box
     c11cf2de-0065-4012-98ac-9f381e01b02c: 'Background Position Y' # Background Position Y
+    c32a0ab7-eb76-4814-96d1-28d0f2f704e9: Projekte # Projekte
     c694059e-17e0-46c2-a35a-4dd7b5f44117: Über # Über
     caf33f71-3ca0-46e2-8dc4-6449cae8f777: Legal # Legal
     d6b689f4-cfa4-407b-b9c1-6e6d1e5d1113: Document # Document
@@ -75,6 +121,7 @@ meta:
     d67e2bc7-d428-44fe-a92c-918dd1e30ca0: 'Simple Pages' # Simple Pages
     db305b95-183e-48a0-b764-a953f8676f5b: FAQs # FAQs
     dce497a3-7f6a-43fc-8257-438b4d67a877: Cover # Cover
+    df801dd9-f5cb-4535-8291-d8c4f3a991db: Thumbs # Thumbs
     e4ca347d-de44-444b-be52-ceb80c45bb49: schuelerinnenschule # schuelerinnenschule
     e6904e0d-8cb4-4147-8916-63f37437a6ac: 'Section Title' # Section Title
     e68548e1-ba7b-4352-9de7-45028085a534: Kontakt # Kontakt

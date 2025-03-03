@@ -1,0 +1,24 @@
+.filter {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-content: center;
+  gap: 0;
+  padding: calc(var(--font-base) * 1) calc(var(--font-base) * 4) 0;
+  font-size: 150%;
+  text-transform: uppercase;
+}
+.filter__icon {
+  width: auto;
+  height: calc(var(--font-base) * 1.2);
+  align-self: center;
+  margin-right: calc(var(--font-base) * 0.2);
+}
+.filter__icon--remove {
+  margin-right: 0;
+}
+.filter span {
+  margin: 0 calc(var(--font-base) * 0.5);
+}
+
+/*# sourceMappingURL=filter.css.map */
