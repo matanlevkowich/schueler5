@@ -1,4 +1,4 @@
-dateModified: 1741037299
+dateModified: 1741104645
 elementSources:
   craft\elements\Entry:
     -
@@ -93,12 +93,13 @@ meta:
     844a2ebb-be85-49dc-8ccd-af1f89ec7348: Logos # Logos
     861d087b-a0f0-4030-8f6e-417e5fc80835: 'Pop UP' # Pop UP
     1422cb2b-bafc-4fee-a6c9-b202b6e80e50: Home # Home
-    2344f00e-4728-4c97-a0c1-fdfb41645ca0: Projects # Projects
+    2344f00e-4728-4c97-a0c1-fdfb41645ca0: Aktuelles # Aktuelles
     7500d289-f696-4a78-a669-4955fa9ae6bd: 'Rich Text' # Rich Text
     9735bb42-4ba5-49db-b437-e9b3d2c4a5ef: 'CTA Link' # CTA Link
     75601bb2-d27c-402e-b0b9-1dce3fa345ef: FAQs # FAQs
     309512d9-0a63-46ff-8108-677ee499ce7d: Logos # Logos
     921683f4-6186-47c6-838d-24b7775d1d32: Thumb # Thumb
+    a6c4944f-e31f-4da7-9469-ee3fd4ab2de1: 'SEO Only' # SEO Only
     a136c54b-7ce5-4912-9c74-fbbfcb09ee96: Schulanmeldung # Schulanmeldung
     ac62ca71-10fd-409c-8e4e-8d37cd96b43b: Logo # Logo
     b04cfd72-7e84-4227-86ca-8f55f74a1a80: 'Text + Cover' # Text + Cover

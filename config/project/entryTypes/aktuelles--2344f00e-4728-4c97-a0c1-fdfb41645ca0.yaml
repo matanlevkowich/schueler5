@@ -124,10 +124,10 @@ fieldLayouts:
         name: SEO
         uid: e215802c-c8c7-446d-8545-95063a50597a
         userCondition: null
-handle: projects
+handle: aktuelles
 hasTitleField: true
 icon: null
-name: Projects
+name: Aktuelles
 showSlugField: true
 showStatusField: true
 slugTranslationKeyFormat: null

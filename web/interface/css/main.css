@@ -1376,6 +1376,7 @@ select {
   align-content: center;
   gap: calc(var(--font-base) * 2);
   margin-top: calc(var(--font-base) * 2);
+  cursor: pointer;
 }
 .glide__bullets {
   display: flex;

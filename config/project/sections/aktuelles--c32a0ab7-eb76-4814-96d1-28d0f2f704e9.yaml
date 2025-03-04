@@ -2,7 +2,7 @@ defaultPlacement: end
 enableVersioning: true
 entryTypes:
   -
-    uid: 78e9170b-0c4d-4e9e-970a-f1fbf5857227 # Rich Pages Simple Text
+    uid: a6c4944f-e31f-4da7-9469-ee3fd4ab2de1 # SEO Only
 handle: aktuelles
 maxAuthors: 1
 name: Aktuelles

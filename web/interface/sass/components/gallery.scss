@@ -24,6 +24,7 @@
   &__arrows{
     @include functions.flex(center,center,functions.dynamic-size(2));
     margin-top: functions.dynamic-size(2);
+    cursor: pointer;
   }
   &__bullets{
     @include functions.flex(center,center,functions.dynamic-size(1));

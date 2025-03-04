@@ -2,7 +2,7 @@ defaultPlacement: end
 enableVersioning: true
 entryTypes:
   -
-    uid: 2344f00e-4728-4c97-a0c1-fdfb41645ca0 # Projects
+    uid: 2344f00e-4728-4c97-a0c1-fdfb41645ca0 # Aktuelles
 handle: aktuellesPages
 maxAuthors: 1
 name: 'Aktuelles '
