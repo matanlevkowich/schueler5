@@ -42,9 +42,11 @@
   }
   &__title{
     color:variables.$red;
-    font-size: 275%;
+    font-size: 250%;
     position: relative;
     z-index: 1;
+    line-height: 1;
+    margin-bottom: functions.dynamic-size(1);
   }
   &__link{
     font-size: 120%;

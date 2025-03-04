@@ -1266,9 +1266,11 @@ select {
 }
 .thumb__title {
   color: #E52623;
-  font-size: 275%;
+  font-size: 250%;
   position: relative;
   z-index: 1;
+  line-height: 1;
+  margin-bottom: calc(var(--font-base) * 1);
 }
 .thumb__link {
   font-size: 120%;
