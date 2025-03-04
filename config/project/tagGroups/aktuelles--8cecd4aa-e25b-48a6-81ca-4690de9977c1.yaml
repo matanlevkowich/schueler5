@@ -37,5 +37,5 @@ fieldLayouts:
         name: Content
         uid: 68887237-0a2a-45bd-8e7f-67e3613d2461
         userCondition: null
-handle: projects
-name: Projects
+handle: aktuelles
+name: Aktuelles

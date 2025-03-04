@@ -2,7 +2,7 @@
     <div class="text__inner">
         <span class="text__number">01</span>
         <h1 class="text__title">{{ entry.title }}</h1>
-        {% set tags = entry.projectTags.all() %}
+        {% set tags = entry.aktuellesTags.all() %}
         {% if tags|length > 0 %}
             {% include '_components/tags' with { tags:tags, iconClass: '' } %}
         {% endif %}

@@ -1,4 +1,4 @@
-dateModified: 1740950468
+dateModified: 1741037299
 elementSources:
   craft\elements\Entry:
     -
@@ -22,7 +22,7 @@ elementSources:
       heading: 'Multiple Pages'
       type: heading
     -
-      key: 'section:16f743ae-e946-453d-9825-8861fb744c7d' # Projekte 
+      key: 'section:16f743ae-e946-453d-9825-8861fb744c7d' # Aktuelles 
       type: native
     -
       key: 'section:caf33f71-3ca0-46e2-8dc4-6449cae8f777' # Legal
@@ -75,13 +75,13 @@ meta:
     7b4a5764-db95-4e82-bb31-45dc9ddf2a1c: Images # Images
     07e010e8-068b-44d2-b9ef-3e723330ed8f: 'Link URL' # Link URL
     7f95c745-3cf9-4cb2-8d2e-4932a9f7971a: Subtitle # Subtitle
-    8cecd4aa-e25b-48a6-81ca-4690de9977c1: Projects # Projects
+    8cecd4aa-e25b-48a6-81ca-4690de9977c1: Aktuelles # Aktuelles
     8d8c1ad0-9b3c-44db-b579-7931d0c36040: 'Simple Text' # Simple Text
     8eb6c3b8-dc1a-44d8-96ad-93c1c7e8c6de: 'Cover Image' # Cover Image
     10bf7c5c-23ce-4205-a559-887fc23d5e7d: 'Extra Pages' # Extra Pages
     16e5f4f4-b63d-4ac5-bc59-7f4ce191c768: Team # Team
-    16f743ae-e946-453d-9825-8861fb744c7d: 'Projekte ' # Projekte 
-    20a31ae5-1782-4bdc-bf1f-58066d44029e: 'Project Tags' # Project Tags
+    16f743ae-e946-453d-9825-8861fb744c7d: 'Aktuelles ' # Aktuelles 
+    20a31ae5-1782-4bdc-bf1f-58066d44029e: 'Aktuelles Tags' # Aktuelles Tags
     51af5b2e-f807-4b09-89a6-c605d62e4296: Home # Home
     64de1d10-bb17-4fea-a662-523ad739ca0c: Docs # Docs
     72dce0d4-0301-4f00-b080-ba91db7eff2b: Schuelerinnenschule # Schuelerinnenschule
@@ -89,7 +89,7 @@ meta:
     81d5b426-e396-4d96-bdc3-c4b37c0ddfd7: Image # Image
     81e6deb1-17ac-4b0c-8279-eebeb19a15b8: SEO # SEO
     738ea168-d971-48b3-b9bb-590219be413f: Rich # Rich
-    759e6196-fea4-4df1-9e9e-22659e970db2: Projects # Projects
+    759e6196-fea4-4df1-9e9e-22659e970db2: Thumbs # Thumbs
     844a2ebb-be85-49dc-8ccd-af1f89ec7348: Logos # Logos
     861d087b-a0f0-4030-8f6e-417e5fc80835: 'Pop UP' # Pop UP
     1422cb2b-bafc-4fee-a6c9-b202b6e80e50: Home # Home
@@ -113,7 +113,7 @@ meta:
     c060b7a3-8dd5-442b-afa8-87af0f162b77: Cookies # Cookies
     c2dfbc55-82e4-4796-8774-0cb0d892d8fd: 'Text Box' # Text Box
     c11cf2de-0065-4012-98ac-9f381e01b02c: 'Background Position Y' # Background Position Y
-    c32a0ab7-eb76-4814-96d1-28d0f2f704e9: Projekte # Projekte
+    c32a0ab7-eb76-4814-96d1-28d0f2f704e9: Aktuelles # Aktuelles
     c694059e-17e0-46c2-a35a-4dd7b5f44117: Über # Über
     caf33f71-3ca0-46e2-8dc4-6449cae8f777: Legal # Legal
     d6b689f4-cfa4-407b-b9c1-6e6d1e5d1113: Document # Document

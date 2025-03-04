@@ -5,7 +5,7 @@
 
 .nav {
   &--header{
-    @include functions.flex(center, center, functions.dynamic-size(3.5));
+    @include functions.flex(center, center, functions.dynamic-size(3.2));
     @include functions.transition(.2s);
     position: fixed;
     align-items: center;
@@ -14,7 +14,7 @@
     left: 0;
     top:-100%;
     background:variables.$red; 
-    font-size: 175%;  
+    font-size: 165%;  
     text-transform: uppercase;
     overflow: hidden;
     
@@ -65,7 +65,7 @@
       transform: translateY(0);
       opacity: 1;
       //transition-delay: .7s;
-      @for $i from 1 through 9 {
+      @for $i from 1 through 10 {
         &:nth-child(#{$i}) {
         transition-delay: calc(0.5s + (#{$i} * 0.1s));
       }

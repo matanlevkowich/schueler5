@@ -9,19 +9,11 @@
   -ms-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
-.arrow--left, .arrow--right {
-  position: absolute;
-  top: 40%;
-  width: calc(var(--font-base) * 1.5);
-  left: calc(var(--font-base) * -2.75);
+.arrow--nav {
   cursor: pointer;
-  transform: rotate(90deg);
-  z-index: 9999;
-}
-.arrow--right {
-  left: auto;
-  right: calc(var(--font-base) * -2.75);
-  transform: rotate(-90deg);
+  vertical-align: middle;
+  width: calc(var(--font-base) * 2.5);
+  height: calc(var(--font-base) * 2.5);
 }
 
 .card__small--active .arrow {
@@ -36,7 +28,7 @@
   height: calc(var(--font-base) * 3);
 }
 
-.project__link .arrow {
+.thumb__link .arrow {
   vertical-align: middle;
   margin-left: calc(var(--font-base) * 0.25);
   transform: rotate(-90deg);
@@ -44,7 +36,7 @@
   height: calc(var(--font-base) * 1);
   z-index: 0;
 }
-.project__link .arrow__shape {
+.thumb__link .arrow__shape {
   fill: #fff;
 }
 

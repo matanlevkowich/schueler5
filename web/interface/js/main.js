@@ -135,24 +135,69 @@ setupPopup({
 
 // Glide 
 
-new Glide('.glide', {
-  type: 'carousel',
-  gap:40,
-  perView: 4,
-  breakpoints: {
-    768: {
-      perView: 1
+document.addEventListener('DOMContentLoaded', function () {
+  const glideElement = document.querySelector('.glide');
+  const slides = glideElement.querySelectorAll('.glide__slide');
+  const navigation = document.querySelector('.glide__arrows'); // Adjust selector if needed
+
+  function getDynamicGap() {
+    return window.innerWidth * 0.04; // 4vw in pixels
+  }
+
+  function getCurrentPerView() {
+    const width = window.innerWidth;
+    if (width <= 480) return 1;
+    if (width <= 576) return 2;
+    if (width <= 768) return 2;
+    if (width <= 992) return 3;
+    return 4; // Default perView
+  }
+
+  function updateGlide() {
+    const perView = getCurrentPerView();
+    const shouldHideNav = slides.length <= perView;
+
+    let glide = new Glide('.glide', {
+      type: 'slider', // Always a slider
+      gap: getDynamicGap(),
+      perView: perView,
+      breakpoints: {
+        992: { perView: 3, gap: 24 },
+        768: { perView: 2, gap: 22 },
+        576: { perView: 2, gap: 16 },
+        480: { perView: 1, gap: 0 }
+      }
+    });
+
+    glide.mount();
+
+    // Show/hide navigation
+    if (navigation) {
+      navigation.style.display = shouldHideNav ? 'none' : 'flex';
     }
 
-  }
-}).mount()
+    // Update gap on window resize
+    window.addEventListener('resize', function () {
+      glide.update({ gap: getDynamicGap() });
 
-
-if (window.innerWidth > 768) {
-    const lightbox = GLightbox({
-        touchNavigation: true,
-        loop: true,
-        closeButton: true,
-        autoplayVideos: true
+      // Recalculate perView and hide/show navigation on resize
+      const updatedPerView = getCurrentPerView();
+      const updatedShouldHideNav = slides.length <= updatedPerView;
+      navigation.style.display = updatedShouldHideNav ? 'none' : 'flex';
     });
-}
+  }
+
+  updateGlide();
+});
+
+
+// Lightbox
+
+const lightbox = GLightbox({
+    touchNavigation: true,
+    loop: true,
+    zoomable:false,
+    closeButton: true,
+    autoplayVideos: true
+});
+

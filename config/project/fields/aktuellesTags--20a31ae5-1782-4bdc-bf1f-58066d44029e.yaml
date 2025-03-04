@@ -1,7 +1,7 @@
 columnSuffix: null
-handle: projectTags
+handle: aktuellesTags
 instructions: null
-name: 'Project Tags'
+name: 'Aktuelles Tags'
 searchable: false
 settings:
   allowSelfRelations: false
@@ -11,8 +11,8 @@ settings:
   minRelations: null
   selectionLabel: null
   showCardsInGrid: false
-  showSiteMenu: false
-  source: 'taggroup:8cecd4aa-e25b-48a6-81ca-4690de9977c1' # Projects
+  showSiteMenu: true
+  source: 'taggroup:8cecd4aa-e25b-48a6-81ca-4690de9977c1' # Aktuelles
   targetSiteId: null
   validateRelatedElements: false
   viewMode: null

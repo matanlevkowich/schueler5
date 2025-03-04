@@ -1,10 +1,10 @@
 fill: null
 format: jpg
-handle: projects
+handle: thumbs
 height: 1600
 interlace: none
 mode: crop
-name: Projects
+name: Thumbs
 position: center-center
 quality: 60
 upscale: true

@@ -1,0 +1,22 @@
+<section class="thumbs">
+    <div class="thumbs__grid">
+        {% for entry in entries %}
+            <article class="thumb {{ thumbClass ?? '' }}">
+                {% if entry.thumb.one() %}
+                    <img class="thumb__img" src="{{ entry.thumb.one().getUrl('thumbs') }}" alt="{{ entry.title }}">
+                {% endif %}
+                <div class="thumb__infos">
+                    
+                    <h2 class="thumb__title">{{ entry.title }}</h2>
+                    {% set tags = entry.aktuellesTags.all() %}
+                    {% if tags|length > 0 %}
+                        {% set iconClass = 'tags__icon--white tags__icon--small' %}
+                        {% include '_components/tags' with { tags:tags, tagClass:'tag--white', iconClass:iconClass  } %}
+                    {% endif %}
+                    <a class="thumb__link" href="{{ entry.url }}">Mehr erfahren {% include '_components/arrow' %}</a>
+                    <div class="thumb__background"></div>
+                </div>
+            </article>
+        {% endfor %}
+    </div>
+</section>

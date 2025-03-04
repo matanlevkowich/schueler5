@@ -7,7 +7,7 @@
             {% for image in images %}
                <li class="glide__slide">
                   <a href="{{ image.getUrl() }}" class="glightbox gallery__a" data-gallery="gallery1">
-                     <img class="gallery__img" src="{{ image.getUrl('gallery') }}" loading="lazy" alt="Thumbnail {{ loop.index }}">
+                     <img class="glide__img" src="{{ image.getUrl('gallery') }}" loading="lazy" alt="Thumbnail {{ loop.index }}">
                   </a>
                </li>
             {% endfor %}
@@ -16,18 +16,18 @@
 
       <div class="glide__arrows" data-glide-el="controls">
          <div class="glide__arrow glide__arrow--left" data-glide-dir="<">
-            {% include '_components/arrow' with { arrowClass: 'arrow--left' } %}
+            {% include '_components/arrow-left' %}
+         </div>
+         <div class="glide__bullets" data-glide-el="controls[nav]">
+            {% for image in images %}
+               <span class="glide__bullet" data-glide-dir="={{ loop.index0 }}"></span>
+            {% endfor %}
          </div>
          <div class="glide__arrow glide__arrow--right" data-glide-dir=">">
-            {% include '_components/arrow' with { arrowClass: 'arrow--right' } %}
+            {% include '_components/arrow-right' %}
          </div>
       </div>
-
-      <div class="glide__bullets" data-glide-el="controls[nav]">
-         {% for image in images %}
-            <span class="glide__bullet" data-glide-dir="={{ loop.index0 }}"></span>
-         {% endfor %}
-      </div>
+  
    </div>
 </div>
 {% endif %}

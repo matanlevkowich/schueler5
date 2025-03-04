@@ -10,20 +10,11 @@
   height: functions.dynamic-size(4);
   @include functions.transition(.3s);
 
-  &--left,
-  &--right{
-    position: absolute;
-    top: 40%;
-    width: calc(var(--font-base)* 1.5);
-    left: calc(var(--font-base)* -2.75);
+  &--nav{
     cursor: pointer;
-    transform: rotate(90deg);
-    z-index: 9999;
-  }
-  &--right{
-    left:auto;
-    right: calc(var(--font-base)* -2.75);
-    transform: rotate(-90deg);
+    vertical-align: middle;
+    width: functions.dynamic-size(2.5);
+    height: functions.dynamic-size(2.5);
   }
 }
 
@@ -49,7 +40,7 @@
   }
 }
 
-.project__link{
+.thumb__link{
   .arrow{
     vertical-align: middle;
     margin-left: functions.dynamic-size(.25);

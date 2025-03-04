@@ -11,15 +11,15 @@
             <h1 class="text__title">{{ entry.sectionTitle }}</h1>
         </div>
     </div>
-    {% set projects = craft.entries()
-        .section('projektePages')
+    {% set entries = craft.entries()
+        .section('aktuellesPages')
         .with(['projectTags', 'thumb'])
         .orderBy('postDate DESC')
-        .limit(3)
+        .limit(4)
     %}
-    {% include '_components/projekte' with { projects: projects } %}
+    {% include '_components/aktuelles' with { entries: entries, projectClass: 'project--home'} %}
     {% include '_components/button' with { 
-        link: { value: '/projekte', label: 'Alle Projekte entdecken' }, 
+        link: { value: '/aktuelles', label: 'Alle Beiträge entdecken' }, 
         buttonClass: 'button--margin button--center button--font' 
     } %}
 

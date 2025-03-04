@@ -24,11 +24,15 @@
 .tag--white {
   color: #fff;
 }
+.tag--white .tag__span,
 .tag--white .tag__link {
   color: #fff;
 }
 .tag__link {
   text-transform: uppercase;
+}
+.tag__span {
+  color: #000;
 }
 
 /*# sourceMappingURL=tags.css.map */

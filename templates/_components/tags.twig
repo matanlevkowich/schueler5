@@ -2,8 +2,8 @@
     {% include '_components/tag-icon' with { iconClass:iconClass }%}
     {% for tag in tags %}
         <div class="tag {{ tagClass ?? '' }}">
-            <a class="tag__link" href="{{ url('projekte', { tag: tag.title }) }}">{{ tag.title }}</a>
-            {% if not loop.last %}, {% endif %}
+            <a class="tag__link" href="{{ url('aktuelles', { tag: tag.title }) }}">{{ tag.title }}</a>
+            {% if not loop.last %}<span class="tag__span">/ </span>{% endif %}
         </div>
     {% endfor %}
 </div>

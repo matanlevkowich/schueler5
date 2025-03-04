@@ -29,11 +29,15 @@
   display: inline-block;
   &--white{
     color:variables.$white;
+    .tag__span,
     .tag__link{
       color:variables.$white;
     }
   }
   &__link{
     text-transform: uppercase; 
+  }
+  &__span{
+    color:variables.$black;
   }
 }

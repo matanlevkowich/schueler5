@@ -1,9 +1,9 @@
 @use '../base/functions';
 @use '../base/variables';
 
-// projects //
+// thumbs //
 
-.projects{
+.thumbs{
   padding:functions.dynamic-size(4);
   
   &__grid{
@@ -11,10 +11,17 @@
   } 
 }
 
-.project{
+.thumb{
   width: 28vw;
   position: relative;
   font-size: 110%;
+  &--home{
+      &:last-child{
+      display: none;
+    }  
+  }
+  
+
   &__img{
     filter:grayscale(1);
   }
@@ -48,7 +55,7 @@
     margin-top: functions.dynamic-size(1);
     letter-spacing: functions.dynamic-size(.1);
     &:hover{
-      + .project__background{
+      + .thumb__background{
         opacity: .4;
         background:variables.$red;
       }
@@ -57,12 +64,45 @@
 }
 
 @media (max-width: variables.$big-tablet-end) {
-  .projects{
-    &__grid{
-    gap: 48px;
-  }  
+  .thumbs{
+      &__grid{
+      gap: 48px;
+    }  
   }
-  .project{
+  .thumb{
     width:calc(50% - 24px);
+    &--home{
+        &:last-child{
+        display: block;
+      }  
+    }
   }
+}
+
+@media (max-width: variables.$tablet-end) {
+  .thumbs{
+    &__grid{
+      gap:44px;
+    }
+  }
+  .thumb{
+    width:calc(50% - 22px);
+  }
+}
+
+@media (max-width: variables.$phone) {
+  .thumbs{
+      &__grid{
+      gap: 32px;
+    }  
+  }
+  .thumb{
+    width:100%;
+    font-size: 150%;
+    &--home{
+        &:last-child{
+        display: none;
+      }  
+    }
+  }  
 }

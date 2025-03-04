@@ -1,23 +1,23 @@
 {% set selectedTag = craft.app.request.getParam('tag') %}
-{% set projectsQuery = craft.entries()
-    .section('projektePages')
-    .with(['projectTags', 'thumb'])
+{% set entriesQuery = craft.entries()
+    .section('aktuellesPages')
+    .with(['aktuellesTags', 'thumb'])
     .orderBy('postDate DESC')
 %}
 {% if selectedTag %}
-    {% set projectsQuery = projectsQuery.relatedTo({
+    {% set entriesQuery = entriesQuery.relatedTo({
         targetElement: craft.tags().title(selectedTag).one()
     }) %}
 {% endif %}
-{% set projects = projectsQuery.all() %}
+{% set entries = entriesQuery.all() %}
 {% if selectedTag %}
     <div class="filter">
         {% include '_components/filter' %}Filter: <strong>{{ selectedTag }}</strong><span> | </span>
-        <a class="filter__remove" href="{{ url('projekte') }}">
+        <a class="filter__remove" href="{{ url('aktuelles') }}">
             {% include '_components/filter-remove' %}Zurücksetzen 
         </a>
     </div>
 {% endif %}
 
-{% include '_components/projekte' with { projects: projects } %}
+{% include '_components/aktuelles' with { entries: entries } %}
 

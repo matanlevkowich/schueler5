@@ -2,10 +2,10 @@ defaultPlacement: end
 enableVersioning: true
 entryTypes:
   -
-    uid: 2344f00e-4728-4c97-a0c1-fdfb41645ca0 # Projects
-handle: projektePages
+    uid: 78e9170b-0c4d-4e9e-970a-f1fbf5857227 # Rich Pages Simple Text
+handle: aktuelles
 maxAuthors: 1
-name: 'Projekte '
+name: Aktuelles
 previewTargets:
   -
     __assoc__:
@@ -23,6 +23,6 @@ siteSettings:
   72dce0d4-0301-4f00-b080-ba91db7eff2b: # Schuelerinnenschule
     enabledByDefault: true
     hasUrls: true
-    template: projekte/_entry.twig
-    uriFormat: 'projekte/{slug}'
-type: channel
+    template: aktuelles/index.twig
+    uriFormat: aktuelles
+type: single

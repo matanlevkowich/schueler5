@@ -17,6 +17,11 @@
 			<span class="nav__span" data-hover="team">team</span>
 		</a>
 	</li>
+	<li class="nav__li {% if craft.app.request.segments|last == 'aktuelles' %} nav__li--active{% endif %}">
+		<a class="nav__a" href="/aktuelles">
+			<span class="nav__span" data-hover="aktuelles">aktuelles</span>
+		</a>
+	</li>
 	<li class="nav__li {% if craft.app.request.segments|last == 'stundenplan' %} nav__li--active{% endif %}">
 		<a class="nav__a" href="/stundenplan">
 			<span class="nav__span" data-hover="stundenplan">stundenplan</span>

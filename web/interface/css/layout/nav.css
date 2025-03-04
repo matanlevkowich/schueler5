@@ -3,7 +3,7 @@
   flex-wrap: wrap;
   justify-content: center;
   align-content: center;
-  gap: calc(var(--font-base) * 3.5);
+  gap: calc(var(--font-base) * 3.2);
   -webkit-transition: all 0.2s ease-in-out;
   -moz-transition: all 0.2s ease-in-out;
   -o-transition: all 0.2s ease-in-out;
@@ -16,7 +16,7 @@
   left: 0;
   top: -100%;
   background: #E52623;
-  font-size: 175%;
+  font-size: 165%;
   text-transform: uppercase;
   overflow: hidden;
 }
@@ -90,6 +90,9 @@
 }
 .nav--active .nav__li:nth-child(9) {
   transition-delay: calc(0.5s + 9 * 0.1s);
+}
+.nav--active .nav__li:nth-child(10) {
+  transition-delay: calc(0.5s + 10 * 0.1s);
 }
 .nav__back {
   -webkit-transition: all 0.4s ease-in-out;
