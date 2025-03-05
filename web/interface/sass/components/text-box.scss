@@ -68,6 +68,15 @@
     line-height: 1;
   }
 
+  &__data{
+    width:100%;
+  }
+
+  &__date{
+    color:variables.$black;
+    font-size: 85%;
+  }
+
   &__box{
     background: variables.$red;
     display: inline-block;

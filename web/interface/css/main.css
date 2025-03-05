@@ -893,6 +893,13 @@ select {
   font-size: 450%;
   line-height: 1;
 }
+.text__data {
+  width: 100%;
+}
+.text__date {
+  color: #000;
+  font-size: 85%;
+}
 .text__box {
   background: #E52623;
   display: inline-block;
@@ -1272,6 +1279,12 @@ select {
   line-height: 1;
   margin-bottom: calc(var(--font-base) * 1);
 }
+.thumb__date {
+  color: #fff;
+  position: relative;
+  z-index: 1;
+  font-size: 85%;
+}
 .thumb__link {
   font-size: 120%;
   position: relative;
@@ -1311,7 +1324,7 @@ select {
   }
   .thumb {
     width: 100%;
-    font-size: 150%;
+    font-size: 175%;
   }
   .thumb--home:last-child {
     display: none;
@@ -1327,8 +1340,10 @@ select {
   height: auto;
   margin-right: calc(var(--font-base) * 0.5);
 }
+.tags__icon--white d,
 .tags__icon--white .tags__path {
   fill: #fff;
+  stroke: #fff;
 }
 .tags__icon--small {
   width: calc(var(--font-base) * 1);

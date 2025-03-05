@@ -20,7 +20,6 @@
       display: none;
     }  
   }
-  
 
   &__img{
     filter:grayscale(1);
@@ -47,6 +46,13 @@
     z-index: 1;
     line-height: 1;
     margin-bottom: functions.dynamic-size(1);
+  }
+
+  &__date{
+    color:variables.$white;
+    position: relative;
+    z-index: 1;
+    font-size: 85%;
   }
   &__link{
     font-size: 120%;
@@ -100,7 +106,7 @@
   }
   .thumb{
     width:100%;
-    font-size: 150%;
+    font-size: 175%;
     &--home{
         &:last-child{
         display: none;

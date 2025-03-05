@@ -2,7 +2,7 @@ baseUrl: $PRIMARY_SITE_URL
 enabled: true
 handle: default
 hasUrls: true
-language: en
+language: de
 name: Schuelerinnenschule
 primary: true
 siteGroup: e4ca347d-de44-444b-be52-ceb80c45bb49 # schuelerinnenschule

@@ -6,13 +6,13 @@
                     <img class="thumb__img" src="{{ entry.thumb.one().getUrl('thumbs') }}" alt="{{ entry.title }}">
                 {% endif %}
                 <div class="thumb__infos">
-                    
                     <h2 class="thumb__title">{{ entry.title }}</h2>
-                    {% set tags = entry.aktuellesTags.all() %}
-                    {% if tags|length > 0 %}
-                        {% set iconClass = 'tags__icon--white tags__icon--small' %}
-                        {% include '_components/tags' with { tags:tags, tagClass:'tag--white', iconClass:iconClass  } %}
-                    {% endif %}
+                        {% set tags = entry.aktuellesTags.all() %}
+                        {% if tags|length > 0 %}
+                            {% set iconClass = 'tags__icon--white tags__icon--small' %}
+                            {% include '_components/tags' with { tags:tags, tagClass:'tag--white', iconClass:iconClass  } %}
+                        {% endif %}
+                        <div class="thumb__date">{{ entry.postDate|date('j. F Y') }}</div>
                     <a class="thumb__link" href="{{ entry.url }}">Mehr erfahren {% include '_components/arrow' %}</a>
                     <div class="thumb__background"></div>
                 </div>

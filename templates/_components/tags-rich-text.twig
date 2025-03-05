@@ -2,10 +2,13 @@
     <div class="text__inner">
         <span class="text__number">01</span>
         <h1 class="text__title">{{ entry.title }}</h1>
-        {% set tags = entry.aktuellesTags.all() %}
-        {% if tags|length > 0 %}
-            {% include '_components/tags' with { tags:tags, iconClass: '' } %}
-        {% endif %}
+        <div class="text__data"> 
+            {% set tags = entry.aktuellesTags.all() %}
+            {% if tags|length > 0 %}
+                {% include '_components/tags' with { tags:tags, iconClass: '' } %}
+            {% endif %}
+            <div class="text__date">{{ entry.postDate|date('j. F Y') }}</div>
+        </div>
     </div>
     <div class="text__paragraph text__paragraph--full">{{ entry.richText }}</div>
 </div>

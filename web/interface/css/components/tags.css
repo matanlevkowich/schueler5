@@ -8,8 +8,10 @@
   height: auto;
   margin-right: calc(var(--font-base) * 0.5);
 }
+.tags__icon--white d,
 .tags__icon--white .tags__path {
   fill: #fff;
+  stroke: #fff;
 }
 .tags__icon--small {
   width: calc(var(--font-base) * 1);

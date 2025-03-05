@@ -3,7 +3,7 @@
     {% for tag in tags %}
         <div class="tag {{ tagClass ?? '' }}">
             <a class="tag__link" href="{{ url('aktuelles', { tag: tag.title }) }}">{{ tag.title }}</a>
-            {% if not loop.last %}<span class="tag__span">/ </span>{% endif %}
+            {% if not loop.last %}<span class="tag__span">/</span>{% endif %}
         </div>
     {% endfor %}
 </div>

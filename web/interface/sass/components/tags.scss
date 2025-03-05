@@ -12,8 +12,10 @@
     height: auto;
     margin-right: functions.dynamic-size(.5);
     &--white{
+      d,
       .tags__path{
           fill:variables.$white;
+          stroke:variables.$white;
       }
     }
     &--small{

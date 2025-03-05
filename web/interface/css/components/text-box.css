@@ -54,6 +54,13 @@
   font-size: 450%;
   line-height: 1;
 }
+.text__data {
+  width: 100%;
+}
+.text__date {
+  color: #000;
+  font-size: 85%;
+}
 .text__box {
   background: #E52623;
   display: inline-block;
