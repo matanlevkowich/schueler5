@@ -1,8 +1,11 @@
 {% set selectedTag = craft.app.request.getParam('tag') %}
+{% set twoYearsAgo = now|date_modify('-3 years') %}
+
 {% set entriesQuery = craft.entries()
     .section('aktuellesPages')
     .with(['aktuellesTags', 'thumb'])
     .orderBy('postDate DESC')
+    .postDate('> ' ~ twoYearsAgo|atom) 
 %}
 {% if selectedTag %}
     {% set entriesQuery = entriesQuery.relatedTo({
