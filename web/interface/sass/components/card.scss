@@ -16,6 +16,12 @@
           content: url('/assets/li-red.svg');
         }
       }
+      a{
+        color:variables.$black;
+        &:before{
+          background-image: url(/assets/li-black.svg);
+        }
+      }
     }  
   }
 
@@ -92,6 +98,46 @@
         position: absolute;
         left: calc(var(--font-base)* -2.7);
         //top:calc(var(--font-base)* .1);
+      }
+    }
+    a{
+      color:variables.$red;
+      display: inline-block;
+      position: relative;
+      font-weight: variables.$semibold-font-weight;
+      @include functions.transition(.3s);
+      padding:0 functions.dynamic-size(.1);
+
+      
+      &:after,
+      &:before{
+        position: absolute;
+        height: 100%;
+        content: '';
+        @include functions.transition(.3s);
+      }
+
+      &:after{
+        left: 0;
+        z-index: -1;
+        width: 100%;
+        background: variables.$white;
+      }
+
+      &:before{
+        background-image: url(/assets/li-red.svg);
+        width: functions.dynamic-size(1.5);
+        background-size: functions.dynamic-size(1.5) auto;
+        background-repeat: no-repeat; 
+        background-position: center;
+        display: inline-block;
+        z-index: -1;
+      }
+      &:hover{
+        transform:translateX(functions.dynamic-size(1.8));
+      }
+      &:hover:before{
+        transform: translateX(functions.dynamic-size(-1.8));  
       }
     }
   }

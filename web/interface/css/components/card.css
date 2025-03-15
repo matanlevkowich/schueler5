@@ -8,6 +8,12 @@
 .card:nth-child(even) .card__text li:before {
   content: url("/assets/li-red.svg");
 }
+.card:nth-child(even) .card__text a {
+  color: #000;
+}
+.card:nth-child(even) .card__text a:before {
+  background-image: url(/assets/li-black.svg);
+}
 .card:last-child {
   border: none;
 }
@@ -80,6 +86,49 @@
   display: inline-block;
   position: absolute;
   left: calc(var(--font-base) * -2.7);
+}
+.card__text a {
+  color: #E52623;
+  display: inline-block;
+  position: relative;
+  font-weight: 600;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  padding: 0 calc(var(--font-base) * 0.1);
+}
+.card__text a:after, .card__text a:before {
+  position: absolute;
+  height: 100%;
+  content: "";
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.card__text a:after {
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  background: #fff;
+}
+.card__text a:before {
+  background-image: url(/assets/li-red.svg);
+  width: calc(var(--font-base) * 1.5);
+  background-size: calc(var(--font-base) * 1.5) auto;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: inline-block;
+  z-index: -1;
+}
+.card__text a:hover {
+  transform: translateX(calc(var(--font-base) * 1.8));
+}
+.card__text a:hover:before {
+  transform: translateX(calc(var(--font-base) * -1.8));
 }
 .card__inner {
   display: flex;
