@@ -9,12 +9,13 @@ settings:
   ckeConfig: 1ec7e76f-561b-41ca-8e77-0f3321ccc1a9 # Clean
   createButtonLabel: null
   defaultTransform: null
-  enableSourceEditingForNonAdmins: false
   purifierConfig: null
   purifyHtml: true
   showUnpermittedFiles: false
   showUnpermittedVolumes: false
   showWordCount: false
+  sourceEditingGroups:
+    - __ADMINS__
   wordLimit: null
 translationKeyFormat: null
 translationMethod: none

@@ -1,5 +1,15 @@
 headingLevels: false
 name: Clean
+options:
+  link:
+    decorators:
+      isExternal:
+        attributes:
+          rel: 'noopener noreferrer'
+          target: _blank
+        label: 'Open in a new tab'
+        mode: manual
 toolbar:
   - bold
   - bulletedList
+  - link
