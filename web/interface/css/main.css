@@ -1312,7 +1312,7 @@ select {
   right: 0;
   bottom: 0;
   background: #000;
-  opacity: 0.3;
+  opacity: 0.5;
   z-index: 0;
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
