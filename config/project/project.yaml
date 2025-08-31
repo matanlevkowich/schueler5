@@ -1,4 +1,4 @@
-dateModified: 1745411222
+dateModified: 1756624595
 elementSources:
   craft\elements\Entry:
     -
@@ -92,6 +92,7 @@ meta:
     759e6196-fea4-4df1-9e9e-22659e970db2: Thumbs # Thumbs
     844a2ebb-be85-49dc-8ccd-af1f89ec7348: Logos # Logos
     861d087b-a0f0-4030-8f6e-417e5fc80835: 'Pop UP' # Pop UP
+    968ea6da-fb38-4839-8e7f-a8b1ffc16e0a: "Schuelerinnenschule\tEnglish" # Schuelerinnenschule	English
     1422cb2b-bafc-4fee-a6c9-b202b6e80e50: Home # Home
     2344f00e-4728-4c97-a0c1-fdfb41645ca0: Aktuelles # Aktuelles
     7500d289-f696-4a78-a669-4955fa9ae6bd: 'Rich Text' # Rich Text

@@ -18,6 +18,12 @@ settings:
             -
               - sources
               - '*'
+            -
+              - showUnpermittedSections
+              - '1'
+            -
+              - showUnpermittedEntries
+              - '1'
       -
         - url
         -
@@ -28,10 +34,13 @@ settings:
             -
               - allowAnchors
               - ''
+            -
+              - allowCustomSchemes
+              - ''
   types:
     - entry
     - url
     - email
 translationKeyFormat: null
-translationMethod: none
+translationMethod: language
 type: craft\fields\Link

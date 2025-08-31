@@ -77,6 +77,10 @@ siteSettings:
     hasUrls: false
     template: null
     uriFormat: null
+  968ea6da-fb38-4839-8e7f-a8b1ffc16e0a: # Schuelerinnenschule	English
+    hasUrls: false
+    template: null
+    uriFormat: null
 structure:
   maxLevels: 1
   uid: 2d2f05b9-ce5a-447b-8481-5e186fcaed0f

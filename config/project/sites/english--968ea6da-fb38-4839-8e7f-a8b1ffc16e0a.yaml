@@ -1,0 +1,9 @@
+baseUrl: $ENGLISH_SITE_URL
+enabled: '1'
+handle: english
+hasUrls: true
+language: en
+name: "Schuelerinnenschule\tEnglish"
+primary: false
+siteGroup: e4ca347d-de44-444b-be52-ceb80c45bb49 # schuelerinnenschule
+sortOrder: 2

@@ -40,5 +40,5 @@ settings:
           - ' - {{ siteName }}'
   titleSuffix: null
 translationKeyFormat: null
-translationMethod: none
+translationMethod: language
 type: ether\seo\fields\SeoField

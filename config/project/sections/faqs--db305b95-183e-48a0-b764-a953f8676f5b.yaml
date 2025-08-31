@@ -25,4 +25,9 @@ siteSettings:
     hasUrls: true
     template: faqs.twig
     uriFormat: faqs
+  968ea6da-fb38-4839-8e7f-a8b1ffc16e0a: # Schuelerinnenschule	English
+    enabledByDefault: true
+    hasUrls: true
+    template: faqs.twig
+    uriFormat: faqs
 type: single
