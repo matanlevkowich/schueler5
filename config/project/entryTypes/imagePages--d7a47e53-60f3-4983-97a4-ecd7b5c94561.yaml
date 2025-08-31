@@ -6,7 +6,38 @@ fieldLayouts:
         elementCondition: null
         elements:
           -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            dateAdded: '2025-08-31T13:03:05+00:00'
+            disabled: false
+            elementCondition: null
+            id: null
+            includeInCards: false
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            providesThumbs: false
+            readonly: false
+            required: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: a3c3e6b7-b01d-4f0e-9f57-68f34be1418d
+            userCondition: null
+            warning: null
+            width: 100
+          -
             dateAdded: '2025-02-01T14:38:15+00:00'
+            editCondition: null
             elementCondition: null
             fieldUid: e6904e0d-8cb4-4147-8916-63f37437a6ac # Section Title
             handle: null
@@ -23,6 +54,7 @@ fieldLayouts:
             width: 100
           -
             dateAdded: '2025-02-01T14:37:23+00:00'
+            editCondition: null
             elementCondition: null
             fieldUid: 81d5b426-e396-4d96-bdc3-c4b37c0ddfd7 # Image
             handle: null
@@ -45,6 +77,7 @@ fieldLayouts:
         elements:
           -
             dateAdded: '2025-02-01T14:37:23+00:00'
+            editCondition: null
             elementCondition: null
             fieldUid: 81e6deb1-17ac-4b0c-8279-eebeb19a15b8 # SEO
             handle: null
@@ -63,7 +96,7 @@ fieldLayouts:
         uid: 999fca15-e1f8-4276-a7b2-2dbbb8298a73
         userCondition: null
 handle: imagePages
-hasTitleField: false
+hasTitleField: true
 icon: null
 name: 'Image Pages'
 showSlugField: true
