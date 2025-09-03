@@ -126,7 +126,7 @@ setupPopup({
 // Setup for Popup (tracked via cookies)
 setupPopup({
   containerSelector: ".pop",
-  buttonSelectors: ".button--pop, .close",
+  buttonSelectors: ".button__box, .close",
   cookieName: "popupClosed",
   delay: 4000,
   duration: 1 
