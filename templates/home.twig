@@ -19,7 +19,7 @@
     %}
     {% include '_components/aktuelles' with { entries: entries, thumbClass: 'thumb--home'} %}
     {% include '_components/button' with { 
-        link: { value: '/aktuelles', label: 'Alle Beiträge entdecken' }, 
+        link: { value: craft.app.language == 'de' ? '/aktuelles' : '/en/news', label: craft.app.language == 'de' ? 'Alle Beiträge entdecken' : 'View all posts' }, 
         buttonClass: 'button--margin button--center button--font' 
     } %}
 
