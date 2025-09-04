@@ -5,7 +5,7 @@
     {% include '_components/gallery' %}
 
     {% include '_components/button' with { 
-        link: { value: '/aktuelles', label: 'Zur Übersicht' }, 
+        link: { value: craft.app.language == 'de' ? '/aktuelles' : '/en/news', label: craft.app.language == 'de' ? 'Zur Übersicht' : 'Back to overview' }, 
         buttonClass: 'button--margin button--center button--font' 
     } %}
 {% endblock %}
