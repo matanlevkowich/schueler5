@@ -1,7 +1,7 @@
 <div class="cook">    
     <div class="cook__text">{{ cookies.richText }}</div>
     {% include '_components/button' with { 
-        link: { value: '', label: 'akzeptieren' }, 
+        link: { value: '', label: craft.app.language == 'de' ? 'akzeptieren' : 'accept'  }, 
         buttonClass: 'button--margin button--cook' 
     } %}
 </div>

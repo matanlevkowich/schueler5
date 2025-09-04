@@ -48,7 +48,7 @@ function button() {
 }
 
 document.addEventListener('DOMContentLoaded', function () {
-    const headButton = document.querySelector('.header__nav');
+    const headButton = document.querySelector('.header__ham');
     headButton.addEventListener('click', function () {
         button();
     });

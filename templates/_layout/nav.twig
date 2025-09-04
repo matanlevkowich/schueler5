@@ -2,49 +2,11 @@
 	{% if includeLogo ?? false %}
 		<div class="nav__back">{% include '_layout/logo' with { extraClass: 'logo--nav' } %}</div>
 	{% endif %}
-	<li class="nav__li {% if craft.app.request.segments|last == '' %} nav__li--active{% endif %}">
-		<a class="nav__a" href="{{ siteUrl }}">
-			<span class="nav__span" data-hover="home">home</span>
-		</a>
-	</li>
-	<li class="nav__li {% if craft.app.request.segments|last == 'ueber' %} nav__li--active{% endif %}">
-		<a class="nav__a" href="/ueber">
-			<span class="nav__span" data-hover="über uns">über uns</span>
-		</a>
-	</li>
-	<li class="nav__li {% if craft.app.request.segments|last == 'team' %} nav__li--active{% endif %}">
-		<a class="nav__a" href="/team">
-			<span class="nav__span" data-hover="team">team</span>
-		</a>
-	</li>
-	<li class="nav__li {% if craft.app.request.segments|last == 'aktuelles' %} nav__li--active{% endif %}">
-		<a class="nav__a" href="/aktuelles">
-			<span class="nav__span" data-hover="aktuelles">aktuelles</span>
-		</a>
-	</li>
-	<li class="nav__li {% if craft.app.request.segments|last == 'stundenplan' %} nav__li--active{% endif %}">
-		<a class="nav__a" href="/stundenplan">
-			<span class="nav__span" data-hover="stundenplan">stundenplan</span>
-		</a>
-	</li>
-	<li class="nav__li {% if craft.app.request.segments|last == 'schulanmeldung' %} nav__li--active{% endif %}">
-		<a class="nav__a" href="/schulanmeldung">
-			<span class="nav__span" data-hover="schulanmeldung">schulanmeldung</span>
-		</a>
-	</li>
-	<li class="nav__li {% if craft.app.request.segments|last == 'faqs' %} nav__li--active{% endif %}">
-		<a class="nav__a" href="/faqs">
-			<span class="nav__span" data-hover="faqs">faqs</span>
-		</a>
-	</li>
-	<li class="nav__li {% if craft.app.request.segments|last == 'spenden' %} nav__li--active{% endif %}">
-		<a class="nav__a" href="/spenden">
-			<span class="nav__span" data-hover="spenden">spenden</span>
-		</a>
-	</li>
-	<li class="nav__li {% if craft.app.request.segments|last == 'kontakt' %} nav__li--active{% endif %}">
-		<a class="nav__a" href="/kontakt">
-			<span class="nav__span" data-hover="kontakt">kontakt</span>
-		</a>
-	</li>
+	{% if craft.app.language == 'de' %}
+		{% include '_layout/nav-de'%}
+	{% endif %}
+
+	{% if craft.app.language == 'en' %}
+		{% include '_layout/nav-en'%}
+	{% endif %}
 </nav>

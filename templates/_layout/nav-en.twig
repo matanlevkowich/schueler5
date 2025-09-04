@@ -1,0 +1,46 @@
+
+<li class="nav__li {% if craft.app.request.segments|last == '' %} nav__li--active{% endif %}">
+	<a class="nav__a" href="{{ siteUrl }}">
+		<span class="nav__span" data-hover="home">home</span>
+	</a>
+</li>
+<li class="nav__li {% if craft.app.request.segments|last == 'about' %} nav__li--active{% endif %}">
+	<a class="nav__a" href="{{ siteUrl }}about">
+		<span class="nav__span" data-hover="about us">about us</span>
+	</a>
+</li>
+<li class="nav__li {% if craft.app.request.segments|last == 'team' %} nav__li--active{% endif %}">
+	<a class="nav__a" href="{{ siteUrl }}team">
+		<span class="nav__span" data-hover="team">team</span>
+	</a>
+</li>
+<li class="nav__li {% if craft.app.request.segments|last == 'news' %} nav__li--active{% endif %}">
+	<a class="nav__a" href="{{ siteUrl }}news">
+		<span class="nav__span" data-hover="news">news</span>
+	</a>
+</li>
+<li class="nav__li {% if craft.app.request.segments|last == 'timetable' %} nav__li--active{% endif %}">
+	<a class="nav__a" href="{{ siteUrl }}timetable">
+		<span class="nav__span" data-hover="timetable">timetable</span>
+	</a>
+</li>
+<li class="nav__li {% if craft.app.request.segments|last == 'registration' %} nav__li--active{% endif %}">
+	<a class="nav__a" href="{{ siteUrl }}registration">
+		<span class="nav__span" data-hover="registration">registration</span>
+	</a>
+</li>
+<li class="nav__li {% if craft.app.request.segments|last == 'faqs' %} nav__li--active{% endif %}">
+	<a class="nav__a" href="{{ siteUrl }}faqs">
+		<span class="nav__span" data-hover="faqs">faqs</span>
+	</a>
+</li>
+<li class="nav__li {% if craft.app.request.segments|last == 'support-us' %} nav__li--active{% endif %}">
+	<a class="nav__a" href="{{ siteUrl }}support-us">
+		<span class="nav__span" data-hover="support us">support us</span>
+	</a>
+</li>
+<li class="nav__li {% if craft.app.request.segments|last == 'contact' %} nav__li--active{% endif %}">
+	<a class="nav__a" href="{{ siteUrl }}contact">
+		<span class="nav__span" data-hover="contact">contact</span>
+	</a>
+</li>
