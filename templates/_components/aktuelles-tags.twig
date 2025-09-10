@@ -17,7 +17,7 @@
     <div class="filter">
         {% include '_components/filter' %}Filter: <strong>{{ selectedTag }}</strong><span> | </span>
         <a class="filter__remove" href="{{ url('aktuelles') }}">
-            {% include '_components/filter-remove' %}Zurücksetzen 
+            {% include '_components/filter-remove' %}{{ craft.app.language == 'de' ? 'Zurücksetzen' : 'Reset' }} 
         </a>
     </div>
 {% endif %}

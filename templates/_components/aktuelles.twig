@@ -13,7 +13,7 @@
                             {% include '_components/tags' with { tags:tags, tagClass:'tag--white', iconClass:iconClass  } %}
                         {% endif %}
                         <div class="thumb__date">{{ entry.postDate|date('j. F Y') }}</div>
-                    <a class="thumb__link" href="{{ entry.url }}">Mehr erfahren {% include '_components/arrow' %}</a>
+                    <a class="thumb__link" href="{{ entry.url }}">{{ craft.app.language == 'de' ? 'Mehr erfahren' : 'Learn More' }} {% include '_components/arrow' %}</a>
                     <div class="thumb__background"></div>
                 </div>
             </article>
