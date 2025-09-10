@@ -2,7 +2,13 @@
     {% include '_components/tag-icon' with { iconClass:iconClass }%}
     {% for tag in tags %}
         <div class="tag {{ tagClass ?? '' }}">
-            <a class="tag__link" href="{{ url('aktuelles', { tag: tag.title }) }}">{{ tag.title }}</a>
+            <a class="tag__link" href="{{ url('aktuelles', { tag: tag.slug }) }}">
+                {% if craft.app.language == 'de' %}
+                    {{ tag.title }}
+                {% elseif craft.app.language == 'en' %}
+                    {{ tag.englishTitle }}
+                {% endif %}
+            </a>
             {% if not loop.last %}<span class="tag__span">/</span>{% endif %}
         </div>
     {% endfor %}
