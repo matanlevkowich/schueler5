@@ -1,25 +1,46 @@
-{% set selectedTag = craft.app.request.getParam('tag') %}
-{% set twoYearsAgo = now|date_modify('-3 years') %}
+{# Language & paths #}
+{% set lang = craft.app.language|slice(0,2) %}
+{% set listingPath = lang == 'en' ? 'news' : 'aktuelles' %}
 
-{% set entriesQuery = craft.entries()
-    .section('aktuellesPages')
-    .with(['aktuellesTags', 'thumb'])
-    .orderBy('postDate DESC')
-    .postDate('> ' ~ twoYearsAgo|atom) 
-%}
-{% if selectedTag %}
-    {% set entriesQuery = entriesQuery.relatedTo({
-        targetElement: craft.tags().title(selectedTag).one()
-    }) %}
+{# Params #}
+{% set selectedTagParam = craft.app.request.getParam('tag') %}
+
+{# Resolve the tag element: prefer slug; fall back to title for legacy links #}
+{% set selectedTagEl = null %}
+{% if selectedTagParam %}
+  {% set selectedTagEl = craft.tags().slug(selectedTagParam).one() 
+      ?? craft.tags().title(selectedTagParam).one() %}
 {% endif %}
+
+{# Entries query #}
+{% set threeYearsAgo = now|date_modify('-3 years') %}
+{% set entriesQuery = craft.entries()
+  .section('aktuellesPages')
+  .with(['aktuellesTags', 'thumb'])
+  .orderBy('postDate DESC')
+  .postDate('> ' ~ threeYearsAgo|atom)
+%}
+
+{% if selectedTagEl %}
+  {% set entriesQuery = entriesQuery.relatedTo({ targetElement: selectedTagEl }) %}
+{% endif %}
+
 {% set entries = entriesQuery.all() %}
-{% if selectedTag %}
-    <div class="filter">
-        {% include '_components/filter' %}Filter: <strong>{{ selectedTag }}</strong><span> | </span>
-        <a class="filter__remove" href="{{ url('aktuelles') }}">
-            {% include '_components/filter-remove' %}{{ craft.app.language == 'de' ? 'Zurücksetzen' : 'Reset' }} 
-        </a>
-    </div>
+
+{# Filter bar #}
+{% if selectedTagEl %}
+  <div class="filter">
+    {% include '_components/filter' %}
+    Filter:
+    <strong>
+      {{ (lang == 'en' ? selectedTagEl.englishTitle : selectedTagEl.title) | default(selectedTagEl.title) }}
+    </strong>
+    <span> | </span>
+    <a class="filter__remove" href="{{ url(listingPath) }}">
+      {% include '_components/filter-remove' %}
+      {{ lang == 'de' ? 'Zurücksetzen' : 'Reset' }}
+    </a>
+  </div>
 {% endif %}
 
 {% include '_components/aktuelles' with { entries: entries } %}
